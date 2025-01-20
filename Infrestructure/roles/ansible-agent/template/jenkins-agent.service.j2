@@ -1,0 +1,26 @@
+[Unit]
+Description=Jenkins Agent (Ansible)
+Wants=network.target
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+Environment="JENKINS_HOME={{ jenkins_home }}"
+Environment="AGENT_NAME=ansible-agent"
+ExecStart=/bin/bash {{ jenkins_home }}/service.sh
+Restart=always
+RestartSec=10
+StartLimitInterval=0
+
+# Security settings
+NoNewPrivileges=yes
+ProtectSystem=full
+ProtectHome=read-only
+PrivateTmp=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+
+[Install]
+WantedBy=multi-user.target

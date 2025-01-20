@@ -1,0 +1,45 @@
+# roles/jenkins_docker_agent/tasks/main.yml
+---
+- name: Install Docker
+  apt:
+    name: docker.io
+    state: present
+
+- name: Add ubuntu user to docker group
+  user:
+    name: ubuntu
+    groups: docker
+    append: yes
+
+- name: Create agent service script
+  template:
+    src: service.sh.j2
+    dest: "{{ jenkins_home }}/service.sh"
+    mode: '0755'
+    owner: ubuntu
+    group: ubuntu
+
+- name: Create agent systemd service
+  template:
+    src: jenkins-agent.service.j2
+    dest: /etc/systemd/system/jenkins-agent.service
+    mode: '0644'
+
+- name: Reload systemd to apply new service
+  systemd:
+    daemon_reload: yes
+
+- name: Enable and start Jenkins agent service
+  systemd:
+    name: jenkins-agent
+    state: started
+    enabled: yes
+
+- name: Check agent service status
+  command: systemctl status jenkins-agent
+  register: service_status
+  ignore_errors: yes
+
+- name: Debug service status
+  debug:
+    var: service_status.stdout_lines

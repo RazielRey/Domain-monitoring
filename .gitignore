@@ -1,0 +1,14 @@
+# Private keys and sensitive files
+*.pem
+aws1_accessKeys.csv
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore Ansible inventory with sensitive data
+Deployment/ansible/inventory_aws_ec2.yaml
+
+# Ignore logs and temporary files
+*.log
+*.tmp

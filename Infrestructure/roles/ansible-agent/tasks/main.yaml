@@ -1,0 +1,76 @@
+---
+- name: Install initial system packages
+  apt:
+    name:
+      - python3-venv
+      - software-properties-common
+      - python3-boto3
+    state: present
+    extra_args: --break-system-packages
+
+- name: Install Docker Python package
+  pip:
+    name: docker
+    state: present
+    extra_args: --break-system-packages
+
+# Add repository
+- name: Add Ansible PPA repository
+  apt_repository:
+    repo: ppa:ansible/ansible
+    state: present
+    update_cache: yes
+
+# Install Ansible packages
+- name: Install Ansible and dependencies
+  apt:
+    name:
+      - ansible
+      - sshpass
+    state: present
+
+- name: Create Ansible configuration directory
+  file:
+    path: /etc/ansible
+    state: directory
+    mode: '0755'
+
+- name: Configure Ansible to disable host key checking
+  lineinfile:
+    path: /etc/ansible/ansible.cfg
+    line: "host_key_checking = False"
+    create: yes
+    mode: '0644'
+    
+- name: Create agent service script
+  template:
+    src: service.sh.j2
+    dest: "{{ jenkins_home }}/service.sh"
+    mode: '0755'
+    owner: ubuntu
+    group: ubuntu
+
+- name: Create agent systemd service
+  template:
+    src: jenkins-agent.service.j2
+    dest: /etc/systemd/system/jenkins-agent.service
+    mode: '0644'
+
+- name: Reload systemd to apply new service
+  systemd:
+    daemon_reload: yes
+
+- name: Enable and start Jenkins agent service
+  systemd:
+    name: jenkins-agent
+    state: started
+    enabled: yes
+
+- name: Check agent service status
+  command: systemctl status jenkins-agent
+  register: service_status
+  ignore_errors: yes
+
+- name: Debug service status
+  debug:
+    var: service_status.stdout_lines

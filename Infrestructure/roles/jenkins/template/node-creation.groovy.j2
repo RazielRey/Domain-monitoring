@@ -1,0 +1,28 @@
+# roles/jenkins/templates/node-creation.groovy.j2
+import jenkins.model.*
+import hudson.model.*
+import hudson.slaves.*
+
+def createNode(String name, String description) {
+    def launcher = new JNLPLauncher(false)
+    def node = new DumbSlave(
+        name,                    // Node name
+        description,             // Description
+        "/var/lib/jenkins",      // Remote root directory
+        "1",                     // Number of executors
+        Node.Mode.NORMAL,        // Mode
+        name,                    // Labels
+        launcher,                // JNLP Launcher
+        RetentionStrategy.INSTANCE)
+    
+    Jenkins.instance.addNode(node)
+    return Jenkins.instance.getNode(name).getComputer().getJnlpMac()
+}
+
+// Create Docker agent
+def dockerSecret = createNode("docker-agent", "Jenkins Docker Agent")
+println "docker:" + dockerSecret
+
+// Create Ansible agent
+def ansibleSecret = createNode("ansible-agent", "Jenkins Ansible Agent")
+println "ansible:" + ansibleSecret

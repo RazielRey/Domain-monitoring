@@ -1,0 +1,102 @@
+# deployment/ansible/deploy-app.yml
+---
+- hosts: tag_Purpose_app_server
+  become: yes
+  vars:
+    fe_image: "{{ docker_image_fe | default('razielrey/domain-monitor-fe') }}"
+    be_image: "{{ docker_image_be | default('razielrey/domain-monitor-be') }}"
+    image_tag: "{{ docker_image_tag | default('latest') }}"
+    fe_port: "8080"
+    be_port: "5001"
+
+  tasks:
+    - name: Debug environment variables
+      debug:
+        msg: |
+          Frontend Image: {{ fe_image }}:{{ image_tag }}
+          Backend Image: {{ be_image }}:{{ image_tag }}
+          Frontend Port: {{ fe_port }}
+          Backend Port: {{ be_port }}
+
+    - name: Show running containers
+      command: docker ps
+      register: docker_ps
+      changed_when: false
+
+    - name: Debug docker ps output
+      debug:
+        var: docker_ps.stdout_lines
+
+  tasks:
+    - name: Pull frontend image
+      docker_image:
+        name: "{{ fe_image }}"
+        source: pull
+        tag: "{{ image_tag }}"
+        force_source: yes
+      register: fe_pull
+
+    - name: Pull backend image  
+      docker_image:
+        name: "{{ be_image }}"
+        source: pull
+        tag: "{{ image_tag }}"
+        force_source: yes
+      register: be_pull
+
+
+    - name: Remove old frontend container
+      docker_container:
+        name: frontend-app
+        state: absent
+      ignore_errors: yes
+
+    - name: Remove old backend container  
+      docker_container:
+        name: backend-app
+        state: absent
+      ignore_errors: yes
+
+    - name: Start frontend container
+      docker_container:
+        name: frontend-app
+        image: "{{ fe_image }}:{{ image_tag }}"
+        state: started
+        restart_policy: always
+        published_ports:
+          - "{{ fe_port }}:8080"
+        env:
+            BACKEND_URL: "http://localhost:{{ be_port }}"
+        networks:
+          - name: host
+
+    - name: Start backend container
+      docker_container:
+        name: backend-app
+        image: "{{ be_image }}:{{ image_tag }}"
+        state: started
+        restart_policy: always
+        published_ports:
+          - "{{ be_port }}:5001"
+        networks:
+          - name: host
+
+    - name: Check frontend container status
+      uri:
+        url: "http://localhost:{{ fe_port }}/health"
+        method: GET
+        status_code: 200
+      register: fe_health
+      retries: 6
+      delay: 10
+      until: fe_health.status == 200
+      
+    - name: Check backend container status
+      uri:
+        url: "http://localhost:{{ be_port }}/health" 
+        method: GET
+        status_code: 200
+      register: be_health
+      retries: 6
+      delay: 10
+      until: be_health.status == 200

@@ -1,0 +1,194 @@
+---
+- name: Install required packages
+  apt:
+    name: 
+      - docker.io
+      - python3-pip
+      - python3-jenkins
+      - python3-setuptools
+    state: present
+
+- name: Add ubuntu user to docker group
+  user:
+    name: ubuntu
+    groups: docker
+    append: yes
+
+- name: Create base Jenkins home directory
+  file:
+    path: "{{ jenkins_home }}"
+    state: directory
+    mode: '0755'
+    owner: 1000
+    group: 1000
+
+
+- name: Setup Jenkins subdirectories
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: 1000
+    group: 1000
+    mode: '0755'
+    recurse: yes
+  with_items:
+    - "{{ jenkins_home }}/plugins"
+    - "{{ jenkins_home }}/init.groovy.d"
+
+- name: Create Jenkins init script
+  template:
+    src: init-script.groovy.j2
+    dest: "{{ jenkins_home }}/init.groovy.d/basic-security.groovy"
+    owner: 1000
+    group: 1000
+    mode: '0644'
+
+- name: Run Jenkins Container
+  docker_container:
+    name: jenkins
+    image: jenkins/jenkins
+    state: started
+    restart_policy: always
+    ports:
+      - "{{ jenkins_port }}:8080"
+      - "{{ jenkins_agent_port }}:50000"
+    volumes:
+      - "{{ jenkins_home }}:{{ jenkins_home }}"
+    env:
+      JAVA_OPTS: "{{ java_args }}"
+
+- name: Wait for Jenkins to start
+  uri:
+    url: "http://{{ jenkins_master_ip }}:8080/login"
+    status_code: [200, 403]
+    timeout: 5
+    validate_certs: no
+  register: result
+  until: result.status in [200, 403]
+  retries: 60
+  delay: 5
+
+- name: Install Jenkins plugins with dependencies
+  jenkins_script:
+    script: "{{ lookup('template', 'install-plugins.groovy.j2') }}"
+    url: "http://{{ jenkins_master_ip }}:8080"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    validate_certs: no
+
+- name: Wait for plugins to install
+  pause:
+    seconds: 50
+
+- name: Restart Jenkins
+  docker_container:
+    name: jenkins
+    state: started
+    restart: yes
+    image: jenkins/jenkins
+    ports:
+      - "{{ jenkins_port }}:8080"
+      - "{{ jenkins_agent_port }}:50000"
+    volumes:
+      - "{{ jenkins_home }}:{{ jenkins_home }}"
+    env:
+      JAVA_OPTS: "{{ java_args }}"
+
+- name: Wait for Jenkins to be fully operational
+  uri:
+    url: "http://{{ jenkins_master_ip }}:8080/api/json"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    force_basic_auth: yes
+    status_code: 200
+    validate_certs: no
+  register: result
+  until: result.status == 200
+  retries: 30
+  delay: 10
+
+- name: Create Jenkins node
+  jenkins_script:
+    script: "{{ lookup('template', 'node-creation.groovy.j2') }}"
+    url: "http://{{ jenkins_master_ip }}:8080"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    validate_certs: no
+  register: agent_node_creation
+
+- name: Store Docker agent secret in AWS Secrets Manager
+  community.aws.aws_secret:
+    name: "/jenkins/agents/docker"
+    secret: "{{ agent_node_creation.output.split('docker:')[1] | trim }}"
+    state: present
+  delegate_to: localhost
+  when: agent_node_creation.output is defined
+
+- name: Store Ansible agent secret in AWS Secrets Manager
+  community.aws.aws_secret:
+    name: "/jenkins/agents/ansible"
+    secret: "{{ agent_node_creation.output.split('ansible:')[1] | trim }}"
+    state: present
+  delegate_to: localhost
+  when: agent_node_creation.output is defined
+
+- name: Check if Docker pipeline job exists
+  uri:
+    url: "http://{{ jenkins_master_ip }}:8080/job/docker-{{ jenkins_pipeline.name }}/api/json"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    force_basic_auth: yes
+    status_code: [200, 404]
+    validate_certs: no
+  register: docker_job_check
+  ignore_errors: yes
+
+- name: Create Docker Pipeline job
+  jenkins_script:
+    script: "{{ lookup('template', 'docker-pipeline-creation.groovy.j2') }}"
+    url: "http://{{ jenkins_master_ip }}:8080"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    validate_certs: no
+  when: docker_job_check.status != 200
+  register: docker_pipeline_creation
+  retries: 3
+  delay: 5
+  until: docker_pipeline_creation is success
+
+- name: Check if Ansible pipeline job exists
+  uri:
+    url: "http://{{ jenkins_master_ip }}:8080/job/ansible-{{ jenkins_pipeline.name }}/api/json"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    force_basic_auth: yes
+    status_code: [200, 404]
+    validate_certs: no
+  register: ansible_job_check
+  ignore_errors: yes
+
+- name: Create Ansible Pipeline job
+  jenkins_script:
+    script: "{{ lookup('template', 'ansible-pipeline-creation.groovy.j2') }}"
+    url: "http://{{ jenkins_master_ip }}:8080"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    validate_certs: no
+  when: ansible_job_check.status != 200
+  register: ansible_pipeline_creation
+  retries: 3
+  delay: 5
+  until: ansible_pipeline_creation is success
+
+- name: Verify pipeline jobs creation
+  uri:
+    url: "http://{{ jenkins_master_ip }}:8080/job/{{ item }}-{{ jenkins_pipeline.name }}/api/json"
+    user: admin
+    password: "{{ jenkins_admin_password }}"
+    force_basic_auth: yes
+    validate_certs: no
+  register: final_check
+  failed_when: final_check.status != 200
+  with_items:
+    - docker
+    - ansible

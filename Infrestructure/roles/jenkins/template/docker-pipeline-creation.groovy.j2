@@ -1,0 +1,71 @@
+// docker-pipeline-creation.groovy.j2
+import jenkins.model.*
+import org.jenkinsci.plugins.workflow.job.*
+import org.jenkinsci.plugins.workflow.cps.*
+import hudson.plugins.git.*
+import hudson.triggers.SCMTrigger
+import hudson.model.*
+
+def jenkins = Jenkins.getInstance()
+
+// Pipeline configuration from variables
+def pipelineName = "docker-{{ jenkins_pipeline.name }}"
+def gitRepoUrl = "{{ jenkins_pipeline.git_repo }}"
+def gitBranch = "{{ jenkins_pipeline.git_branch }}"
+def jenkinsfilePath = "{{ jenkins_pipeline.jenkinsfile_path }}"
+def pollSchedule = "{{ jenkins_pipeline.poll_schedule }}"
+def ansiblePipelineName = "ansible-{{ jenkins_pipeline.name }}"
+
+try {
+    // Create pipeline job for Docker agent
+    WorkflowJob pipelineJob = jenkins.createProject(WorkflowJob.class, pipelineName)
+    
+    // Configure Git SCM
+    def scmConfig = new GitSCM(GitSCM.createRepoList(gitRepoUrl, null),
+                              Collections.singletonList(new BranchSpec(gitBranch)),
+                              false,
+                              Collections.<SubmoduleConfig>emptyList(),
+                              null,
+                              null,
+                              Collections.<GitSCMExtension>emptyList())
+
+    // Set up pipeline
+    def flowDefinition = new CpsScmFlowDefinition(scmConfig, jenkinsfilePath)
+    
+    // Add downstream trigger configuration
+    def pipelineScript = """
+        pipeline {
+            agent { label '{{ docker_agent.labels }}' }
+            stages {
+                stage('Build') {
+                    steps {
+                        checkout scm
+                        load '${jenkinsfilePath}'
+                    }
+                }
+            }
+            post {
+                success {
+                    build job: '${ansiblePipelineName}',
+                          parameters: [string(name: 'IMAGE_TAG', value: env.BUILD_TAG)],
+                          wait: false
+                }
+            }
+        }
+    """
+    flowDefinition.setScript(pipelineScript)
+    pipelineJob.setDefinition(flowDefinition)
+
+    // Set to run only on Docker agent
+    pipelineJob.setAssignedLabel(jenkins.getLabel("docker"))
+    
+    // Add SCM polling trigger
+    pipelineJob.addTrigger(new SCMTrigger(pollSchedule))
+    
+    pipelineJob.save()
+    println "Docker pipeline job created successfully with downstream trigger"
+
+} catch (Exception e) {
+    println "Error creating Docker pipeline: ${e.message}"
+    throw e
+}

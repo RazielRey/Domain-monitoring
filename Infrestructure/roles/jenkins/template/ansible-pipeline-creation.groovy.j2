@@ -1,0 +1,68 @@
+// ansible-pipeline-creation.groovy.j2
+import jenkins.model.*
+import org.jenkinsci.plugins.workflow.job.*
+import org.jenkinsci.plugins.workflow.cps.*
+import hudson.plugins.git.*
+import hudson.triggers.SCMTrigger
+import hudson.model.*
+
+def jenkins = Jenkins.getInstance()
+
+// Pipeline configuration from variables
+def pipelineName = "ansible-{{ jenkins_pipeline.name }}"
+def gitRepoUrl = "{{ jenkins_pipeline.git_repo }}"
+def gitBranch = "{{ jenkins_pipeline.git_branch }}"
+def jenkinsfilePath = "{{ jenkins_pipeline.ansible_jenkinsfile_path }}"  // Using the new path variable
+
+try {
+    // Create pipeline job for Ansible agent
+    WorkflowJob pipelineJob = jenkins.createProject(WorkflowJob.class, pipelineName)
+    
+    // Configure Git SCM
+    def scmConfig = new GitSCM(GitSCM.createRepoList(gitRepoUrl, null),
+                              Collections.singletonList(new BranchSpec(gitBranch)),
+                              false,
+                              Collections.<SubmoduleConfig>emptyList(),
+                              null,
+                              null,
+                              Collections.<GitSCMExtension>emptyList())
+
+    // Add parameters definition
+    def parameterDefinitions = [
+        new StringParameterDefinition('IMAGE_TAG', 'latest', 'Docker image tag to deploy')
+    ]
+    pipelineJob.addProperty(new ParametersDefinitionProperty(parameterDefinitions))
+
+    // Set up pipeline
+    def flowDefinition = new CpsScmFlowDefinition(scmConfig, jenkinsfilePath)
+    
+    // Add pipeline configuration
+    def pipelineScript = """
+        pipeline {
+            agent { label '{{ ansible_agent.labels }}' }
+            parameters {
+                string(name: 'IMAGE_TAG', defaultValue: 'latest', description: 'Docker image tag to deploy')
+            }
+            stages {
+                stage('Deploy') {
+                    steps {
+                        checkout scm
+                        load '${jenkinsfilePath}'
+                    }
+                }
+            }
+        }
+    """
+    flowDefinition.setScript(pipelineScript)
+    pipelineJob.setDefinition(flowDefinition)
+
+    // Set to run only on Ansible agent
+    pipelineJob.setAssignedLabel(jenkins.getLabel("ansible"))
+    
+    pipelineJob.save()
+    println "Ansible pipeline job created successfully with parameters"
+
+} catch (Exception e) {
+    println "Error creating Ansible pipeline: ${e.message}"
+    throw e
+}

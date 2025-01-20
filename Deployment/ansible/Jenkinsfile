@@ -1,0 +1,59 @@
+pipeline {
+    agent { label 'ansible' }
+    
+    parameters {
+        string(name: 'IMAGE_TAG', defaultValue: 'latest', description: 'Docker image tag to deploy')
+    }
+    
+    environment {
+        ANSIBLE_DIR = 'deployment/ansible'
+    }
+
+    stages {
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+                echo 'Workspace cleaned'
+            }
+        }
+
+        stage('Checkout') {
+            steps {
+                checkout scm  
+            }
+        }
+
+        stage('Verify Parameters') {
+            steps {
+                script {
+                    echo "Deploying images with tag: ${params.IMAGE_TAG}"
+                    if (!params.IMAGE_TAG) {
+                        error "No image tag provided!"
+                    }
+                }
+            }
+        }
+
+        stage('Run Deployment') {
+            steps {
+                dir(ANSIBLE_DIR) {
+                    sh """
+                        ansible-playbook playbook.yaml \
+                            -i /etc/ansible/aws_ec2.yaml \
+                            --limit tag_Purpose_app_server \
+                            -e "docker_image_tag=${params.IMAGE_TAG}"
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Deployment completed successfully!"
+        }
+        failure {
+            echo "Deployment failed!"
+        }
+    }
+}
