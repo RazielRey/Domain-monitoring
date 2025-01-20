@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "username": "testuser@test.com",
+            "password": "Test123!",
+            "full_name": "Test User",
+            "is_google_user": false
+        },
+        {
+            "username": "admin@test.com",
+            "password": "Admin123!",
+            "full_name": "Admin User",
+            "is_google_user": false
+        }
+    ]
+}

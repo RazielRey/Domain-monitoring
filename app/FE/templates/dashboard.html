@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Management Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="dashboard-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-nav">
+            <h1 class="dashboard-title">Domain Management Dashboard</h1>
+            <div class="user-section">
+                {% if session.username %}
+                <div class="user-profile">
+                    {% if session.is_google_user and session.profile_picture %}
+                        <img src="{{ session.profile_picture }}" alt="Profile" class="profile-picture">
+                    {% else %}
+                        <span class="icon">👤</span>
+                    {% endif %}
+                    <div class="user-info">
+                        {% if session.get('is_google_user', False) and session.get('full_name') %}
+                            <span class="full-name">{{ session.full_name }}</span>
+                        {% endif %}
+                        <span class="email">{{ session.username }}</span>
+                    </div>
+                </div>
+                {% endif %}
+                <a href="/logout" class="button logout-button">
+                    <span class="icon">↪</span>
+                    Logout
+                </a>
+            </div>
+        </div>
+        
+        <div class="top-cards"></div>
+
+        <!-- Cards wrapper for side-by-side layout -->
+        <div class="cards-wrapper">
+            <!-- Add Domain Card -->
+            <div class="card card-half">
+                <div class="card-header">
+                    <h2>Add New Domain</h2>
+                </div>
+                <div class="card-content">
+                    <div class="domain-input-group">
+                        <input type="text" id="domainInput" placeholder="Enter domain name (e.g., domain.com)" class="domain-input">
+                        <button class="button add-button">
+                            <span class="icon">+</span>
+                            Add Domain
+                        </button>
+                    </div>
+                    
+                    <div class="file-upload-group">
+                        <label for="file-upload" class="button upload-button">
+                            <span class="icon">↑</span>
+                            Upload Domains
+                        </label>
+                        <input type="file" id="file-upload" accept=".txt" class="hidden">
+                        <span class="upload-help">.txt file with one domain per line</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scheduler Card -->
+            <div class="card card-half">
+                <div class="card-header">
+                    <h2>Schedule Checks</h2>
+                </div>
+                <div class="card-content">
+                    <div class="scheduler-options">
+                        <!-- Hourly Schedule Option -->
+                        <div class="schedule-group">
+                            <label class="schedule-label">
+                                <input type="radio" name="schedule-type" value="hourly" class="schedule-radio">
+                                Run every
+                                <input type="number" id="hourlyInterval" min="1" max="24" value="1" class="schedule-input">
+                                hour(s)
+                            </label>
+                        </div>
+                        
+                        <!-- Daily Schedule Option -->
+                        <div class="schedule-group">
+                            <label class="schedule-label">
+                                <input type="radio" name="schedule-type" value="daily" class="schedule-radio">
+                                Run once daily at
+                                <input type="time" id="dailyTime" class="schedule-input" value="00:00">
+                            </label>
+                        </div>
+                        
+                        <!-- Schedule Status -->
+                        <div class="schedule-status">
+                            <span id="nextRunTime" class="next-run">Next check: Not scheduled</span>
+                            <div class="schedule-buttons">
+                                <button id="startSchedule" class="button schedule-button">
+                                    <span class="icon">▶</span>
+                                    Start Schedule
+                                </button>
+                                <button id="stopSchedule" class="button schedule-button stop" disabled>
+                                    <span class="icon">⏹</span>
+                                    Stop Schedule
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Domains Table Card -->
+        <div class="card">
+            <div class="card-header">
+                <div class="header-content">
+                    <h2>Your Domains</h2>
+                    <div id="spinner" class="spinner" style="display: none;"></div>
+                    <button class="button refresh-button">
+                        <span class="icon">⟳</span>
+                        Refresh All
+                    </button>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="table-container">
+                    <table class="domains-table">
+                        <thead>
+                            <tr>
+                                <th>Domain Name</th>
+                                <th>Status</th>
+                                <th>SSL Status</th>
+                                <th>SSL Expiry</th>
+                                <th>SSL Issuer</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="domainsTableBody">
+                            <!-- Table content will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashbored_script.js"></script>
+    
+</body>
+</html>

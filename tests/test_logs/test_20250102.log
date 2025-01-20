@@ -1,0 +1,251 @@
+2025-01-02 10:37:38 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 10:37:38 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 10:37:40 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 10:37:40 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 10:37:40 - INFO - [test_domains.py:40] - Starting test to add a domain
+2025-01-02 10:37:40 - INFO - [test_domains.py:47] - Domain entered: example.com
+2025-01-02 10:37:40 - INFO - [test_domains.py:52] - Add button clicked
+2025-01-02 10:37:42 - INFO - [test_domains.py:63] - Domain successfully added to table
+2025-01-02 11:44:51 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 11:44:51 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 11:44:53 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 11:44:53 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 11:44:53 - INFO - [test_domains.py:40] - Starting test to add a domain
+2025-01-02 11:44:53 - INFO - [test_domains.py:47] - Domain entered: example.com
+2025-01-02 11:44:53 - INFO - [test_domains.py:52] - Add button clicked
+2025-01-02 11:44:55 - INFO - [test_domains.py:63] - Domain successfully added to table
+2025-01-02 11:45:01 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 11:45:01 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 11:45:03 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 11:45:03 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 11:45:03 - INFO - [test_domains.py:76] - Starting delete domain test
+2025-01-02 11:45:03 - INFO - [test_domains.py:86] - Added test domain: delete-test.com
+2025-01-02 11:45:05 - INFO - [test_domains.py:93] - Delete button clicked
+2025-01-02 11:45:05 - INFO - [test_domains.py:98] - Confirmation alert accepted
+2025-01-02 11:52:00 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 11:52:00 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 11:52:02 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 11:52:02 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 11:52:02 - INFO - [test_domains.py:40] - Starting test to add a domain
+2025-01-02 11:52:02 - INFO - [test_domains.py:47] - Domain entered: example.com
+2025-01-02 11:52:02 - INFO - [test_domains.py:52] - Add button clicked
+2025-01-02 11:52:04 - INFO - [test_domains.py:63] - Domain successfully added to table
+2025-01-02 11:52:10 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 11:52:10 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 11:52:12 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 11:52:12 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 11:52:12 - INFO - [test_domains.py:76] - Starting delete domain test
+2025-01-02 11:52:12 - INFO - [test_domains.py:86] - Added test domain: delete-test.com
+2025-01-02 11:52:14 - INFO - [test_domains.py:93] - Delete button clicked
+2025-01-02 11:52:14 - INFO - [test_domains.py:96] - Waiting for alert
+2025-01-02 12:44:19 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 12:44:19 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 12:44:20 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 12:44:20 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 12:44:20 - INFO - [test_domains.py:40] - Starting test to add a domain
+2025-01-02 12:44:21 - INFO - [test_domains.py:47] - Domain entered: example.com
+2025-01-02 12:44:21 - INFO - [test_domains.py:52] - Add button clicked
+2025-01-02 12:44:23 - INFO - [test_domains.py:63] - Domain successfully added to table
+2025-01-02 12:44:29 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 12:44:29 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 12:44:30 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 12:44:30 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 12:44:30 - INFO - [test_domains.py:76] - Starting delete domain test
+2025-01-02 12:44:31 - INFO - [test_domains.py:86] - Added test domain: delete-test.com
+2025-01-02 12:44:33 - INFO - [test_domains.py:93] - Delete button clicked
+2025-01-02 12:44:33 - INFO - [test_domains.py:96] - Waiting for alert
+2025-01-02 12:46:13 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 12:46:13 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 12:46:14 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 12:46:14 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 12:46:14 - INFO - [test_domains.py:40] - Starting test to add a domain
+2025-01-02 12:46:15 - INFO - [test_domains.py:47] - Domain entered: example.com
+2025-01-02 12:46:15 - INFO - [test_domains.py:52] - Add button clicked
+2025-01-02 12:46:17 - INFO - [test_domains.py:63] - Domain successfully added to table
+2025-01-02 12:46:23 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 12:46:23 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 12:46:24 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 12:46:24 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 12:46:24 - INFO - [test_domains.py:76] - Starting delete domain test
+2025-01-02 12:46:24 - INFO - [test_domains.py:86] - Added test domain: delete-test.com
+2025-01-02 12:46:26 - INFO - [test_domains.py:93] - Delete button clicked
+2025-01-02 12:46:26 - INFO - [test_domains.py:96] - Waiting for alert
+2025-01-02 12:57:22 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 12:57:22 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 12:57:23 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 12:57:23 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 12:57:23 - INFO - [test_domains.py:40] - Starting test to add a domain
+2025-01-02 12:57:23 - INFO - [test_domains.py:47] - Domain entered: example.com
+2025-01-02 12:57:23 - INFO - [test_domains.py:52] - Add button clicked
+2025-01-02 12:57:26 - INFO - [test_domains.py:63] - Domain successfully added to table
+2025-01-02 12:57:32 - INFO - [test_domains.py:12] - Starting domain tests setup
+2025-01-02 12:57:32 - INFO - [test_domains.py:18] - Performing login
+2025-01-02 12:57:33 - INFO - [test_domains.py:33] - Login successful
+2025-01-02 12:57:33 - INFO - [test_domains.py:14] - Login successful
+2025-01-02 12:57:33 - INFO - [test_domains.py:76] - Starting delete domain test
+2025-01-02 12:57:34 - INFO - [test_domains.py:86] - Added test domain: delete-test.com
+2025-01-02 12:57:36 - INFO - [test_domains.py:93] - Delete button clicked
+2025-01-02 12:57:36 - INFO - [test_domains.py:96] - Waiting for alert
+2025-01-02 13:00:33 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 13:00:33 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 13:00:34 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 13:00:34 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 13:00:34 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 13:00:34 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 13:00:34 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 13:00:37 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 13:00:43 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 13:00:43 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 13:00:44 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 13:00:44 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 13:00:44 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 13:00:44 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 13:00:47 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 13:00:47 - INFO - [test_domains.py:99] - Waiting for alert
+2025-01-02 13:05:52 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 13:05:52 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 13:05:54 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 13:05:54 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 13:05:54 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 13:05:54 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 13:05:54 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 13:05:56 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 13:06:02 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 13:06:02 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 13:06:04 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 13:06:04 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 13:06:04 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 13:06:04 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 13:06:06 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 13:06:06 - INFO - [test_domains.py:99] - Waiting for alert
+2025-01-02 13:06:06 - INFO - [test_domains.py:103] - Confirmation alert accepted
+2025-01-02 13:06:08 - INFO - [test_domains.py:109] - Verifying domain deletion
+2025-01-02 13:12:00 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 13:12:00 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 13:12:01 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 13:12:01 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 13:12:01 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 13:12:01 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 13:12:01 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 13:12:03 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 13:12:10 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 13:12:10 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 13:12:11 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 13:12:11 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 13:12:11 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 13:12:11 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 13:12:14 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 13:12:14 - INFO - [test_domains.py:99] - Waiting for alert
+2025-01-02 13:12:14 - INFO - [test_domains.py:102] - Alert text: Are you sure you want to delete this domain?
+2025-01-02 13:12:14 - INFO - [test_domains.py:104] - Confirmation alert accepted
+2025-01-02 13:12:16 - INFO - [test_domains.py:110] - Verifying domain deletion
+2025-01-02 14:56:36 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 14:56:36 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 14:56:37 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 14:56:37 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 14:56:37 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 14:56:37 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 14:56:37 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 14:56:39 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 14:56:45 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 14:56:45 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 14:56:46 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 14:56:46 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 14:56:46 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 14:56:46 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 14:56:48 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 14:59:37 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 14:59:37 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 14:59:39 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 14:59:39 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 14:59:39 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 14:59:39 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 14:59:39 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 14:59:41 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 14:59:46 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 14:59:46 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 14:59:47 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 14:59:47 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 14:59:47 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 14:59:48 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 14:59:50 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 14:59:55 - INFO - [test_domains.py:105] - Verifying domain deletion
+2025-01-02 14:59:55 - ERROR - [test_domains.py:111] - Domain still exists after deletion
+2025-01-02 15:04:05 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 15:04:05 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 15:04:06 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 15:04:06 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 15:04:06 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 15:04:06 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 15:04:06 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 15:04:08 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 15:04:14 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 15:04:14 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 15:04:15 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 15:04:15 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 15:04:15 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 15:04:15 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 15:04:17 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 15:04:21 - INFO - [test_domains.py:102] - Waiting for table update after deletion
+2025-01-02 15:04:21 - INFO - [test_domains.py:107] - Table updated successfully
+2025-01-02 15:04:21 - INFO - [test_domains.py:110] - Verifying domain deletion
+2025-01-02 15:04:21 - INFO - [test_domains.py:119] - Domain successfully deleted
+2025-01-02 16:40:37 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 16:40:37 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 16:40:38 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 16:40:38 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 16:40:38 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 16:40:38 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 16:40:38 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 16:40:40 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 16:40:50 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 16:40:50 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 16:40:51 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 16:40:51 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 16:40:51 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 16:40:51 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 16:40:53 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 16:40:57 - INFO - [test_domains.py:102] - Waiting for table update after deletion
+2025-01-02 16:41:07 - ERROR - [test_domains.py:123] - Failed to delete domain: Message: Domain was not removed from the table
+
+2025-01-02 16:41:12 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 16:41:12 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 16:41:14 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 16:41:14 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 16:41:14 - INFO - [test_domains.py:129] - Starting refresh domains test
+2025-01-02 16:41:14 - INFO - [test_domains.py:138] - Added test domain: refresh-test.com
+2025-01-02 16:41:16 - INFO - [test_domains.py:146] - Initial status: FAILED
+2025-01-02 16:41:16 - INFO - [test_domains.py:151] - Clicked refresh button
+2025-01-02 16:41:16 - INFO - [test_domains.py:158] - Refresh completed (spinner gone)
+2025-01-02 16:41:18 - INFO - [test_domains.py:164] - New status: FAILED
+2025-01-02 16:41:18 - INFO - [test_domains.py:168] - Domain status refreshed successfully
+2025-01-02 16:44:59 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 16:44:59 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 16:45:01 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 16:45:01 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 16:45:01 - INFO - [test_domains.py:43] - Starting test to add a domain
+2025-01-02 16:45:01 - INFO - [test_domains.py:50] - Domain entered: example.com
+2025-01-02 16:45:01 - INFO - [test_domains.py:55] - Add button clicked
+2025-01-02 16:45:03 - INFO - [test_domains.py:66] - Domain successfully added to table
+2025-01-02 16:45:13 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 16:45:13 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 16:45:14 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 16:45:14 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 16:45:14 - INFO - [test_domains.py:79] - Starting delete domain test
+2025-01-02 16:45:14 - INFO - [test_domains.py:89] - Added test domain: delete-test.com
+2025-01-02 16:45:16 - INFO - [test_domains.py:96] - Delete button clicked
+2025-01-02 16:45:20 - INFO - [test_domains.py:102] - Waiting for table update after deletion
+2025-01-02 16:45:20 - INFO - [test_domains.py:107] - Table updated successfully
+2025-01-02 16:45:20 - INFO - [test_domains.py:110] - Verifying domain deletion
+2025-01-02 16:45:20 - INFO - [test_domains.py:119] - Domain successfully deleted
+2025-01-02 16:45:25 - INFO - [test_domains.py:15] - Starting domain tests setup
+2025-01-02 16:45:25 - INFO - [test_domains.py:21] - Performing login
+2025-01-02 16:45:26 - INFO - [test_domains.py:36] - Login successful
+2025-01-02 16:45:26 - INFO - [test_domains.py:17] - Login successful
+2025-01-02 16:45:26 - INFO - [test_domains.py:129] - Starting refresh domains test
+2025-01-02 16:45:27 - INFO - [test_domains.py:138] - Added test domain: refresh-test.com
+2025-01-02 16:45:29 - INFO - [test_domains.py:146] - Initial status: FAILED
+2025-01-02 16:45:29 - INFO - [test_domains.py:151] - Clicked refresh button
+2025-01-02 16:45:29 - INFO - [test_domains.py:158] - Refresh completed (spinner gone)
+2025-01-02 16:45:31 - INFO - [test_domains.py:164] - New status: FAILED
+2025-01-02 16:45:31 - INFO - [test_domains.py:168] - Domain status refreshed successfully

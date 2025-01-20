@@ -1,0 +1,30 @@
+2025-01-05 10:23:53 - ERROR - [domains_check_MT.py:78] - Error checking youtube.com: 
+None
+2025-01-05 10:23:54 - ERROR - [domains_check_MT.py:78] - Error checking forbes.com: 
+None
+2025-01-05 10:23:54 - ERROR - [domains_check_MT.py:78] - Error checking unity.com: HTTPConnectionPool(host='unity.com', port=80): Read timed out. (read timeout=1.5)
+None
+2025-01-05 10:23:54 - ERROR - [domains_check_MT.py:78] - Error checking cnn.com: 
+None
+2025-01-05 10:23:54 - ERROR - [domains_check_MT.py:78] - Error checking cnet.com: 
+None
+2025-01-05 10:23:54 - ERROR - [domains_check_MT.py:78] - Error checking zoom.us: 
+None
+2025-01-05 10:23:55 - ERROR - [domains_check_MT.py:78] - Error checking reddit.com: 
+None
+2025-01-05 10:23:57 - ERROR - [domains_check_MT.py:78] - Error checking weather.com: 
+None
+2025-01-05 10:23:57 - ERROR - [domains_check_MT.py:78] - Error checking tumblr.com: 
+None
+2025-01-05 10:23:57 - ERROR - [domains_check_MT.py:78] - Error checking steam.com: HTTPConnectionPool(host='steam.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001580BFF3B60>: Failed to resolve 'steam.com' ([Errno 11001] getaddrinfo failed)"))
+None
+2025-01-05 10:23:57 - ERROR - [domains_check_MT.py:78] - Error checking wix.com: 
+None
+2025-01-05 10:23:57 - ERROR - [domains_check_MT.py:78] - Error checking joomla.org: 
+None
+2025-01-05 10:23:58 - ERROR - [domains_check_MT.py:78] - Error checking amd.com: HTTPSConnectionPool(host='www.amd.com', port=443): Read timed out. (read timeout=1.5)
+None
+2025-01-05 10:23:59 - ERROR - [domains_check_MT.py:78] - Error checking magento.com: 
+None
+2025-01-05 10:24:00 - ERROR - [domains_check_MT.py:78] - Error checking aliexpress.com: 
+None

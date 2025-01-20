@@ -1,0 +1,11 @@
+{
+    "domains": [
+        {
+            "url": "google.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-02-24 08:35:56",
+            "issuer": "WR2"
+        }
+    ]
+}

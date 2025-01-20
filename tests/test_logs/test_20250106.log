@@ -1,0 +1,388 @@
+2025-01-06 15:04:54 - INFO - [run_tests.py:21] - Starting core test suite
+2025-01-06 15:04:57 - INFO - [test_base.py:29] - Using base URL: http://host.docker.internal:8080
+2025-01-06 15:04:57 - ERROR - [test_base.py:91] - Error creating test user: HTTPConnectionPool(host='host.docker.internal', port=8080): Max retries exceeded with url: /NewUser (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001A0C2427380>: Failed to resolve 'host.docker.internal' ([Errno 11001] getaddrinfo failed)"))
+2025-01-06 15:05:00 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:05:03 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:05:04 - INFO - [test_base.py:29] - Using base URL: http://host.docker.internal:8080
+2025-01-06 15:05:04 - ERROR - [test_base.py:91] - Error creating test user: HTTPConnectionPool(host='host.docker.internal', port=8080): Max retries exceeded with url: /NewUser (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001A0C27E09E0>: Failed to resolve 'host.docker.internal' ([Errno 11001] getaddrinfo failed)"))
+2025-01-06 15:05:04 - INFO - [test_auth.py:54] - Starting login test
+2025-01-06 15:05:04 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-06 15:05:08 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:05:10 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:05:12 - INFO - [test_base.py:29] - Using base URL: http://host.docker.internal:8080
+2025-01-06 15:05:12 - ERROR - [test_base.py:91] - Error creating test user: HTTPConnectionPool(host='host.docker.internal', port=8080): Max retries exceeded with url: /NewUser (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001A0C27E17F0>: Failed to resolve 'host.docker.internal' ([Errno 11001] getaddrinfo failed)"))
+2025-01-06 15:05:12 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:05:12 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:05:14 - INFO - [test_base.py:29] - Using base URL: http://host.docker.internal:8080
+2025-01-06 15:05:14 - ERROR - [test_base.py:91] - Error creating test user: HTTPConnectionPool(host='host.docker.internal', port=8080): Max retries exceeded with url: /NewUser (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001A0C27E11F0>: Failed to resolve 'host.docker.internal' ([Errno 11001] getaddrinfo failed)"))
+2025-01-06 15:05:14 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:05:14 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:05:16 - INFO - [test_base.py:29] - Using base URL: http://host.docker.internal:8080
+2025-01-06 15:05:16 - ERROR - [test_base.py:91] - Error creating test user: HTTPConnectionPool(host='host.docker.internal', port=8080): Max retries exceeded with url: /NewUser (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001A0C27E2840>: Failed to resolve 'host.docker.internal' ([Errno 11001] getaddrinfo failed)"))
+2025-01-06 15:05:16 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-06 15:05:16 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-06 15:05:16 - INFO - [run_tests.py:26] - Tests run: 5
+2025-01-06 15:05:16 - INFO - [run_tests.py:27] - Tests failed: 0
+2025-01-06 15:05:16 - INFO - [run_tests.py:28] - Tests with errors: 5
+2025-01-06 15:10:45 - INFO - [run_tests.py:21] - Starting core test suite
+2025-01-06 15:10:47 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:10:49 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:10:49 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-06 15:10:50 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-06 15:10:50 - INFO - [test_auth.py:22] - Username entered
+2025-01-06 15:10:50 - INFO - [test_auth.py:26] - Password entered
+2025-01-06 15:10:51 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-06 15:10:52 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-06 15:10:52 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-06 15:10:55 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:10:57 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:11:03 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:11:06 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:11:06 - INFO - [test_auth.py:54] - Starting login test
+2025-01-06 15:11:06 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-06 15:11:06 - INFO - [test_auth.py:59] - Page loaded
+2025-01-06 15:11:06 - INFO - [test_auth.py:62] - Locating username field
+2025-01-06 15:11:06 - INFO - [test_auth.py:64] - Username field located
+2025-01-06 15:11:06 - INFO - [test_auth.py:66] - Locating password field
+2025-01-06 15:11:06 - INFO - [test_auth.py:68] - Password field located
+2025-01-06 15:11:06 - INFO - [test_auth.py:71] - Entering username
+2025-01-06 15:11:06 - INFO - [test_auth.py:73] - Entering password
+2025-01-06 15:11:06 - INFO - [test_auth.py:77] - Locating login button
+2025-01-06 15:11:06 - INFO - [test_auth.py:79] - Login button located
+2025-01-06 15:11:06 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-06 15:11:07 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-06 15:11:07 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-06 15:11:07 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-06 15:11:10 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:11:13 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:11:14 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:11:16 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:11:16 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:11:16 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:11:18 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:11:18 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:11:18 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-06 15:11:18 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-06 15:11:18 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-06 15:11:20 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-06 15:11:23 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:11:26 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:11:27 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:11:29 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:11:29 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:11:29 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:11:31 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:11:31 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:11:31 - INFO - [test_domains.py:223] - Starting file upload test
+2025-01-06 15:11:31 - INFO - [test_domains.py:232] - Created test domains file
+2025-01-06 15:11:31 - INFO - [test_domains.py:237] - Uploaded test file
+2025-01-06 15:11:31 - INFO - [test_domains.py:245] - Alert dismissed
+2025-01-06 15:11:33 - INFO - [test_domains.py:258] - Successfully verified uploaded domains in table
+2025-01-06 15:11:33 - INFO - [test_domains.py:271] - Cleaned up test file in finally block
+2025-01-06 15:11:36 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:11:39 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:11:40 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:11:42 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:11:42 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-06 15:11:42 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-06 15:11:44 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-06 15:11:44 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-06 15:11:44 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-06 15:11:46 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-06 15:11:46 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-06 15:11:47 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-06 15:11:50 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:11:52 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:11:52 - INFO - [run_tests.py:26] - Tests run: 5
+2025-01-06 15:11:52 - INFO - [run_tests.py:27] - Tests failed: 1
+2025-01-06 15:11:52 - INFO - [run_tests.py:28] - Tests with errors: 0
+2025-01-06 15:13:45 - INFO - [run_tests.py:21] - Starting core test suite
+2025-01-06 15:13:47 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:13:49 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:13:50 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-06 15:13:50 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-06 15:13:50 - INFO - [test_auth.py:22] - Username entered
+2025-01-06 15:13:51 - INFO - [test_auth.py:26] - Password entered
+2025-01-06 15:13:51 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-06 15:13:52 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-06 15:13:52 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-06 15:13:55 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:13:57 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:14:03 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:14:05 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:14:05 - INFO - [test_auth.py:54] - Starting login test
+2025-01-06 15:14:05 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-06 15:14:06 - INFO - [test_auth.py:59] - Page loaded
+2025-01-06 15:14:06 - INFO - [test_auth.py:62] - Locating username field
+2025-01-06 15:14:06 - INFO - [test_auth.py:64] - Username field located
+2025-01-06 15:14:06 - INFO - [test_auth.py:66] - Locating password field
+2025-01-06 15:14:06 - INFO - [test_auth.py:68] - Password field located
+2025-01-06 15:14:06 - INFO - [test_auth.py:71] - Entering username
+2025-01-06 15:14:06 - INFO - [test_auth.py:73] - Entering password
+2025-01-06 15:14:06 - INFO - [test_auth.py:77] - Locating login button
+2025-01-06 15:14:06 - INFO - [test_auth.py:79] - Login button located
+2025-01-06 15:14:06 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-06 15:14:07 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-06 15:14:07 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-06 15:14:07 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-06 15:14:10 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:14:12 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:14:14 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:14:16 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:14:16 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:14:16 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:14:17 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:14:17 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:14:17 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-06 15:14:17 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-06 15:14:18 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-06 15:14:20 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-06 15:14:23 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:14:25 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:14:27 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:14:29 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:14:29 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:14:29 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:14:30 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:14:30 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:14:30 - INFO - [test_domains.py:223] - Starting file upload test
+2025-01-06 15:14:30 - INFO - [test_domains.py:232] - Created test domains file
+2025-01-06 15:14:30 - INFO - [test_domains.py:237] - Uploaded test file
+2025-01-06 15:14:30 - INFO - [test_domains.py:245] - Alert dismissed
+2025-01-06 15:14:32 - INFO - [test_domains.py:258] - Successfully verified uploaded domains in table
+2025-01-06 15:14:32 - INFO - [test_domains.py:271] - Cleaned up test file in finally block
+2025-01-06 15:14:35 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:14:38 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:14:39 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:14:41 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:14:41 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-06 15:14:41 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-06 15:14:43 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-06 15:14:43 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-06 15:14:43 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-06 15:14:43 - INFO - [test_scheduler.py:66] - Domain entered: scheduler-test.com
+2025-01-06 15:14:48 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:14:51 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:14:51 - INFO - [run_tests.py:26] - Tests run: 5
+2025-01-06 15:14:51 - INFO - [run_tests.py:27] - Tests failed: 0
+2025-01-06 15:14:51 - INFO - [run_tests.py:28] - Tests with errors: 1
+2025-01-06 15:18:49 - INFO - [run_tests.py:21] - Starting core test suite
+2025-01-06 15:18:51 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:18:53 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:18:53 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-06 15:18:54 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-06 15:18:54 - INFO - [test_auth.py:22] - Username entered
+2025-01-06 15:18:54 - INFO - [test_auth.py:26] - Password entered
+2025-01-06 15:18:54 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-06 15:18:56 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-06 15:18:56 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-06 15:18:59 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:19:01 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:19:07 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:19:09 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:19:09 - INFO - [test_auth.py:54] - Starting login test
+2025-01-06 15:19:09 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-06 15:19:10 - INFO - [test_auth.py:59] - Page loaded
+2025-01-06 15:19:10 - INFO - [test_auth.py:62] - Locating username field
+2025-01-06 15:19:10 - INFO - [test_auth.py:64] - Username field located
+2025-01-06 15:19:10 - INFO - [test_auth.py:66] - Locating password field
+2025-01-06 15:19:10 - INFO - [test_auth.py:68] - Password field located
+2025-01-06 15:19:10 - INFO - [test_auth.py:71] - Entering username
+2025-01-06 15:19:10 - INFO - [test_auth.py:73] - Entering password
+2025-01-06 15:19:10 - INFO - [test_auth.py:77] - Locating login button
+2025-01-06 15:19:10 - INFO - [test_auth.py:79] - Login button located
+2025-01-06 15:19:10 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-06 15:19:11 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-06 15:19:11 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-06 15:19:11 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-06 15:19:14 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:19:16 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:19:18 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:19:20 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:19:20 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:19:20 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:19:21 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:19:21 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:19:21 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-06 15:19:22 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-06 15:19:22 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-06 15:19:24 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-06 15:19:27 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:19:29 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:19:31 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:19:33 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:19:33 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:19:33 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:19:35 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:19:35 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:19:35 - INFO - [test_domains.py:223] - Starting file upload test
+2025-01-06 15:19:35 - INFO - [test_domains.py:232] - Created test domains file
+2025-01-06 15:19:35 - INFO - [test_domains.py:237] - Uploaded test file
+2025-01-06 15:19:35 - INFO - [test_domains.py:245] - Alert dismissed
+2025-01-06 15:19:37 - INFO - [test_domains.py:258] - Successfully verified uploaded domains in table
+2025-01-06 15:19:37 - INFO - [test_domains.py:271] - Cleaned up test file in finally block
+2025-01-06 15:19:40 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:19:42 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:19:44 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:19:46 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:19:46 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-06 15:19:46 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-06 15:19:48 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-06 15:19:48 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-06 15:19:48 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-06 15:19:48 - INFO - [test_scheduler.py:66] - Domain entered: scheduler-test.com
+2025-01-06 15:20:00 - ERROR - [test_base.py:100] - Element not clickable: css selector=input[value='hourly']
+2025-01-06 15:20:00 - ERROR - [test_scheduler.py:94] - Failed to set hourly schedule: Message: 
+
+2025-01-06 15:20:03 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:20:05 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:20:05 - INFO - [run_tests.py:26] - Tests run: 5
+2025-01-06 15:20:05 - INFO - [run_tests.py:27] - Tests failed: 1
+2025-01-06 15:20:05 - INFO - [run_tests.py:28] - Tests with errors: 0
+2025-01-06 15:23:43 - INFO - [run_tests.py:21] - Starting core test suite
+2025-01-06 15:23:45 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:23:47 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:23:47 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-06 15:23:48 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-06 15:23:48 - INFO - [test_auth.py:22] - Username entered
+2025-01-06 15:23:48 - INFO - [test_auth.py:26] - Password entered
+2025-01-06 15:23:48 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-06 15:23:50 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-06 15:23:50 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-06 15:23:53 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:23:55 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:24:01 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:24:03 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:24:03 - INFO - [test_auth.py:54] - Starting login test
+2025-01-06 15:24:03 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-06 15:24:04 - INFO - [test_auth.py:59] - Page loaded
+2025-01-06 15:24:04 - INFO - [test_auth.py:62] - Locating username field
+2025-01-06 15:24:04 - INFO - [test_auth.py:64] - Username field located
+2025-01-06 15:24:04 - INFO - [test_auth.py:66] - Locating password field
+2025-01-06 15:24:04 - INFO - [test_auth.py:68] - Password field located
+2025-01-06 15:24:04 - INFO - [test_auth.py:71] - Entering username
+2025-01-06 15:24:04 - INFO - [test_auth.py:73] - Entering password
+2025-01-06 15:24:04 - INFO - [test_auth.py:77] - Locating login button
+2025-01-06 15:24:04 - INFO - [test_auth.py:79] - Login button located
+2025-01-06 15:24:04 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-06 15:24:05 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-06 15:24:05 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-06 15:24:05 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-06 15:24:08 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:24:10 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:24:12 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:24:14 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:24:14 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:24:14 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:24:15 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:24:15 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:24:15 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-06 15:24:16 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-06 15:24:16 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-06 15:24:18 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-06 15:24:21 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:24:23 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:24:25 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:24:27 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:24:27 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:24:27 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:24:28 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:24:28 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:24:28 - INFO - [test_domains.py:223] - Starting file upload test
+2025-01-06 15:24:28 - INFO - [test_domains.py:232] - Created test domains file
+2025-01-06 15:24:28 - INFO - [test_domains.py:237] - Uploaded test file
+2025-01-06 15:24:28 - INFO - [test_domains.py:245] - Alert dismissed
+2025-01-06 15:24:30 - INFO - [test_domains.py:258] - Successfully verified uploaded domains in table
+2025-01-06 15:24:30 - INFO - [test_domains.py:271] - Cleaned up test file in finally block
+2025-01-06 15:24:33 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:24:36 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:24:37 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:24:39 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:24:39 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-06 15:24:39 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-06 15:24:41 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-06 15:24:41 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-06 15:24:41 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-06 15:24:41 - INFO - [test_scheduler.py:66] - Domain entered: scheduler-test.com
+2025-01-06 15:24:54 - ERROR - [test_base.py:100] - Element not clickable: css selector=input[value='hourly']
+2025-01-06 15:24:54 - ERROR - [test_scheduler.py:94] - Failed to set hourly schedule: Message: 
+
+2025-01-06 15:24:57 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:24:59 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:24:59 - INFO - [run_tests.py:26] - Tests run: 5
+2025-01-06 15:24:59 - INFO - [run_tests.py:27] - Tests failed: 1
+2025-01-06 15:24:59 - INFO - [run_tests.py:28] - Tests with errors: 0
+2025-01-06 15:26:40 - INFO - [run_tests.py:21] - Starting core test suite
+2025-01-06 15:26:42 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:26:44 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:26:44 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-06 15:26:45 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-06 15:26:45 - INFO - [test_auth.py:22] - Username entered
+2025-01-06 15:26:45 - INFO - [test_auth.py:26] - Password entered
+2025-01-06 15:26:45 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-06 15:26:47 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-06 15:26:47 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-06 15:26:50 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:26:52 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:26:58 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:27:00 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:27:00 - INFO - [test_auth.py:54] - Starting login test
+2025-01-06 15:27:00 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-06 15:27:01 - INFO - [test_auth.py:59] - Page loaded
+2025-01-06 15:27:01 - INFO - [test_auth.py:62] - Locating username field
+2025-01-06 15:27:01 - INFO - [test_auth.py:64] - Username field located
+2025-01-06 15:27:01 - INFO - [test_auth.py:66] - Locating password field
+2025-01-06 15:27:01 - INFO - [test_auth.py:68] - Password field located
+2025-01-06 15:27:01 - INFO - [test_auth.py:71] - Entering username
+2025-01-06 15:27:01 - INFO - [test_auth.py:73] - Entering password
+2025-01-06 15:27:01 - INFO - [test_auth.py:77] - Locating login button
+2025-01-06 15:27:01 - INFO - [test_auth.py:79] - Login button located
+2025-01-06 15:27:01 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-06 15:27:02 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-06 15:27:02 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-06 15:27:02 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-06 15:27:05 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:27:07 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:27:09 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:27:11 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:27:11 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:27:11 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:27:12 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:27:12 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:27:12 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-06 15:27:13 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-06 15:27:13 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-06 15:27:15 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-06 15:27:18 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:27:20 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:27:22 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:27:24 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:27:24 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-06 15:27:24 - INFO - [test_domains.py:23] - Performing login
+2025-01-06 15:27:25 - INFO - [test_domains.py:38] - Login successful
+2025-01-06 15:27:25 - INFO - [test_domains.py:19] - Login successful
+2025-01-06 15:27:25 - INFO - [test_domains.py:223] - Starting file upload test
+2025-01-06 15:27:25 - INFO - [test_domains.py:232] - Created test domains file
+2025-01-06 15:27:25 - INFO - [test_domains.py:237] - Uploaded test file
+2025-01-06 15:27:26 - INFO - [test_domains.py:245] - Alert dismissed
+2025-01-06 15:27:28 - INFO - [test_domains.py:258] - Successfully verified uploaded domains in table
+2025-01-06 15:27:28 - INFO - [test_domains.py:271] - Cleaned up test file in finally block
+2025-01-06 15:27:31 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:27:33 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:27:35 - INFO - [test_base.py:29] - Using base URL: http://localhost:8080
+2025-01-06 15:27:37 - INFO - [test_base.py:85] - Test user created successfully
+2025-01-06 15:27:37 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-06 15:27:37 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-06 15:27:38 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-06 15:27:38 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-06 15:27:38 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-06 15:27:38 - INFO - [test_scheduler.py:64] - Domain entered: scheduler-test.com
+2025-01-06 15:27:41 - INFO - [test_scheduler.py:74] - Selected hourly schedule
+2025-01-06 15:27:42 - INFO - [test_scheduler.py:81] - Started schedule
+2025-01-06 15:27:44 - INFO - [test_scheduler.py:88] - Next run text: Next check: 1/6/25, 4:11 PM
+2025-01-06 15:27:44 - INFO - [test_scheduler.py:95] - Schedule verified running
+2025-01-06 15:27:47 - INFO - [test_base.py:43] - No alert present during teardown.
+2025-01-06 15:27:50 - INFO - [test_base.py:48] - Browser closed.
+2025-01-06 15:27:50 - INFO - [run_tests.py:26] - Tests run: 5
+2025-01-06 15:27:50 - INFO - [run_tests.py:27] - Tests failed: 0
+2025-01-06 15:27:50 - INFO - [run_tests.py:28] - Tests with errors: 0

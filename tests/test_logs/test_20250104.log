@@ -1,0 +1,678 @@
+2025-01-04 21:52:22 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 21:52:22 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 21:52:24 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 21:52:24 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 21:52:26 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 21:52:32 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 21:52:32 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 21:52:34 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 21:52:34 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 21:52:34 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 21:52:36 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 21:52:36 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 21:52:36 - INFO - [test_scheduler.py:73] - Set hourly interval to 2
+2025-01-04 21:52:36 - INFO - [test_scheduler.py:78] - Clicked start schedule button
+2025-01-04 21:52:37 - INFO - [test_scheduler.py:85] - Next run time updated: Next check: 4.1.2025, 23:52:36
+2025-01-04 21:52:37 - INFO - [test_scheduler.py:93] - Schedule buttons in correct state
+2025-01-04 21:59:40 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 21:59:40 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 21:59:41 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 21:59:41 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 21:59:44 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 21:59:50 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 21:59:50 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 21:59:52 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 21:59:52 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 21:59:52 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 21:59:54 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 21:59:54 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:00:04 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:00:04 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:00:05 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:00:05 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:00:05 - INFO - [test_scheduler.py:105] - Starting stop schedule test
+2025-01-04 22:00:08 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:00:08 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:00:10 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:00:10 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:01:37 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:01:37 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:01:38 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:01:38 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:01:40 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:01:46 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:01:46 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:01:48 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:01:48 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:01:48 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:01:50 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:01:50 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:02:00 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:02:00 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:02:02 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:02:02 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:02:02 - INFO - [test_scheduler.py:105] - Starting stop schedule test
+2025-01-04 22:02:04 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:02:04 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:02:06 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:02:07 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:04:56 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:04:56 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:04:58 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:04:58 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:05:00 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:05:10 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:05:10 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:05:12 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:05:12 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:05:12 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:05:14 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:05:14 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:05:21 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:05:21 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:05:22 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:05:22 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:05:22 - INFO - [test_scheduler.py:105] - Starting stop schedule test
+2025-01-04 22:05:25 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:05:25 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:05:27 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:05:27 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:11:53 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:11:53 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:11:55 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:11:55 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:11:57 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:12:04 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:12:04 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:12:06 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:12:06 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:12:06 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:12:08 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:12:09 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:12:18 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:12:18 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:12:20 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:12:20 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:12:20 - INFO - [test_scheduler.py:105] - Starting stop schedule test
+2025-01-04 22:12:22 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:12:22 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:12:24 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:12:25 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:14:22 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:14:22 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:14:23 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:14:23 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:14:26 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:14:33 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:14:33 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:14:35 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:14:35 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:14:35 - INFO - [test_scheduler.py:105] - Starting daily schedule test
+2025-01-04 22:14:37 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:14:37 - INFO - [test_scheduler.py:114] - Selected daily schedule
+2025-01-04 22:14:47 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:14:47 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:14:49 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:14:49 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:14:49 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:14:51 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:14:51 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:20:27 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:20:27 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:20:29 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:20:29 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:20:31 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:20:38 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:20:38 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:20:40 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:20:40 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:20:40 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:20:42 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:20:43 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:20:52 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:20:52 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:20:54 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:20:54 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:20:54 - INFO - [test_scheduler.py:105] - Starting stop schedule test
+2025-01-04 22:20:56 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:20:56 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:20:58 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:20:59 - INFO - [test_scheduler.py:67] - Selected hourly schedule option
+2025-01-04 22:23:18 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:23:18 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:23:20 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:23:20 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:23:20 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:23:22 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:23:22 - INFO - [test_scheduler.py:64] - Selected hourly schedule option
+2025-01-04 22:23:49 - INFO - [test_scheduler.py:11] - Starting domain tests setup
+2025-01-04 22:23:49 - INFO - [test_scheduler.py:17] - Performing login
+2025-01-04 22:23:51 - INFO - [test_scheduler.py:32] - Login successful
+2025-01-04 22:23:51 - INFO - [test_scheduler.py:13] - Login successful
+2025-01-04 22:23:51 - INFO - [test_scheduler.py:103] - Starting stop schedule test
+2025-01-04 22:23:53 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:23:53 - INFO - [test_scheduler.py:55] - Starting hourly schedule test
+2025-01-04 22:23:55 - INFO - [test_scheduler.py:47] - Domain entered: scheduler-test.com
+2025-01-04 22:23:55 - INFO - [test_scheduler.py:64] - Selected hourly schedule option
+2025-01-04 22:26:25 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:26:25 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:26:27 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:26:27 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:26:29 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:26:32 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:26:33 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:26:33 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:26:36 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:26:36 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:26:38 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:26:38 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:26:38 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:26:40 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:26:40 - INFO - [test_scheduler.py:66] - Selected hourly schedule option
+2025-01-04 22:26:51 - ERROR - [test_scheduler.py:100] - Failed to set up hourly schedule: Message: 
+
+2025-01-04 22:26:54 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:26:54 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:26:55 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:27:00 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:27:00 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:27:01 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:27:01 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:27:01 - INFO - [test_scheduler.py:105] - Starting stop schedule test
+2025-01-04 22:27:04 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:27:04 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:27:06 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:27:06 - INFO - [test_scheduler.py:66] - Selected hourly schedule option
+2025-01-04 22:27:17 - ERROR - [test_scheduler.py:100] - Failed to set up hourly schedule: Message: 
+
+2025-01-04 22:27:20 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:27:20 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:27:20 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:31:01 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:31:01 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:31:02 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:31:02 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:31:02 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:31:05 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:31:05 - INFO - [test_scheduler.py:66] - Selected hourly schedule option
+2025-01-04 22:31:15 - ERROR - [test_scheduler.py:100] - Failed to set up hourly schedule: Message: 
+
+2025-01-04 22:31:18 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:31:19 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:31:19 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:31:33 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:31:33 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:31:35 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:31:35 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:31:35 - INFO - [test_scheduler.py:105] - Starting stop schedule test
+2025-01-04 22:31:37 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:31:37 - INFO - [test_scheduler.py:114] - Selected hourly schedule option
+2025-01-04 22:31:48 - ERROR - [test_scheduler.py:140] - Failed to stop schedule: Message: 
+
+2025-01-04 22:31:51 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:31:51 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:31:51 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:33:13 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:33:13 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:33:15 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:33:15 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:33:15 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:33:17 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:33:18 - INFO - [test_scheduler.py:66] - Selected hourly schedule option
+2025-01-04 22:33:38 - ERROR - [test_scheduler.py:98] - Failed to set up hourly schedule: Message: 
+
+2025-01-04 22:33:41 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:33:41 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:33:41 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:36:39 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:36:39 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:36:40 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:36:40 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:36:40 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:36:43 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:36:43 - INFO - [test_scheduler.py:66] - Selected hourly schedule option
+2025-01-04 22:36:43 - INFO - [test_scheduler.py:70] - hourlyInterval visible=True, enabled=False
+2025-01-04 22:37:03 - ERROR - [test_scheduler.py:93] - Failed to set up hourly schedule: Message: 
+
+2025-01-04 22:37:06 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:37:07 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:37:07 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:38:43 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:38:43 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:38:44 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:38:44 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:38:44 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:38:47 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:38:47 - INFO - [test_scheduler.py:66] - Selected hourly schedule option
+2025-01-04 22:39:07 - ERROR - [test_scheduler.py:93] - Failed to set up hourly schedule: Message: 
+
+2025-01-04 22:39:10 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:39:11 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:39:11 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:40:57 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:40:57 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:40:58 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:40:58 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:40:58 - INFO - [test_scheduler.py:56] - Starting hourly schedule test
+2025-01-04 22:41:01 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:41:01 - INFO - [test_scheduler.py:64] - Selected hourly schedule option
+2025-01-04 22:41:31 - ERROR - [test_scheduler.py:93] - Test failed with timeout: Message: 
+
+2025-01-04 22:41:34 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:41:35 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:41:35 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:42:27 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:42:27 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:42:28 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:42:28 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:42:31 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:42:34 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:42:34 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:42:34 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:42:38 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:42:38 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:42:40 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:42:40 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:42:40 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:42:42 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:42:42 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-04 22:42:43 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-04 22:42:43 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-04 22:42:46 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:42:46 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:42:46 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:42:54 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:42:54 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:42:56 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:42:56 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:42:56 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-04 22:42:56 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:42:59 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:42:59 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-04 22:42:59 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-04 22:42:59 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-04 22:42:59 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-04 22:42:59 - INFO - [test_scheduler.py:98] - Schedule verified stopped
+2025-01-04 22:43:02 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:43:03 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:43:03 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:49:34 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:49:34 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:49:35 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:49:35 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:49:38 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:49:41 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:49:41 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:49:41 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:49:45 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:49:45 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:49:47 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:49:47 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:49:47 - INFO - [test_scheduler.py:106] - Starting daily schedule test
+2025-01-04 22:49:49 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:49:49 - INFO - [test_scheduler.py:115] - Selected daily schedule
+2025-01-04 22:49:49 - INFO - [test_scheduler.py:121] - Set daily time to 13:00
+2025-01-04 22:49:49 - INFO - [test_scheduler.py:126] - Started daily schedule
+2025-01-04 22:49:52 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:49:53 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:49:53 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:49:59 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:49:59 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:50:01 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:50:01 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:50:01 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:50:03 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:50:03 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-04 22:50:03 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-04 22:50:04 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-04 22:50:07 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:50:07 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:50:07 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 22:50:11 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 22:50:11 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 22:50:13 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 22:50:13 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 22:50:13 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-04 22:50:13 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 22:50:15 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 22:50:15 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-04 22:50:15 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-04 22:50:15 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-04 22:50:15 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-04 22:50:15 - INFO - [test_scheduler.py:98] - Schedule verified stopped
+2025-01-04 22:50:18 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 22:50:19 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 22:50:19 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:08:47 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 23:08:47 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 23:08:49 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 23:08:49 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 23:08:51 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 23:08:54 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:08:54 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:08:55 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:08:58 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 23:08:58 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 23:09:00 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 23:09:00 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 23:09:00 - INFO - [test_scheduler.py:106] - Starting daily schedule test
+2025-01-04 23:09:02 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 23:09:02 - INFO - [test_scheduler.py:115] - Selected daily schedule
+2025-01-04 23:09:03 - INFO - [test_scheduler.py:121] - Set daily time to 13:00
+2025-01-04 23:09:03 - INFO - [test_scheduler.py:126] - Started daily schedule
+2025-01-04 23:09:03 - INFO - [test_scheduler.py:134] - Next check updated: Next check: 5.1.2025, 13:00:00
+2025-01-04 23:09:06 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:09:07 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:09:07 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:09:15 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 23:09:15 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 23:09:17 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 23:09:17 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 23:09:17 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 23:09:19 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 23:09:19 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-04 23:09:20 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-04 23:09:20 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-04 23:09:23 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:09:23 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:09:23 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:09:27 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-04 23:09:27 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-04 23:09:29 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-04 23:09:29 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-04 23:09:29 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-04 23:09:29 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-04 23:09:31 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-04 23:09:31 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-04 23:09:31 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-04 23:09:31 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-04 23:09:31 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-04 23:09:31 - INFO - [test_scheduler.py:98] - Schedule verified stopped
+2025-01-04 23:09:34 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:09:35 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:09:35 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:16:35 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:16:35 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:16:37 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:16:37 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:16:37 - INFO - [test_domains.py:44] - Starting test to add a domain
+2025-01-04 23:16:37 - INFO - [test_domains.py:51] - Domain entered: example.com
+2025-01-04 23:16:37 - INFO - [test_domains.py:56] - Add button clicked
+2025-01-04 23:16:39 - INFO - [test_domains.py:67] - Domain successfully added to table
+2025-01-04 23:16:42 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:16:43 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:16:43 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:16:46 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:16:46 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:16:48 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:16:48 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:16:48 - INFO - [test_domains.py:80] - Starting delete domain test
+2025-01-04 23:16:48 - INFO - [test_domains.py:90] - Added test domain: delete-test.com
+2025-01-04 23:16:50 - INFO - [test_domains.py:97] - Delete button clicked
+2025-01-04 23:16:50 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:16:50 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-04 23:16:50 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:16:50 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:16:51 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-04 23:16:51 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:16:51 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:16:54 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-04 23:16:54 - INFO - [test_domains.py:103] - Waiting for table update after deletion
+2025-01-04 23:17:04 - ERROR - [test_domains.py:124] - Failed to delete domain: Message: Domain was not removed from the table
+
+2025-01-04 23:17:07 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:17:08 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:17:08 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:17:14 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:17:14 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:17:16 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:17:16 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:17:16 - INFO - [test_domains.py:180] - Starting file upload test
+2025-01-04 23:17:16 - INFO - [test_domains.py:189] - Created test domains file
+2025-01-04 23:17:16 - INFO - [test_domains.py:194] - Uploaded test file
+2025-01-04 23:17:18 - WARNING - [test_base.py:53] - Unexpected alert present. Handling it.
+2025-01-04 23:17:18 - ERROR - [test_domains.py:220] - Unexpected error in file upload test: Message: no such alert
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78D53FB05+28789]
+	(No symbol) [0x00007FF78D4A86E0]
+	(No symbol) [0x00007FF78D345759]
+	(No symbol) [0x00007FF78D335AF4]
+	(No symbol) [0x00007FF78D35A6E1]
+	(No symbol) [0x00007FF78D36AD67]
+	(No symbol) [0x00007FF78D3BF4ED]
+	(No symbol) [0x00007FF78D36ABE5]
+	(No symbol) [0x00007FF78D3BF1E3]
+	(No symbol) [0x00007FF78D38A938]
+	(No symbol) [0x00007FF78D38BAA1]
+	GetHandleVerifier [0x00007FF78D87933D+3410093]
+	GetHandleVerifier [0x00007FF78D88E7DD+3497293]
+	GetHandleVerifier [0x00007FF78D882A73+3448803]
+	GetHandleVerifier [0x00007FF78D607BBB+848171]
+	(No symbol) [0x00007FF78D4B3C3F]
+	(No symbol) [0x00007FF78D4AF6E4]
+	(No symbol) [0x00007FF78D4AF87D]
+	(No symbol) [0x00007FF78D49ED49]
+	BaseThreadInitThunk [0x00007FFB86BBE8D7+23]
+	RtlUserThreadStart [0x00007FFB8817FBCC+44]
+
+2025-01-04 23:17:18 - INFO - [test_domains.py:227] - Cleaned up test file in finally block
+2025-01-04 23:17:21 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:17:21 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:17:21 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:17:25 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:17:25 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:17:27 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:17:27 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:17:27 - INFO - [test_domains.py:130] - Starting refresh domains test
+2025-01-04 23:17:27 - INFO - [test_domains.py:139] - Added test domain: refresh-test.com
+2025-01-04 23:17:29 - INFO - [test_domains.py:147] - Initial status: FAILED
+2025-01-04 23:17:29 - INFO - [test_domains.py:152] - Clicked refresh button
+2025-01-04 23:17:34 - INFO - [test_domains.py:159] - Refresh completed (spinner gone)
+2025-01-04 23:17:36 - INFO - [test_domains.py:165] - New status: FAILED
+2025-01-04 23:17:36 - INFO - [test_domains.py:169] - Domain status refreshed successfully
+2025-01-04 23:17:39 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:17:40 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:17:40 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:18:25 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:18:25 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:18:26 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:18:26 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:18:26 - INFO - [test_domains.py:44] - Starting test to add a domain
+2025-01-04 23:18:27 - INFO - [test_domains.py:51] - Domain entered: example.com
+2025-01-04 23:18:27 - INFO - [test_domains.py:56] - Add button clicked
+2025-01-04 23:18:29 - INFO - [test_domains.py:67] - Domain successfully added to table
+2025-01-04 23:18:32 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:18:32 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:18:32 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:18:36 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:18:36 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:18:38 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:18:38 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:18:38 - INFO - [test_domains.py:80] - Starting delete domain test
+2025-01-04 23:18:38 - INFO - [test_domains.py:90] - Added test domain: delete-test.com
+2025-01-04 23:18:40 - INFO - [test_domains.py:97] - Delete button clicked
+2025-01-04 23:18:40 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:18:40 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-04 23:18:40 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:18:40 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:18:41 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-04 23:18:41 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:18:41 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:18:44 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-04 23:18:44 - INFO - [test_domains.py:103] - Waiting for table update after deletion
+2025-01-04 23:18:54 - ERROR - [test_domains.py:124] - Failed to delete domain: Message: Domain was not removed from the table
+
+2025-01-04 23:18:57 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:18:58 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:18:58 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:19:04 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:19:04 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:19:05 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:19:05 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:19:05 - INFO - [test_domains.py:180] - Starting file upload test
+2025-01-04 23:19:05 - INFO - [test_domains.py:189] - Created test domains file
+2025-01-04 23:19:05 - INFO - [test_domains.py:194] - Uploaded test file
+2025-01-04 23:19:07 - WARNING - [test_base.py:53] - Unexpected alert present. Handling it.
+2025-01-04 23:19:07 - ERROR - [test_domains.py:220] - Unexpected error in file upload test: Message: no such alert
+  (Session info: chrome=131.0.6778.205)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78D53FB05+28789]
+	(No symbol) [0x00007FF78D4A86E0]
+	(No symbol) [0x00007FF78D345759]
+	(No symbol) [0x00007FF78D335AF4]
+	(No symbol) [0x00007FF78D35A6E1]
+	(No symbol) [0x00007FF78D36AD67]
+	(No symbol) [0x00007FF78D3BF4ED]
+	(No symbol) [0x00007FF78D36ABE5]
+	(No symbol) [0x00007FF78D3BF1E3]
+	(No symbol) [0x00007FF78D38A938]
+	(No symbol) [0x00007FF78D38BAA1]
+	GetHandleVerifier [0x00007FF78D87933D+3410093]
+	GetHandleVerifier [0x00007FF78D88E7DD+3497293]
+	GetHandleVerifier [0x00007FF78D882A73+3448803]
+	GetHandleVerifier [0x00007FF78D607BBB+848171]
+	(No symbol) [0x00007FF78D4B3C3F]
+	(No symbol) [0x00007FF78D4AF6E4]
+	(No symbol) [0x00007FF78D4AF87D]
+	(No symbol) [0x00007FF78D49ED49]
+	BaseThreadInitThunk [0x00007FFB86BBE8D7+23]
+	RtlUserThreadStart [0x00007FFB8817FBCC+44]
+
+2025-01-04 23:19:07 - INFO - [test_domains.py:227] - Cleaned up test file in finally block
+2025-01-04 23:19:10 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:19:11 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:19:11 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:19:15 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:19:15 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:19:17 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:19:17 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:19:17 - INFO - [test_domains.py:130] - Starting refresh domains test
+2025-01-04 23:19:17 - INFO - [test_domains.py:139] - Added test domain: refresh-test.com
+2025-01-04 23:19:19 - INFO - [test_domains.py:147] - Initial status: FAILED
+2025-01-04 23:19:19 - INFO - [test_domains.py:152] - Clicked refresh button
+2025-01-04 23:19:23 - INFO - [test_domains.py:159] - Refresh completed (spinner gone)
+2025-01-04 23:19:25 - INFO - [test_domains.py:165] - New status: FAILED
+2025-01-04 23:19:25 - INFO - [test_domains.py:169] - Domain status refreshed successfully
+2025-01-04 23:19:28 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:19:28 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:19:28 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:51:29 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:51:29 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:51:30 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:51:30 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:51:30 - INFO - [test_domains.py:44] - Starting test to add a domain
+2025-01-04 23:51:30 - INFO - [test_domains.py:51] - Domain entered: example.com
+2025-01-04 23:51:30 - INFO - [test_domains.py:56] - Add button clicked
+2025-01-04 23:51:32 - INFO - [test_domains.py:67] - Domain successfully added to table
+2025-01-04 23:51:35 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:51:35 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:51:35 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:51:39 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:51:39 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:51:40 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:51:40 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:51:40 - INFO - [test_domains.py:80] - Starting delete domain test
+2025-01-04 23:51:40 - INFO - [test_domains.py:90] - Added test domain: delete-test.com
+2025-01-04 23:51:42 - INFO - [test_domains.py:97] - Delete button clicked
+2025-01-04 23:51:42 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:51:42 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-04 23:51:42 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:51:42 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:51:43 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-04 23:51:43 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:51:43 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:51:46 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-04 23:51:46 - INFO - [test_domains.py:103] - Waiting for table update after deletion
+2025-01-04 23:51:56 - ERROR - [test_domains.py:124] - Failed to delete domain: Message: Domain was not removed from the table
+
+2025-01-04 23:51:59 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:52:00 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:52:00 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:52:05 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:52:05 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:52:06 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:52:06 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:52:06 - INFO - [test_domains.py:182] - Starting file upload test
+2025-01-04 23:52:06 - INFO - [test_domains.py:191] - Created test domains file
+2025-01-04 23:52:06 - INFO - [test_domains.py:196] - Uploaded test file
+2025-01-04 23:52:06 - INFO - [test_domains.py:204] - Alert dismissed
+2025-01-04 23:52:08 - INFO - [test_domains.py:217] - Successfully verified uploaded domains in table
+2025-01-04 23:52:08 - INFO - [test_domains.py:230] - Cleaned up test file in finally block
+2025-01-04 23:52:11 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:52:12 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:52:12 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:52:15 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:52:15 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:52:16 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:52:16 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:52:16 - INFO - [test_domains.py:130] - Starting refresh domains test
+2025-01-04 23:52:16 - INFO - [test_domains.py:139] - Added test domain: refresh-test.com
+2025-01-04 23:52:18 - INFO - [test_domains.py:147] - Initial status: FAILED
+2025-01-04 23:52:19 - INFO - [test_domains.py:152] - Clicked refresh button
+2025-01-04 23:52:19 - INFO - [test_domains.py:159] - Refresh completed (spinner gone)
+2025-01-04 23:52:21 - INFO - [test_domains.py:165] - New status: FAILED
+2025-01-04 23:52:21 - INFO - [test_domains.py:169] - Domain status refreshed successfully
+2025-01-04 23:52:24 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:52:25 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:52:25 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:53:31 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:53:31 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:53:32 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:53:32 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:53:32 - INFO - [test_domains.py:44] - Starting test to add a domain
+2025-01-04 23:53:32 - INFO - [test_domains.py:51] - Domain entered: example.com
+2025-01-04 23:53:32 - INFO - [test_domains.py:56] - Add button clicked
+2025-01-04 23:53:34 - INFO - [test_domains.py:67] - Domain successfully added to table
+2025-01-04 23:53:37 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:53:37 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:53:37 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:53:41 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:53:41 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:53:42 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:53:42 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:53:42 - INFO - [test_domains.py:80] - Starting delete domain test
+2025-01-04 23:53:42 - INFO - [test_domains.py:90] - Added test domain: delete-test.com
+2025-01-04 23:53:44 - INFO - [test_domains.py:97] - Delete button clicked
+2025-01-04 23:53:44 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:53:44 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-04 23:53:44 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:53:44 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:53:45 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-04 23:53:45 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-04 23:53:45 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-04 23:53:48 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-04 23:53:48 - INFO - [test_domains.py:103] - Waiting for table update after deletion
+2025-01-04 23:53:48 - INFO - [test_domains.py:108] - Table updated successfully
+2025-01-04 23:53:48 - INFO - [test_domains.py:111] - Verifying domain deletion
+2025-01-04 23:53:48 - INFO - [test_domains.py:120] - Domain successfully deleted
+2025-01-04 23:53:51 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:53:51 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:53:51 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:53:59 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:53:59 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:54:00 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:54:00 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:54:00 - INFO - [test_domains.py:183] - Starting file upload test
+2025-01-04 23:54:00 - INFO - [test_domains.py:192] - Created test domains file
+2025-01-04 23:54:00 - INFO - [test_domains.py:197] - Uploaded test file
+2025-01-04 23:54:00 - INFO - [test_domains.py:205] - Alert dismissed
+2025-01-04 23:54:02 - INFO - [test_domains.py:218] - Successfully verified uploaded domains in table
+2025-01-04 23:54:02 - INFO - [test_domains.py:231] - Cleaned up test file in finally block
+2025-01-04 23:54:05 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:54:06 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:54:06 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-04 23:54:09 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-04 23:54:09 - INFO - [test_domains.py:22] - Performing login
+2025-01-04 23:54:10 - INFO - [test_domains.py:37] - Login successful
+2025-01-04 23:54:10 - INFO - [test_domains.py:18] - Login successful
+2025-01-04 23:54:10 - INFO - [test_domains.py:131] - Starting refresh domains test
+2025-01-04 23:54:10 - INFO - [test_domains.py:140] - Added test domain: refresh-test.com
+2025-01-04 23:54:12 - INFO - [test_domains.py:148] - Initial status: FAILED
+2025-01-04 23:54:13 - INFO - [test_domains.py:153] - Clicked refresh button
+2025-01-04 23:54:16 - INFO - [test_domains.py:160] - Refresh completed (spinner gone)
+2025-01-04 23:54:18 - INFO - [test_domains.py:166] - New status: FAILED
+2025-01-04 23:54:18 - INFO - [test_domains.py:170] - Domain status refreshed successfully
+2025-01-04 23:54:21 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-04 23:54:22 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-04 23:54:22 - INFO - [test_base.py:41] - Dashboard loaded after refresh.

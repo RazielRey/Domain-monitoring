@@ -1,0 +1,353 @@
+2025-01-01 15:21:10 - INFO - [test_auth.py:109] - Starting back button test
+2025-01-01 15:21:11 - DEBUG - [test_auth.py:115] - Navigated to registration page
+2025-01-01 15:21:12 - DEBUG - [test_auth.py:120] - Clicked back button
+2025-01-01 15:21:12 - INFO - [test_auth.py:124] - Back button test completed successfully
+2025-01-01 15:21:16 - INFO - [test_auth.py:65] - Starting existing user registration test
+2025-01-01 15:21:17 - DEBUG - [test_auth.py:72] - Clicked register button
+2025-01-01 15:21:18 - DEBUG - [test_auth.py:79] - Entered existing username: testuser
+2025-01-01 15:21:20 - ERROR - [test_auth.py:103] - Existing user test failed. Current URL: http://localhost:8080/register
+2025-01-01 15:21:20 - ERROR - [test_auth.py:104] - Page source: <html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Monitoring</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+    <h1>Registration</h1>
+    </div>
+    <form action="/NewUser" method="POST">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required=""><div id="avaliabilityStatus"><span style="color: green;">User is available</span></div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create Password" required="">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required="">
+          </div>
+          <div id="error">
+          </div>
+          <div class="buttons">
+            <button type="submit" id="register">Register</button>
+            <button type="button" id="back" class="back-button" onclick="window.location.href='/'">Back</button>
+          </div>                
+        </form>
+        <script src="registration_script.js"></script>
+
+</body></html>
+2025-01-01 15:21:25 - INFO - [test_auth.py:9] - Starting successful registration test
+2025-01-01 15:21:26 - DEBUG - [test_auth.py:12] - Navigated to homepage
+2025-01-01 15:21:26 - DEBUG - [test_auth.py:17] - Clicked register button
+2025-01-01 15:21:26 - DEBUG - [test_auth.py:22] - Generated test username: testuser_1735737686
+2025-01-01 15:21:27 - DEBUG - [test_auth.py:36] - Filled in registration form
+2025-01-01 15:21:29 - DEBUG - [test_auth.py:45] - Submitted registration form
+2025-01-01 15:21:31 - INFO - [test_auth.py:52] - Registration success message: You have successfully registered. Please sign in.
+2025-01-01 15:21:31 - INFO - [test_auth.py:56] - Registration test completed successfully
+2025-01-01 15:40:49 - INFO - [test_base.py:13] - Setting up test: AuthenticationTests
+2025-01-01 15:40:51 - INFO - [test_base.py:66] - Added test user: testuser@test.com
+2025-01-01 15:40:51 - INFO - [test_base.py:66] - Added test user: admin@test.com
+2025-01-01 15:40:51 - DEBUG - [test_base.py:72] - Test users verification completed
+2025-01-01 15:40:51 - DEBUG - [test_base.py:30] - WebDriver and test data initialized
+2025-01-01 15:40:51 - INFO - [test_auth.py:107] - Starting successful login test
+2025-01-01 15:40:51 - INFO - [test_base.py:106] - Logging in as existing_user
+2025-01-01 15:40:51 - DEBUG - [test_base.py:80] - Waiting for element: id=username
+2025-01-01 15:40:52 - DEBUG - [test_base.py:85] - Element found: id=username
+2025-01-01 15:40:52 - DEBUG - [test_base.py:80] - Waiting for element: id=password
+2025-01-01 15:40:52 - DEBUG - [test_base.py:85] - Element found: id=password
+2025-01-01 15:40:52 - DEBUG - [test_base.py:80] - Waiting for element: id=login
+2025-01-01 15:40:52 - DEBUG - [test_base.py:85] - Element found: id=login
+2025-01-01 15:40:52 - DEBUG - [test_base.py:80] - Waiting for element: class name=dashboard-title
+2025-01-01 15:41:13 - ERROR - [test_base.py:88] - Element not found: class name=dashboard-title
+2025-01-01 15:41:13 - ERROR - [test_base.py:127] - Failed to login as existing_user: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F6F2FB05+28789]
+	(No symbol) [0x00007FF7F6E986E0]
+	(No symbol) [0x00007FF7F6D3592A]
+	(No symbol) [0x00007FF7F6D8930E]
+	(No symbol) [0x00007FF7F6D895FC]
+	(No symbol) [0x00007FF7F6DD28A7]
+	(No symbol) [0x00007FF7F6DAF47F]
+	(No symbol) [0x00007FF7F6DCF654]
+	(No symbol) [0x00007FF7F6DAF1E3]
+	(No symbol) [0x00007FF7F6D7A938]
+	(No symbol) [0x00007FF7F6D7BAA1]
+	GetHandleVerifier [0x00007FF7F726933D+3410093]
+	GetHandleVerifier [0x00007FF7F727E7DD+3497293]
+	GetHandleVerifier [0x00007FF7F7272A73+3448803]
+	GetHandleVerifier [0x00007FF7F6FF7BBB+848171]
+	(No symbol) [0x00007FF7F6EA3C3F]
+	(No symbol) [0x00007FF7F6E9F6E4]
+	(No symbol) [0x00007FF7F6E9F87D]
+	(No symbol) [0x00007FF7F6E8ED49]
+	BaseThreadInitThunk [0x00007FFB86BBE8D7+23]
+	RtlUserThreadStart [0x00007FFB8817FBCC+44]
+
+2025-01-01 15:41:13 - ERROR - [test_auth.py:113] - Login test failed
+2025-01-01 15:41:13 - INFO - [test_base.py:34] - Tearing down test: AuthenticationTests
+2025-01-01 15:41:15 - DEBUG - [test_base.py:37] - WebDriver closed
+2025-01-01 15:41:15 - INFO - [test_base.py:13] - Setting up test: AuthenticationTests
+2025-01-01 15:41:17 - DEBUG - [test_base.py:72] - Test users verification completed
+2025-01-01 15:41:17 - DEBUG - [test_base.py:30] - WebDriver and test data initialized
+2025-01-01 15:41:17 - INFO - [test_auth.py:62] - Starting existing user registration test
+2025-01-01 15:41:17 - DEBUG - [test_base.py:80] - Waiting for element: id=register
+2025-01-01 15:41:17 - DEBUG - [test_base.py:85] - Element found: id=register
+2025-01-01 15:41:18 - DEBUG - [test_auth.py:70] - Clicked register button
+2025-01-01 15:41:18 - DEBUG - [test_base.py:80] - Waiting for element: id=username
+2025-01-01 15:41:18 - DEBUG - [test_base.py:85] - Element found: id=username
+2025-01-01 15:41:18 - DEBUG - [test_auth.py:75] - Entered existing username: testuser@test.com
+2025-01-01 15:41:19 - DEBUG - [test_base.py:80] - Waiting for element: id=avaliabilityStatus
+2025-01-01 15:41:19 - DEBUG - [test_base.py:85] - Element found: id=avaliabilityStatus
+2025-01-01 15:41:19 - ERROR - [test_auth.py:101] - Existing user test failed. Current URL: http://localhost:8080/register
+2025-01-01 15:41:19 - ERROR - [test_auth.py:102] - Page source: <html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Monitoring</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+    <h1>Registration</h1>
+    </div>
+    <form action="/NewUser" method="POST">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required=""><div id="avaliabilityStatus"><span style="color: green;">User is available</span></div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create Password" required="">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required="">
+          </div>
+          <div id="error">
+          </div>
+          <div class="buttons">
+            <button type="submit" id="register">Register</button>
+            <button type="button" id="back" class="back-button" onclick="window.location.href='/'">Back</button>
+          </div>                
+        </form>
+        <script src="registration_script.js"></script>
+
+</body></html>
+2025-01-01 15:41:19 - INFO - [test_base.py:34] - Tearing down test: AuthenticationTests
+2025-01-01 15:41:21 - DEBUG - [test_base.py:37] - WebDriver closed
+2025-01-01 15:41:21 - INFO - [test_base.py:13] - Setting up test: AuthenticationTests
+2025-01-01 15:41:23 - DEBUG - [test_base.py:72] - Test users verification completed
+2025-01-01 15:41:23 - DEBUG - [test_base.py:30] - WebDriver and test data initialized
+2025-01-01 15:41:23 - INFO - [test_auth.py:9] - Starting successful registration test
+2025-01-01 15:41:24 - DEBUG - [test_auth.py:11] - Navigated to homepage
+2025-01-01 15:41:24 - DEBUG - [test_base.py:80] - Waiting for element: id=register
+2025-01-01 15:41:24 - DEBUG - [test_base.py:85] - Element found: id=register
+2025-01-01 15:41:25 - DEBUG - [test_auth.py:15] - Clicked register button
+2025-01-01 15:41:25 - DEBUG - [test_auth.py:20] - Generated test username: newuser_1735738885@test.com
+2025-01-01 15:41:25 - DEBUG - [test_base.py:80] - Waiting for element: id=username
+2025-01-01 15:41:25 - DEBUG - [test_base.py:85] - Element found: id=username
+2025-01-01 15:41:25 - DEBUG - [test_base.py:80] - Waiting for element: id=password
+2025-01-01 15:41:25 - DEBUG - [test_base.py:85] - Element found: id=password
+2025-01-01 15:41:25 - DEBUG - [test_base.py:80] - Waiting for element: id=confirm-password
+2025-01-01 15:41:25 - DEBUG - [test_base.py:85] - Element found: id=confirm-password
+2025-01-01 15:41:25 - DEBUG - [test_auth.py:33] - Filled in registration form
+2025-01-01 15:41:26 - DEBUG - [test_base.py:80] - Waiting for element: id=avaliabilityStatus
+2025-01-01 15:41:26 - DEBUG - [test_base.py:85] - Element found: id=avaliabilityStatus
+2025-01-01 15:41:26 - DEBUG - [test_base.py:80] - Waiting for element: id=register
+2025-01-01 15:41:26 - DEBUG - [test_base.py:85] - Element found: id=register
+2025-01-01 15:41:27 - DEBUG - [test_auth.py:45] - Submitted registration form
+2025-01-01 15:41:27 - DEBUG - [test_base.py:80] - Waiting for element: id=positive
+2025-01-01 15:41:27 - DEBUG - [test_base.py:85] - Element found: id=positive
+2025-01-01 15:41:27 - INFO - [test_auth.py:49] - Registration success message: You have successfully registered. Please sign in.
+2025-01-01 15:41:27 - INFO - [test_auth.py:53] - Registration test completed successfully
+2025-01-01 15:41:27 - INFO - [test_base.py:34] - Tearing down test: AuthenticationTests
+2025-01-01 15:41:29 - DEBUG - [test_base.py:37] - WebDriver closed
+2025-01-01 15:42:37 - INFO - [test_base.py:13] - Setting up test: AuthenticationTests
+2025-01-01 15:42:39 - DEBUG - [test_base.py:72] - Test users verification completed
+2025-01-01 15:42:39 - DEBUG - [test_base.py:30] - WebDriver and test data initialized
+2025-01-01 15:42:39 - INFO - [test_auth.py:107] - Starting successful login test
+2025-01-01 15:42:39 - INFO - [test_base.py:106] - Logging in as existing_user
+2025-01-01 15:42:39 - DEBUG - [test_base.py:80] - Waiting for element: id=username
+2025-01-01 15:42:39 - DEBUG - [test_base.py:85] - Element found: id=username
+2025-01-01 15:42:39 - DEBUG - [test_base.py:80] - Waiting for element: id=password
+2025-01-01 15:42:39 - DEBUG - [test_base.py:85] - Element found: id=password
+2025-01-01 15:42:40 - DEBUG - [test_base.py:80] - Waiting for element: id=login
+2025-01-01 15:42:40 - DEBUG - [test_base.py:85] - Element found: id=login
+2025-01-01 15:42:40 - DEBUG - [test_base.py:80] - Waiting for element: class name=dashboard-title
+2025-01-01 15:42:50 - ERROR - [test_base.py:88] - Element not found: class name=dashboard-title
+2025-01-01 15:42:50 - ERROR - [test_base.py:127] - Failed to login as existing_user: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F6F2FB05+28789]
+	(No symbol) [0x00007FF7F6E986E0]
+	(No symbol) [0x00007FF7F6D3592A]
+	(No symbol) [0x00007FF7F6D8930E]
+	(No symbol) [0x00007FF7F6D895FC]
+	(No symbol) [0x00007FF7F6DD28A7]
+	(No symbol) [0x00007FF7F6DAF47F]
+	(No symbol) [0x00007FF7F6DCF654]
+	(No symbol) [0x00007FF7F6DAF1E3]
+	(No symbol) [0x00007FF7F6D7A938]
+	(No symbol) [0x00007FF7F6D7BAA1]
+	GetHandleVerifier [0x00007FF7F726933D+3410093]
+	GetHandleVerifier [0x00007FF7F727E7DD+3497293]
+	GetHandleVerifier [0x00007FF7F7272A73+3448803]
+	GetHandleVerifier [0x00007FF7F6FF7BBB+848171]
+	(No symbol) [0x00007FF7F6EA3C3F]
+	(No symbol) [0x00007FF7F6E9F6E4]
+	(No symbol) [0x00007FF7F6E9F87D]
+	(No symbol) [0x00007FF7F6E8ED49]
+	BaseThreadInitThunk [0x00007FFB86BBE8D7+23]
+	RtlUserThreadStart [0x00007FFB8817FBCC+44]
+
+2025-01-01 15:42:50 - ERROR - [test_auth.py:113] - Login test failed
+2025-01-01 15:42:50 - INFO - [test_base.py:34] - Tearing down test: AuthenticationTests
+2025-01-01 15:42:52 - DEBUG - [test_base.py:37] - WebDriver closed
+2025-01-01 15:42:52 - INFO - [test_base.py:13] - Setting up test: AuthenticationTests
+2025-01-01 15:42:54 - DEBUG - [test_base.py:72] - Test users verification completed
+2025-01-01 15:42:54 - DEBUG - [test_base.py:30] - WebDriver and test data initialized
+2025-01-01 15:42:54 - INFO - [test_auth.py:62] - Starting existing user registration test
+2025-01-01 15:42:54 - DEBUG - [test_base.py:80] - Waiting for element: id=register
+2025-01-01 15:42:54 - DEBUG - [test_base.py:85] - Element found: id=register
+2025-01-01 15:42:55 - DEBUG - [test_auth.py:70] - Clicked register button
+2025-01-01 15:42:55 - DEBUG - [test_base.py:80] - Waiting for element: id=username
+2025-01-01 15:42:55 - DEBUG - [test_base.py:85] - Element found: id=username
+2025-01-01 15:42:55 - DEBUG - [test_auth.py:75] - Entered existing username: testuser@test.com
+2025-01-01 15:42:56 - DEBUG - [test_base.py:80] - Waiting for element: id=avaliabilityStatus
+2025-01-01 15:42:56 - DEBUG - [test_base.py:85] - Element found: id=avaliabilityStatus
+2025-01-01 15:42:56 - ERROR - [test_auth.py:101] - Existing user test failed. Current URL: http://localhost:8080/register
+2025-01-01 15:42:56 - ERROR - [test_auth.py:102] - Page source: <html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Monitoring</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+    <h1>Registration</h1>
+    </div>
+    <form action="/NewUser" method="POST">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required=""><div id="avaliabilityStatus"><span style="color: green;">User is available</span></div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create Password" required="">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required="">
+          </div>
+          <div id="error">
+          </div>
+          <div class="buttons">
+            <button type="submit" id="register">Register</button>
+            <button type="button" id="back" class="back-button" onclick="window.location.href='/'">Back</button>
+          </div>                
+        </form>
+        <script src="registration_script.js"></script>
+
+</body></html>
+2025-01-01 15:42:56 - INFO - [test_base.py:34] - Tearing down test: AuthenticationTests
+2025-01-01 15:42:59 - DEBUG - [test_base.py:37] - WebDriver closed
+2025-01-01 15:42:59 - INFO - [test_base.py:13] - Setting up test: AuthenticationTests
+2025-01-01 15:43:00 - DEBUG - [test_base.py:72] - Test users verification completed
+2025-01-01 15:43:00 - DEBUG - [test_base.py:30] - WebDriver and test data initialized
+2025-01-01 15:43:00 - INFO - [test_auth.py:9] - Starting successful registration test
+2025-01-01 15:43:01 - DEBUG - [test_auth.py:11] - Navigated to homepage
+2025-01-01 15:43:01 - DEBUG - [test_base.py:80] - Waiting for element: id=register
+2025-01-01 15:43:01 - DEBUG - [test_base.py:85] - Element found: id=register
+2025-01-01 15:43:02 - DEBUG - [test_auth.py:15] - Clicked register button
+2025-01-01 15:43:02 - DEBUG - [test_auth.py:20] - Generated test username: newuser_1735738982@test.com
+2025-01-01 15:43:02 - DEBUG - [test_base.py:80] - Waiting for element: id=username
+2025-01-01 15:43:02 - DEBUG - [test_base.py:85] - Element found: id=username
+2025-01-01 15:43:02 - DEBUG - [test_base.py:80] - Waiting for element: id=password
+2025-01-01 15:43:02 - DEBUG - [test_base.py:85] - Element found: id=password
+2025-01-01 15:43:02 - DEBUG - [test_base.py:80] - Waiting for element: id=confirm-password
+2025-01-01 15:43:02 - DEBUG - [test_base.py:85] - Element found: id=confirm-password
+2025-01-01 15:43:02 - DEBUG - [test_auth.py:33] - Filled in registration form
+2025-01-01 15:43:03 - DEBUG - [test_base.py:80] - Waiting for element: id=avaliabilityStatus
+2025-01-01 15:43:03 - DEBUG - [test_base.py:85] - Element found: id=avaliabilityStatus
+2025-01-01 15:43:03 - DEBUG - [test_base.py:80] - Waiting for element: id=register
+2025-01-01 15:43:03 - DEBUG - [test_base.py:85] - Element found: id=register
+2025-01-01 15:43:04 - DEBUG - [test_auth.py:45] - Submitted registration form
+2025-01-01 15:43:04 - DEBUG - [test_base.py:80] - Waiting for element: id=positive
+2025-01-01 15:43:04 - DEBUG - [test_base.py:85] - Element found: id=positive
+2025-01-01 15:43:04 - INFO - [test_auth.py:49] - Registration success message: You have successfully registered. Please sign in.
+2025-01-01 15:43:04 - INFO - [test_auth.py:53] - Registration test completed successfully
+2025-01-01 15:43:04 - INFO - [test_base.py:34] - Tearing down test: AuthenticationTests
+2025-01-01 15:43:06 - DEBUG - [test_base.py:37] - WebDriver closed
+2025-01-01 16:29:22 - INFO - [test_auth.py:47] - Starting login test
+2025-01-01 16:29:29 - INFO - [test_auth.py:73] - Starting logout test
+2025-01-01 16:29:29 - INFO - [test_auth.py:47] - Starting login test
+2025-01-01 16:29:46 - INFO - [test_auth.py:10] - Starting registration test
+2025-01-01 16:31:07 - INFO - [test_auth.py:47] - Starting login test
+2025-01-01 16:31:15 - INFO - [test_auth.py:73] - Starting logout test
+2025-01-01 16:31:15 - INFO - [test_auth.py:47] - Starting login test
+2025-01-01 16:31:32 - INFO - [test_auth.py:10] - Starting registration test
+2025-01-01 16:34:13 - INFO - [test_auth.py:46] - Starting login test
+2025-01-01 16:34:21 - INFO - [test_auth.py:72] - Starting logout test
+2025-01-01 16:34:21 - INFO - [test_auth.py:46] - Starting login test
+2025-01-01 16:50:25 - INFO - [test_auth.py:47] - Starting login test
+2025-01-01 16:50:33 - INFO - [test_auth.py:73] - Starting logout test
+2025-01-01 16:50:33 - INFO - [test_auth.py:47] - Starting login test
+2025-01-01 17:15:48 - INFO - [test_auth.py:55] - Starting login test
+2025-01-01 17:15:56 - INFO - [test_auth.py:81] - Starting logout test
+2025-01-01 17:15:56 - INFO - [test_auth.py:55] - Starting login test
+2025-01-01 17:16:13 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-01 17:16:14 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-01 17:16:14 - INFO - [test_auth.py:22] - Username entered
+2025-01-01 17:16:14 - INFO - [test_auth.py:26] - Password entered
+2025-01-01 17:16:15 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-01 17:16:16 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-01 17:16:16 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-01 17:19:53 - INFO - [test_auth.py:54] - Starting login test
+2025-01-01 17:19:53 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-01 17:19:54 - INFO - [test_auth.py:59] - Page loaded
+2025-01-01 17:19:54 - INFO - [test_auth.py:62] - Locating username field
+2025-01-01 17:19:54 - INFO - [test_auth.py:64] - Username field located
+2025-01-01 17:19:54 - INFO - [test_auth.py:66] - Locating password field
+2025-01-01 17:19:54 - INFO - [test_auth.py:68] - Password field located
+2025-01-01 17:19:54 - INFO - [test_auth.py:71] - Entering username
+2025-01-01 17:19:54 - INFO - [test_auth.py:73] - Entering password
+2025-01-01 17:19:54 - INFO - [test_auth.py:77] - Locating login button
+2025-01-01 17:19:54 - INFO - [test_auth.py:79] - Login button located
+2025-01-01 17:19:54 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-01 17:19:54 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-01 17:19:55 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-01 17:19:55 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-01 17:20:01 - INFO - [test_auth.py:97] - Starting logout test
+2025-01-01 17:20:01 - INFO - [test_auth.py:100] - Logging in before performing logout
+2025-01-01 17:20:01 - INFO - [test_auth.py:54] - Starting login test
+2025-01-01 17:20:01 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-01 17:20:01 - INFO - [test_auth.py:59] - Page loaded
+2025-01-01 17:20:01 - INFO - [test_auth.py:62] - Locating username field
+2025-01-01 17:20:02 - INFO - [test_auth.py:64] - Username field located
+2025-01-01 17:20:02 - INFO - [test_auth.py:66] - Locating password field
+2025-01-01 17:20:02 - INFO - [test_auth.py:68] - Password field located
+2025-01-01 17:20:02 - INFO - [test_auth.py:71] - Entering username
+2025-01-01 17:20:02 - INFO - [test_auth.py:73] - Entering password
+2025-01-01 17:20:02 - INFO - [test_auth.py:77] - Locating login button
+2025-01-01 17:20:02 - INFO - [test_auth.py:79] - Login button located
+2025-01-01 17:20:02 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-01 17:20:02 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-01 17:20:03 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-01 17:20:03 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-01 17:20:03 - INFO - [test_auth.py:102] - Login successful, proceeding to logout
+2025-01-01 17:20:03 - INFO - [test_auth.py:105] - Locating logout button
+2025-01-01 17:20:03 - INFO - [test_auth.py:107] - Logout button located
+2025-01-01 17:20:03 - INFO - [test_auth.py:109] - Clicking logout button
+2025-01-01 17:20:03 - INFO - [test_auth.py:113] - Verifying redirection to the login page
+2025-01-01 17:20:03 - INFO - [test_auth.py:116] - Login page loaded successfully
+2025-01-01 17:20:18 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-01 17:20:19 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-01 17:20:19 - INFO - [test_auth.py:22] - Username entered
+2025-01-01 17:20:19 - INFO - [test_auth.py:26] - Password entered
+2025-01-01 17:20:19 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-01 17:20:21 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-01 17:20:21 - INFO - [test_auth.py:42] - User registered successfully

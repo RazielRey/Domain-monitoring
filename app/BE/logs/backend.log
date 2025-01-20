@@ -1,0 +1,14 @@
+2025-01-06 22:19:59,320 - backend_service - INFO - Creating new users.json file
+2025-01-06 22:19:59,320 - backend_service - INFO - users.json created successfully
+2025-01-06 22:20:03,933 - backend_service - INFO - New regular user registered: raziel
+2025-01-06 22:20:03,933 - backend_service - INFO - New user registered: raziel
+2025-01-06 22:20:11,748 - backend_service - INFO - Successful regular login for user: raziel
+2025-01-06 22:20:11,748 - backend_service - INFO - Successful login for user: raziel
+2025-01-06 22:20:26,251 - backend_service - INFO - Added 1 domains to queue for raziel
+2025-01-06 22:20:27,138 - backend_service - INFO - Expected 1 results, got 1 for raziel
+2025-01-06 22:26:54,238 - backend_service - INFO - Added 1 domains to queue for raziel
+2025-01-06 22:26:55,189 - backend_service - INFO - Expected 1 results, got 1 for raziel
+2025-01-06 22:27:04,384 - backend_service - INFO - Stopped scheduler for user: raziel
+2025-01-06 22:27:18,787 - backend_service - INFO - Stopped scheduler for user: raziel
+2025-01-07 11:13:59,796 - backend_service - INFO - Successful regular login for user: raziel
+2025-01-07 11:13:59,799 - backend_service - INFO - Successful login for user: raziel

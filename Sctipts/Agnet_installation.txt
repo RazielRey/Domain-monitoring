@@ -1,0 +1,66 @@
+#!/bin/bash
+set -e
+
+install_agent_packages() {
+  apt update
+  apt install -y openjdk-17-jdk curl
+  
+  # Install Docker
+  apt install -y ca-certificates curl gnupg
+  install -m 0755 -d /etc/apt/keyrings
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  chmod a+r /etc/apt/keyrings/docker.gpg
+  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | tee /etc/apt/sources.list.d/docker.list
+  apt update
+  apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+}
+
+configure_hosts_for_agent() {
+  read -p "Enter the hostname of the Jenkins master: " JENKINS_MASTER_HOSTNAME
+  read -p "Enter the IP address of the Jenkins master: " JENKINS_MASTER_IP
+  sed -i "/\s$JENKINS_MASTER_HOSTNAME$/d" /etc/hosts
+  echo "$JENKINS_MASTER_IP $JENKINS_MASTER_HOSTNAME" >> /etc/hosts
+}
+
+configure_jenkins_agent_service() {
+  mkdir -p /var/jenkins_home
+  chown -R 1000:1000 /var/jenkins_home
+  
+  read -p "Enter the Jenkins master URL: " JENKINS_URL
+  read -p "Enter the Jenkins agent secret key: " AGENT_SECRET
+  read -p "Enter the Jenkins agent name: " AGENT_NAME
+  
+  curl -o /var/jenkins_home/agent.jar $JENKINS_URL/jnlpJars/agent.jar
+  
+  cat <<EOF > /var/jenkins_home/service.sh
+#!/bin/bash
+/usr/lib/jvm/java-17-openjdk-amd64/bin/java -jar /var/jenkins_home/agent.jar \
+  -url $JENKINS_URL \
+  -secret $AGENT_SECRET \
+  -name $AGENT_NAME \
+  -workDir "/var/jenkins_home" \
+  -webSocket
+EOF
+  chmod +x /var/jenkins_home/service.sh
+  
+  cat <<EOF > /etc/systemd/system/jenkins-agent.service
+[Unit]
+Description=Jenkins Agent Service
+After=network.target
+[Service]
+User=root
+WorkingDirectory=/var/jenkins_home
+ExecStart=/bin/bash /var/jenkins_home/service.sh
+Restart=always
+[Install]
+WantedBy=multi-user.target
+EOF
+
+  systemctl daemon-reload
+  systemctl enable jenkins-agent
+  systemctl start jenkins-agent
+}
+
+install_agent_packages
+configure_hosts_for_agent
+configure_jenkins_agent_service

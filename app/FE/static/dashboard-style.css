@@ -1,0 +1,435 @@
+body {
+    background-color: #c6d9db;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: 'System Font', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cards wrapper for side-by-side layout */
+.cards-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-half {
+    flex: 1;
+    min-width: 0; /* Prevents cards from overflowing their container */
+}
+
+/* Icon styles */
+.icon {
+    display: inline-block;
+    font-size: 1.2em;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    line-height: 1;
+    margin-right: 0.5em;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Typography */
+.dashboard-title {
+    text-align: center;
+    color: #3c455c;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin: 0;
+}
+
+/* Card styles */
+.card {
+    background-color: #F8F0e3;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0rem;
+}
+
+.card-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-header h2 {
+    color: #3c455c;
+    margin: 0;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* Empty state */
+.domains-table tbody:empty::after {
+    content: "No domains added yet";
+    display: table-cell;
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-style: italic;
+    column-span: all;
+}
+
+/* Input groups */
+.domain-input-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.domain-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.file-upload-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.upload-help {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.add-button {
+    background-color: #9aacb8;
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #8399a8;
+}
+
+.upload-button {
+    background-color: #3c455c;
+    color: white;
+}
+
+.upload-button:hover {
+    background-color: #2d3445;
+}
+
+.refresh-button {
+    background-color: transparent;
+    border: 1px solid #9aacb8;
+    color: #3c455c;
+}
+
+.refresh-button:hover {
+    background-color: #97A5B8;
+    color: white;
+}
+
+.delete-button {
+    padding: 0.5rem;
+    color: #dc2626;
+    background: transparent;
+}
+
+.delete-button:hover {
+    background-color: #fee2e2;
+}
+
+/* Table styles */
+.table-container {
+    overflow-x: auto;
+}
+
+.domains-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.domains-table th,
+.domains-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.domains-table th {
+    font-weight: 600;
+    color: #3c455c;
+}
+
+.domains-table th:last-child {
+    padding-left: 1rem;  
+    
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.status-badge.active {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status-badge.failed {
+    background-color: #fecaca;
+    color: #dc2626;
+}
+
+/* SSL Status badges */
+.ssl-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.ssl-badge.valid {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.ssl-badge.expired {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.ssl-badge.failed {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions-cell {
+    white-space: nowrap;
+    display: flex;
+}
+
+.action-button {
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 4px;
+    margin: 0 1px;
+    width: 31px;
+}
+
+.check-button {
+    color: #059669;
+}
+
+.check-button:hover {
+    background-color: #d1fae5;
+}
+
+
+.delete-button:hover {
+    background-color: #fee2e2;
+}
+
+/* Tooltip for buttons */
+.action-button {
+    position: relative;
+}
+
+.action-button:hover::after {
+    content: attr(data-tooltip); 
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 8px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.logout-button {
+    background-color: transparent;
+    border: 1px solid #9aacb8;
+    color: #3c455c;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #445C6F;
+    color: white;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-name {
+    font-weight: 600;
+    color: #3c455c;
+    font-size: 0.9rem;
+}
+
+.email {
+    font-size: 0.8rem;
+    color: #3c455c;
+}
+
+.schedule-button {
+    background-color: #9aacb8;
+    color: white;
+}
+
+.schedule-button:hover {
+    background-color: #8399a8;
+}
+
+.schedule-button.stop {
+    background-color: #dc2626;
+}
+
+.schedule-button.stop:hover {
+    background-color: #b91c1c;
+}
+
+.schedule-button:disabled {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #09f;
+    border-radius: 50%;
+    animation: spin 1s ease infinite;
+    height: 40px;
+    width: 40px;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card-half {
+        width: 100%;
+    }
+
+    .user-profile {
+        margin-right: 8px;
+    }
+    
+    .email {
+        display: none;
+    }
+    
+    .profile-picture {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .domain-input-group {
+        flex-direction: column;
+    }
+    
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .file-upload-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .upload-help {
+        text-align: center;
+    }
+    
+    .domains-table {
+        font-size: 0.875rem;
+    }
+
+    .schedule-buttons {
+        flex-direction: column;
+    }
+}

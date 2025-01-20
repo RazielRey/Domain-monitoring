@@ -1,0 +1,199 @@
+#!/bin/bash
+
+# Stop the script on any error
+set -e
+
+# Function to install necessary packages
+install_packages() {
+  echo "### Installing required packages"
+  apt update
+  apt install -y docker.io nfs-common
+}
+
+# Function to configure /etc/hosts based on user input
+configure_hosts() {
+  echo "### Configuring /etc/hosts"
+
+  read -p "Enter the hostname of the NFS server (or type 'none' if no NFS is used): " NFS_HOSTNAME
+  if [[ "$NFS_HOSTNAME" != "none" ]]; then
+    read -p "Enter the IP address of the NFS server: " NFS_IP
+
+    # Remove any existing entries for the NFS hostname
+    sed -i "/\s$NFS_HOSTNAME$/d" /etc/hosts
+    echo "$NFS_IP $NFS_HOSTNAME" >> /etc/hosts
+  fi
+
+  read -p "Are you using an agent? (yes/no): " AGENT_USED
+  if [[ "$AGENT_USED" == "yes" ]]; then
+    read -p "Enter the hostname of the agent: " AGENT_HOSTNAME
+    read -p "Enter the IP address of the agent: " AGENT_IP
+    sed -i "/\s$AGENT_HOSTNAME$/d" /etc/hosts
+    echo "$AGENT_IP $AGENT_HOSTNAME" >> /etc/hosts
+  fi
+
+  read -p "Are you deploying a Swarm cluster or a single node? (swarm/single): " DEPLOY_TYPE
+  if [[ "$DEPLOY_TYPE" == "swarm" ]]; then
+    read -p "Enter the number of Swarm nodes: " NUM_NODES
+    for ((i = 1; i <= NUM_NODES; i++)); do
+      read -p "Enter the hostname of Swarm node $i: " SWARM_HOSTNAME
+      read -p "Enter the IP address of Swarm node $i: " SWARM_IP
+      sed -i "/\s$SWARM_HOSTNAME$/d" /etc/hosts
+      echo "$SWARM_IP $SWARM_HOSTNAME" >> /etc/hosts
+    done
+  elif [[ "$DEPLOY_TYPE" != "single" ]]; then
+    echo "Invalid deployment type. Please enter 'swarm' or 'single'."
+    exit 1
+  fi
+
+  echo "### /etc/hosts configuration completed."
+}
+
+# Function to configure NFS mount on the node
+configure_nfs_mount() {
+  if [[ "$NFS_HOSTNAME" == "none" ]]; then
+    echo "### No NFS server is being used. Skipping NFS configuration."
+    return
+  fi
+
+  echo "### Configuring NFS mount"
+  mkdir -p /mnt/jenkins
+  if ! grep -q "/mnt/jenkins" /etc/fstab; then
+    echo "$NFS_HOSTNAME:/mnt/jenkins /mnt/jenkins nfs defaults 0 0" >> /etc/fstab
+  fi
+  mount -a
+  df -h | grep /mnt/jenkins
+  echo "### NFS mount completed."
+}
+
+# Function to deploy an additional container
+deploy_additional_container() {
+  read -p "Do you want to deploy an additional container for your app? (yes/no): " DEPLOY_APP
+  if [[ "$DEPLOY_APP" == "yes" ]]; then
+    read -p "Enter the name of the Docker image for your app: " APP_DOCKER_IMAGE
+
+    while true; do
+      read -p "Enter the port to expose your app (format: hostPort:containerPort): " APP_PORT
+      if ! docker ps -a --format '{{.Ports}}' | grep -q "${APP_PORT%%:*}"; then
+        break
+      else
+        echo "The host port ${APP_PORT%%:*} is already in use. Please specify a different port."
+      fi
+    done
+
+    echo "### Deploying additional container for your app"
+    docker run -d --restart always --name app-container \
+      -p "$APP_PORT" \
+      "$APP_DOCKER_IMAGE"
+
+    echo "### Additional container for your app deployed successfully."
+  fi
+}
+
+# Function to deploy a single node
+deploy_single_node() {
+  echo "### Configuring single node deployment"
+
+  configure_nfs_mount
+
+  # Change hostname to single-node
+  echo "### Changing hostname to single-node"
+  hostnamectl set-hostname single-node
+
+  read -p "Enter the name of the Docker image to deploy (default: jenkins/jenkins:lts): " DOCKER_IMAGE
+  DOCKER_IMAGE=${DOCKER_IMAGE:-jenkins/jenkins:lts}
+
+  # Prepare Jenkins home directory
+  if [[ "$NFS_HOSTNAME" == "none" ]]; then
+    echo "### Preparing /var/jenkins_home for Jenkins"
+    mkdir -p /var/jenkins_home
+    chown -R 1000:1000 /var/jenkins_home
+  fi
+
+  # Deploy a Docker container for the single node
+  echo "### Deploying Docker container for Jenkins"
+  if [[ "$NFS_HOSTNAME" == "none" ]]; then
+    docker run -d --restart always --name jenkins-container \
+      --hostname jenkins-single-node \
+      -p 8080:8080 \
+      -v /var/jenkins_home:/var/jenkins_home \
+      "$DOCKER_IMAGE"
+  else
+    docker run -d --restart always --name jenkins-container \
+      --hostname jenkins-single-node \
+      -p 8080:8080 \
+      -v /mnt/jenkins:/var/jenkins_home \
+      "$DOCKER_IMAGE"
+  fi
+
+  # Show Docker admin password
+  echo "### Retrieving Jenkins admin password"
+  sleep 10
+  if [[ "$NFS_HOSTNAME" != "none" && -f /mnt/jenkins/secrets/initialAdminPassword ]]; then
+    cat /mnt/jenkins/secrets/initialAdminPassword
+  elif [[ "$NFS_HOSTNAME" == "none" && -f /var/jenkins_home/secrets/initialAdminPassword ]]; then
+    cat /var/jenkins_home/secrets/initialAdminPassword
+  else
+    echo "Admin password file not found! Check if Jenkins has initialized correctly."
+  fi
+
+  # Deploy additional container if needed
+  deploy_additional_container
+
+  echo "### Single node deployment completed."
+}
+
+# Function to deploy a swarm cluster
+deploy_swarm_cluster() {
+  echo "### Configuring Swarm cluster deployment"
+
+  # Initialize Swarm on the first node
+  echo "### Initializing Docker Swarm on this node"
+  docker swarm init --advertise-addr $(hostname)
+
+  SWARM_JOIN_COMMAND=$(docker swarm join-token manager)
+  echo "### Swarm join command for other nodes:"
+  echo "$SWARM_JOIN_COMMAND"
+
+  read -p "Do you want to add the other nodes as managers? (yes/no): " ADD_MANAGERS
+  if [[ "$ADD_MANAGERS" == "yes" ]]; then
+    echo "### Use the following command to add the other nodes as managers:"
+    echo "$SWARM_JOIN_COMMAND"
+  fi
+
+  read -p "Have you added all other Swarm nodes to the cluster? (yes/no): " NODES_ADDED
+  if [[ "$NODES_ADDED" != "yes" ]]; then
+    echo "Please add the nodes to the Swarm cluster using the command above, then re-run the script."
+    exit 1
+  fi
+
+  # Mount NFS on this node
+  configure_nfs_mount
+
+  # Create overlay network
+  echo "### Creating overlay network"
+  docker network create --driver overlay jenkins
+
+  # Deploy a Jenkins service to the Swarm
+  echo "### Deploying Docker service for Jenkins"
+  docker service create --name jenkins \
+    --publish published=8080,target=8080 \
+    --mount type=bind,source=/mnt/jenkins,target=/var/jenkins_home \
+    jenkins/jenkins
+
+  # Deploy additional container if needed
+  deploy_additional_container
+
+  echo "### Swarm cluster deployment completed."
+}
+
+# Main script logic
+install_packages
+configure_hosts
+
+if [[ "$DEPLOY_TYPE" == "single" ]]; then
+  deploy_single_node
+elif [[ "$DEPLOY_TYPE" == "swarm" ]]; then
+  deploy_swarm_cluster
+fi
+
+echo "### Deployment process completed."

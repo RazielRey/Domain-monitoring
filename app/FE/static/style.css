@@ -1,0 +1,257 @@
+body {
+    background-color: #c6d9db;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  #title {
+    top: 20vh;  
+    text-align: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #3c455c;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    background-color: #F8F0e3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+  }
+
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 510;
+  }
+
+  .form-group input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  
+  .buttons button {
+    padding: 8px 20px;
+    color: #F8F0e3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    top: 2vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.2s;
+        
+}
+
+.buttons button#login {
+    background-color: #9aacb8;
+    color: white;
+    width: 20%;
+  }
+
+  .buttons button#register {
+    background-color: #3c455c;
+    color: white;
+    width: 25%;
+  }
+
+  #back {
+    background-color: #9aacb8;
+    color: white;
+    width: 20%;
+    transition: background-color 0.2s;
+  }
+
+  @media (max-width: 768px) {
+    form {
+        width: 90%;
+        margin: 0 20px;
+    }
+}
+
+#error {
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+#positive {
+  color: green;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.buttons button#login:hover {
+  background-color: #8399a8;  
+  transition: background-color 0.2s;  
+}
+
+.buttons button#register:hover {
+  background-color: #2d3445;  
+  transition: background-color 0.2s;
+}
+
+#back:hover {
+  background-color: #8399a8; 
+  transition: background-color 0.2s;
+}
+
+#avaliabilityStatus {
+  font-family: 'Poppins', sans-serif;
+}
+
+.google-btn {
+  width: 240px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+.google-btn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.google-icon-wrapper {
+  width: 40px;
+  height: 42px;
+  padding: 1px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google-icon {
+  width: 18px;
+  height: 18px;
+}
+.btn-text {
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 11px 11px 11px;
+  margin: 0;
+}
+.google-login {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.separator span {
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+}
+
+.google-signin {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 170px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: #b37c57;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.google-button:hover {
+  background: #834e2b
+}
+
+.google-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.google-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.button-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Make sure other buttons maintain consistent styling */
+.buttons {
+  margin-bottom: 10px;
+}
+
+button {
+  min-width: 120px;
+}
+
+/* Ensure form maintains proper spacing */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .google-button {
+      max-width: 100%;
+      padding: 8px 16px;
+  }
+  
+  .button-text {
+      font-size: 13px;
+  }
+  
+  .google-icon {
+      width: 16px;
+      height: 16px;
+  }
+}

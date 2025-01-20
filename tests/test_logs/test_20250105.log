@@ -1,0 +1,927 @@
+2025-01-05 09:46:03 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 09:46:03 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 09:46:03 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 09:46:03 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 09:46:04 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 09:46:04 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 09:46:04 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 09:46:04 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 09:46:04 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 09:46:04 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 09:46:04 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 09:46:04 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 09:46:04 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 09:46:05 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 09:46:05 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 09:46:08 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:46:08 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:46:08 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:46:14 - INFO - [test_auth.py:97] - Starting logout test
+2025-01-05 09:46:14 - INFO - [test_auth.py:100] - Logging in before performing logout
+2025-01-05 09:46:14 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 09:46:14 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 09:46:15 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 09:46:15 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 09:46:15 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 09:46:15 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 09:46:15 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 09:46:15 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 09:46:15 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 09:46:15 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 09:46:15 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 09:46:15 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 09:46:16 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 09:46:16 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 09:46:16 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 09:46:16 - INFO - [test_auth.py:102] - Login successful, proceeding to logout
+2025-01-05 09:46:16 - INFO - [test_auth.py:105] - Locating logout button
+2025-01-05 09:46:16 - INFO - [test_auth.py:107] - Logout button located
+2025-01-05 09:46:16 - INFO - [test_auth.py:109] - Clicking logout button
+2025-01-05 09:46:17 - INFO - [test_auth.py:113] - Verifying redirection to the login page
+2025-01-05 09:46:17 - INFO - [test_auth.py:116] - Login page loaded successfully
+2025-01-05 09:46:20 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:46:20 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:46:30 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 09:46:35 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-05 09:46:36 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-05 09:46:36 - INFO - [test_auth.py:22] - Username entered
+2025-01-05 09:46:36 - INFO - [test_auth.py:26] - Password entered
+2025-01-05 09:46:36 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-05 09:46:38 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-05 09:46:38 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-05 09:46:41 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:46:41 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:46:51 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 09:46:55 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:46:55 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:46:57 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:46:57 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:46:57 - INFO - [test_domains.py:44] - Starting test to add a domain
+2025-01-05 09:46:57 - INFO - [test_domains.py:51] - Domain entered: example.com
+2025-01-05 09:46:57 - INFO - [test_domains.py:56] - Add button clicked
+2025-01-05 09:46:59 - INFO - [test_domains.py:67] - Domain successfully added to table
+2025-01-05 09:47:02 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:47:03 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:47:03 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:47:07 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:47:07 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:47:08 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:47:08 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:47:08 - INFO - [test_domains.py:80] - Starting delete domain test
+2025-01-05 09:47:09 - INFO - [test_domains.py:90] - Added test domain: delete-test.com
+2025-01-05 09:47:11 - INFO - [test_domains.py:97] - Delete button clicked
+2025-01-05 09:47:11 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 09:47:11 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-05 09:47:11 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 09:47:11 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 09:47:11 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-05 09:47:11 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 09:47:11 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 09:47:14 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-05 09:47:14 - INFO - [test_domains.py:103] - Waiting for table update after deletion
+2025-01-05 09:47:30 - ERROR - [test_domains.py:124] - Failed to delete domain: Message: Domain was not removed from the table
+
+2025-01-05 09:47:33 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:47:33 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:47:33 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:47:37 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:47:37 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:47:39 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:47:39 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:47:39 - INFO - [test_domains.py:183] - Starting file upload test
+2025-01-05 09:47:39 - INFO - [test_domains.py:192] - Created test domains file
+2025-01-05 09:47:39 - INFO - [test_domains.py:197] - Uploaded test file
+2025-01-05 09:47:39 - INFO - [test_domains.py:205] - Alert dismissed
+2025-01-05 09:47:41 - INFO - [test_domains.py:218] - Successfully verified uploaded domains in table
+2025-01-05 09:47:41 - INFO - [test_domains.py:231] - Cleaned up test file in finally block
+2025-01-05 09:47:44 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:47:45 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:47:45 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:47:49 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:47:49 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:47:50 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:47:50 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:47:50 - INFO - [test_domains.py:131] - Starting refresh domains test
+2025-01-05 09:47:51 - INFO - [test_domains.py:140] - Added test domain: refresh-test.com
+2025-01-05 09:47:53 - INFO - [test_domains.py:148] - Initial status: OK
+2025-01-05 09:47:53 - INFO - [test_domains.py:153] - Clicked refresh button
+2025-01-05 09:47:57 - INFO - [test_domains.py:160] - Refresh completed (spinner gone)
+2025-01-05 09:47:59 - INFO - [test_domains.py:166] - New status: OK
+2025-01-05 09:47:59 - INFO - [test_domains.py:170] - Domain status refreshed successfully
+2025-01-05 09:48:02 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:48:03 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:48:03 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:48:15 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:48:15 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:48:17 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:48:17 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:48:19 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:48:22 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:48:23 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:48:23 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:48:27 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:48:27 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:48:28 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:48:28 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:48:28 - INFO - [test_scheduler.py:106] - Starting daily schedule test
+2025-01-05 09:48:31 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:48:31 - INFO - [test_scheduler.py:115] - Selected daily schedule
+2025-01-05 09:48:31 - INFO - [test_scheduler.py:121] - Set daily time to 13:00
+2025-01-05 09:48:31 - INFO - [test_scheduler.py:126] - Started daily schedule
+2025-01-05 09:48:32 - INFO - [test_scheduler.py:134] - Next check updated: Next check: 5.1.2025, 13:00:00
+2025-01-05 09:48:35 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:48:36 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:48:36 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:48:39 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:48:39 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:48:41 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:48:41 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:48:41 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 09:48:43 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:48:44 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 09:48:44 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 09:48:44 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 09:48:47 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:48:47 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:48:47 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:48:51 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:48:51 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:48:53 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:48:53 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:48:53 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-05 09:48:53 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 09:48:55 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:48:56 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 09:48:56 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 09:48:56 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 09:48:56 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-05 09:48:59 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:49:00 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:49:00 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:56:18 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 09:56:18 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 09:56:18 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 09:56:18 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 09:56:19 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 09:56:19 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 09:56:19 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 09:56:19 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 09:56:19 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 09:56:19 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 09:56:19 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 09:56:19 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 09:56:20 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 09:56:20 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 09:56:20 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 09:56:23 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:56:24 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:56:24 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:56:29 - INFO - [test_auth.py:97] - Starting logout test
+2025-01-05 09:56:29 - INFO - [test_auth.py:100] - Logging in before performing logout
+2025-01-05 09:56:29 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 09:56:29 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 09:56:30 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 09:56:30 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 09:56:30 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 09:56:30 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 09:56:30 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 09:56:30 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 09:56:30 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 09:56:30 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 09:56:30 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 09:56:30 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 09:56:31 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 09:56:31 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 09:56:31 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 09:56:31 - INFO - [test_auth.py:102] - Login successful, proceeding to logout
+2025-01-05 09:56:31 - INFO - [test_auth.py:105] - Locating logout button
+2025-01-05 09:56:31 - INFO - [test_auth.py:107] - Logout button located
+2025-01-05 09:56:31 - INFO - [test_auth.py:109] - Clicking logout button
+2025-01-05 09:56:32 - INFO - [test_auth.py:113] - Verifying redirection to the login page
+2025-01-05 09:56:32 - INFO - [test_auth.py:116] - Login page loaded successfully
+2025-01-05 09:56:35 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:56:36 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:56:46 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 09:56:50 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-05 09:56:51 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-05 09:56:51 - INFO - [test_auth.py:22] - Username entered
+2025-01-05 09:56:51 - INFO - [test_auth.py:26] - Password entered
+2025-01-05 09:56:51 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-05 09:56:53 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-05 09:56:53 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-05 09:56:56 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:56:56 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:57:06 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 09:57:10 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:57:10 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:57:12 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:57:12 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:57:12 - INFO - [test_domains.py:44] - Starting test to add a domain
+2025-01-05 09:57:12 - INFO - [test_domains.py:51] - Domain entered: example.com
+2025-01-05 09:57:12 - INFO - [test_domains.py:56] - Add button clicked
+2025-01-05 09:57:14 - INFO - [test_domains.py:67] - Domain successfully added to table
+2025-01-05 09:57:17 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:57:18 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:57:18 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:57:22 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:57:22 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:57:23 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:57:23 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:57:23 - INFO - [test_domains.py:80] - Starting delete domain test
+2025-01-05 09:57:23 - INFO - [test_domains.py:90] - Added test domain: delete-test.com
+2025-01-05 09:57:24 - INFO - [test_domains.py:101] - Delete button clicked
+2025-01-05 09:57:24 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 09:57:24 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-05 09:57:24 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 09:57:24 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 09:57:24 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-05 09:57:24 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 09:57:24 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 09:57:27 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-05 09:57:27 - INFO - [test_domains.py:107] - Waiting for table update after deletion
+2025-01-05 09:57:47 - ERROR - [test_domains.py:129] - Failed to delete domain: Message: Domain was not removed from the table after sufficient wait.
+
+2025-01-05 09:57:50 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:57:51 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:57:51 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:57:55 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:57:55 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:57:56 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:57:56 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:57:56 - INFO - [test_domains.py:188] - Starting file upload test
+2025-01-05 09:57:56 - INFO - [test_domains.py:197] - Created test domains file
+2025-01-05 09:57:56 - INFO - [test_domains.py:202] - Uploaded test file
+2025-01-05 09:57:56 - INFO - [test_domains.py:210] - Alert dismissed
+2025-01-05 09:57:59 - INFO - [test_domains.py:223] - Successfully verified uploaded domains in table
+2025-01-05 09:57:59 - INFO - [test_domains.py:236] - Cleaned up test file in finally block
+2025-01-05 09:58:02 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:58:02 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:58:02 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:58:06 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 09:58:06 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 09:58:08 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 09:58:08 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 09:58:08 - INFO - [test_domains.py:136] - Starting refresh domains test
+2025-01-05 09:58:08 - INFO - [test_domains.py:145] - Added test domain: refresh-test.com
+2025-01-05 09:58:10 - INFO - [test_domains.py:153] - Initial status: FAILED
+2025-01-05 09:58:10 - INFO - [test_domains.py:158] - Clicked refresh button
+2025-01-05 09:58:14 - INFO - [test_domains.py:165] - Refresh completed (spinner gone)
+2025-01-05 09:58:16 - INFO - [test_domains.py:171] - New status: FAILED
+2025-01-05 09:58:16 - INFO - [test_domains.py:175] - Domain status refreshed successfully
+2025-01-05 09:58:19 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:58:19 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:58:19 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:58:32 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:58:32 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:58:34 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:58:34 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:58:36 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:58:39 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:58:39 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:58:40 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:58:43 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:58:43 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:58:45 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:58:45 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:58:45 - INFO - [test_scheduler.py:113] - Starting daily schedule test
+2025-01-05 09:58:47 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:58:47 - INFO - [test_scheduler.py:122] - Selected daily schedule
+2025-01-05 09:58:47 - INFO - [test_scheduler.py:128] - Set daily time to 13:00
+2025-01-05 09:58:47 - INFO - [test_scheduler.py:133] - Started daily schedule
+2025-01-05 09:58:47 - INFO - [test_scheduler.py:141] - Next check updated: Next check: 5.1.2025, 13:00:00
+2025-01-05 09:58:50 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:58:51 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:58:51 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:58:55 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:58:55 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:58:56 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:58:56 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:58:56 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 09:58:58 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:58:59 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 09:58:59 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 09:58:59 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 09:59:02 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:59:02 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:59:02 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 09:59:06 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 09:59:06 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 09:59:08 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 09:59:08 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 09:59:08 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-05 09:59:08 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 09:59:10 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 09:59:11 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 09:59:11 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 09:59:11 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 09:59:11 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-05 09:59:11 - INFO - [test_scheduler.py:102] - Final nextRunTime text: Next check: Not scheduled
+2025-01-05 09:59:11 - INFO - [test_scheduler.py:104] - Schedule verified stopped
+2025-01-05 09:59:14 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 09:59:15 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 09:59:15 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:01:39 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 10:01:39 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 10:01:39 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 10:01:39 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 10:01:40 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 10:01:40 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 10:01:40 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 10:01:40 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 10:01:40 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 10:01:40 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 10:01:40 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 10:01:40 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 10:01:40 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 10:01:41 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 10:01:41 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 10:01:44 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:01:44 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:01:44 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:01:50 - INFO - [test_auth.py:97] - Starting logout test
+2025-01-05 10:01:50 - INFO - [test_auth.py:100] - Logging in before performing logout
+2025-01-05 10:01:50 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 10:01:50 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 10:01:51 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 10:01:51 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 10:01:51 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 10:01:51 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 10:01:51 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 10:01:51 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 10:01:51 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 10:01:51 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 10:01:51 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 10:01:51 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 10:01:52 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 10:01:52 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 10:01:52 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 10:01:52 - INFO - [test_auth.py:102] - Login successful, proceeding to logout
+2025-01-05 10:01:52 - INFO - [test_auth.py:105] - Locating logout button
+2025-01-05 10:01:52 - INFO - [test_auth.py:107] - Logout button located
+2025-01-05 10:01:52 - INFO - [test_auth.py:109] - Clicking logout button
+2025-01-05 10:01:52 - INFO - [test_auth.py:113] - Verifying redirection to the login page
+2025-01-05 10:01:52 - INFO - [test_auth.py:116] - Login page loaded successfully
+2025-01-05 10:01:55 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:01:56 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:01:56 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:02:01 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-05 10:02:01 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-05 10:02:01 - INFO - [test_auth.py:22] - Username entered
+2025-01-05 10:02:01 - INFO - [test_auth.py:26] - Password entered
+2025-01-05 10:02:02 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-05 10:02:03 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-05 10:02:03 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-05 10:02:06 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:02:07 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:02:17 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 10:02:21 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 10:02:21 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 10:02:22 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 10:02:22 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 10:02:22 - INFO - [test_domains.py:44] - Starting test to add a domain
+2025-01-05 10:02:23 - INFO - [test_domains.py:51] - Domain entered: example.com
+2025-01-05 10:02:23 - INFO - [test_domains.py:56] - Add button clicked
+2025-01-05 10:02:25 - INFO - [test_domains.py:67] - Domain successfully added to table
+2025-01-05 10:02:28 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:02:28 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:02:29 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:02:32 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 10:02:32 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 10:02:34 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 10:02:34 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 10:02:34 - INFO - [test_domains.py:80] - Starting delete domain test
+2025-01-05 10:02:34 - INFO - [test_domains.py:90] - Added test domain: delete-test.com
+2025-01-05 10:02:34 - INFO - [test_domains.py:101] - Delete button clicked
+2025-01-05 10:02:34 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:02:35 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-05 10:02:35 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:02:35 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:02:35 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-05 10:02:35 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:02:35 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:02:38 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-05 10:02:38 - INFO - [test_domains.py:107] - Waiting for table update after deletion
+2025-01-05 10:03:12 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:03:12 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:03:12 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:03:16 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 10:03:16 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 10:03:18 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 10:03:18 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 10:03:18 - INFO - [test_domains.py:195] - Starting file upload test
+2025-01-05 10:03:18 - INFO - [test_domains.py:204] - Created test domains file
+2025-01-05 10:03:18 - INFO - [test_domains.py:209] - Uploaded test file
+2025-01-05 10:03:18 - INFO - [test_domains.py:217] - Alert dismissed
+2025-01-05 10:03:20 - INFO - [test_domains.py:230] - Successfully verified uploaded domains in table
+2025-01-05 10:03:20 - INFO - [test_domains.py:243] - Cleaned up test file in finally block
+2025-01-05 10:03:23 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:03:24 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:03:24 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:03:28 - INFO - [test_domains.py:16] - Starting domain tests setup
+2025-01-05 10:03:28 - INFO - [test_domains.py:22] - Performing login
+2025-01-05 10:03:29 - INFO - [test_domains.py:37] - Login successful
+2025-01-05 10:03:29 - INFO - [test_domains.py:18] - Login successful
+2025-01-05 10:03:29 - INFO - [test_domains.py:143] - Starting refresh domains test
+2025-01-05 10:03:30 - INFO - [test_domains.py:152] - Added test domain: refresh-test.com
+2025-01-05 10:03:32 - INFO - [test_domains.py:160] - Initial status: FAILED
+2025-01-05 10:03:32 - INFO - [test_domains.py:165] - Clicked refresh button
+2025-01-05 10:03:36 - INFO - [test_domains.py:172] - Refresh completed (spinner gone)
+2025-01-05 10:03:38 - INFO - [test_domains.py:178] - New status: FAILED
+2025-01-05 10:03:38 - INFO - [test_domains.py:182] - Domain status refreshed successfully
+2025-01-05 10:03:41 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:03:41 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:03:41 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:03:55 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:03:55 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:03:57 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:03:57 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:03:59 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:04:02 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:04:02 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:04:02 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:04:06 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:04:06 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:04:08 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:04:08 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:04:08 - INFO - [test_scheduler.py:113] - Starting daily schedule test
+2025-01-05 10:04:10 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:04:10 - INFO - [test_scheduler.py:122] - Selected daily schedule
+2025-01-05 10:04:10 - INFO - [test_scheduler.py:128] - Set daily time to 13:00
+2025-01-05 10:04:10 - INFO - [test_scheduler.py:133] - Started daily schedule
+2025-01-05 10:04:11 - INFO - [test_scheduler.py:141] - Next check updated: Next check: 5.1.2025, 13:00:00
+2025-01-05 10:04:14 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:04:15 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:04:15 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:04:19 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:04:19 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:04:20 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:04:20 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:04:20 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 10:04:23 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:04:23 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 10:04:23 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 10:04:23 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 10:04:26 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:04:26 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:04:27 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:04:31 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:04:31 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:04:32 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:04:32 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:04:32 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-05 10:04:32 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 10:04:34 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:04:35 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 10:04:35 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 10:04:35 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 10:04:35 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-05 10:04:36 - INFO - [test_scheduler.py:102] - Final nextRunTime text: Next check: Not scheduled
+2025-01-05 10:04:36 - INFO - [test_scheduler.py:104] - Schedule verified stopped
+2025-01-05 10:04:39 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:04:39 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:04:39 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:05:00 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 10:05:00 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 10:05:00 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 10:05:00 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 10:05:00 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 10:05:00 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 10:05:00 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 10:05:00 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 10:05:00 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 10:05:00 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 10:05:00 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 10:05:00 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 10:05:01 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 10:05:01 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 10:05:01 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 10:05:04 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:05:05 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:05:05 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:05:11 - INFO - [test_auth.py:97] - Starting logout test
+2025-01-05 10:05:11 - INFO - [test_auth.py:100] - Logging in before performing logout
+2025-01-05 10:05:11 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 10:05:11 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 10:05:11 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 10:05:11 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 10:05:12 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 10:05:12 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 10:05:12 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 10:05:12 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 10:05:12 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 10:05:12 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 10:05:12 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 10:05:12 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 10:05:12 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 10:05:13 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 10:05:13 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 10:05:13 - INFO - [test_auth.py:102] - Login successful, proceeding to logout
+2025-01-05 10:05:13 - INFO - [test_auth.py:105] - Locating logout button
+2025-01-05 10:05:13 - INFO - [test_auth.py:107] - Logout button located
+2025-01-05 10:05:13 - INFO - [test_auth.py:109] - Clicking logout button
+2025-01-05 10:05:13 - INFO - [test_auth.py:113] - Verifying redirection to the login page
+2025-01-05 10:05:13 - INFO - [test_auth.py:116] - Login page loaded successfully
+2025-01-05 10:05:16 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:05:17 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:05:27 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 10:05:31 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-05 10:05:32 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-05 10:05:32 - INFO - [test_auth.py:22] - Username entered
+2025-01-05 10:05:32 - INFO - [test_auth.py:26] - Password entered
+2025-01-05 10:05:32 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-05 10:05:34 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-05 10:05:34 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-05 10:05:37 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:05:38 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:05:48 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 10:05:51 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:05:51 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:05:53 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:05:53 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:05:53 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-05 10:05:53 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-05 10:05:53 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-05 10:05:55 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-05 10:05:58 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:05:59 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:05:59 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:06:02 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:06:02 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:06:04 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:06:04 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:06:04 - INFO - [test_domains.py:81] - Starting delete domain test
+2025-01-05 10:06:04 - INFO - [test_domains.py:91] - Added test domain: delete-test.com
+2025-01-05 10:06:04 - INFO - [test_domains.py:102] - Delete button clicked
+2025-01-05 10:06:04 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:06:04 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-05 10:06:04 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:06:04 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:06:05 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-05 10:06:05 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:06:05 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:06:08 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-05 10:06:08 - INFO - [test_domains.py:108] - Waiting for table update after deletion
+2025-01-05 10:06:35 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:06:36 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:06:36 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:06:40 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:06:40 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:06:42 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:06:42 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:06:42 - INFO - [test_domains.py:196] - Starting file upload test
+2025-01-05 10:06:42 - INFO - [test_domains.py:205] - Created test domains file
+2025-01-05 10:06:42 - INFO - [test_domains.py:210] - Uploaded test file
+2025-01-05 10:06:42 - INFO - [test_domains.py:218] - Alert dismissed
+2025-01-05 10:06:44 - INFO - [test_domains.py:231] - Successfully verified uploaded domains in table
+2025-01-05 10:06:44 - INFO - [test_domains.py:244] - Cleaned up test file in finally block
+2025-01-05 10:06:47 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:06:47 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:06:47 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:06:51 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:06:51 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:06:52 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:06:52 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:06:52 - INFO - [test_domains.py:144] - Starting refresh domains test
+2025-01-05 10:06:52 - INFO - [test_domains.py:153] - Added test domain: refresh-test.com
+2025-01-05 10:06:54 - INFO - [test_domains.py:161] - Initial status: FAILED
+2025-01-05 10:06:55 - INFO - [test_domains.py:166] - Clicked refresh button
+2025-01-05 10:06:58 - INFO - [test_domains.py:173] - Refresh completed (spinner gone)
+2025-01-05 10:07:00 - INFO - [test_domains.py:179] - New status: FAILED
+2025-01-05 10:07:00 - INFO - [test_domains.py:183] - Domain status refreshed successfully
+2025-01-05 10:07:03 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:07:04 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:07:04 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:07:17 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:07:17 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:07:18 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:07:18 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:07:21 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:07:24 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:07:24 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:07:24 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:07:28 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:07:28 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:07:30 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:07:30 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:07:30 - INFO - [test_scheduler.py:113] - Starting daily schedule test
+2025-01-05 10:07:32 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:07:32 - INFO - [test_scheduler.py:122] - Selected daily schedule
+2025-01-05 10:07:32 - INFO - [test_scheduler.py:128] - Set daily time to 13:00
+2025-01-05 10:07:33 - INFO - [test_scheduler.py:133] - Started daily schedule
+2025-01-05 10:07:33 - INFO - [test_scheduler.py:141] - Next check updated: Next check: 5.1.2025, 13:00:00
+2025-01-05 10:07:36 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:07:37 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:07:37 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:07:41 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:07:41 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:07:42 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:07:42 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:07:42 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 10:07:44 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:07:44 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 10:07:45 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 10:07:45 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 10:07:48 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:07:48 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:07:48 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:07:52 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:07:52 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:07:54 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:07:54 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:07:54 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-05 10:07:54 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 10:07:56 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:07:57 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 10:07:57 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 10:07:57 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 10:07:57 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-05 10:07:57 - INFO - [test_scheduler.py:102] - Final nextRunTime text: Next check: Not scheduled
+2025-01-05 10:07:57 - INFO - [test_scheduler.py:104] - Schedule verified stopped
+2025-01-05 10:08:00 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:08:01 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:08:01 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:08:55 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 10:08:55 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 10:08:56 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 10:08:56 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 10:08:56 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 10:08:56 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 10:08:56 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 10:08:56 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 10:08:56 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 10:08:56 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 10:08:56 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 10:08:56 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 10:08:56 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 10:08:57 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 10:08:57 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 10:09:00 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:09:00 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:09:00 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:09:06 - INFO - [test_auth.py:97] - Starting logout test
+2025-01-05 10:09:06 - INFO - [test_auth.py:100] - Logging in before performing logout
+2025-01-05 10:09:06 - INFO - [test_auth.py:54] - Starting login test
+2025-01-05 10:09:06 - INFO - [test_auth.py:57] - Navigating to the base URL
+2025-01-05 10:09:07 - INFO - [test_auth.py:59] - Page loaded
+2025-01-05 10:09:07 - INFO - [test_auth.py:62] - Locating username field
+2025-01-05 10:09:07 - INFO - [test_auth.py:64] - Username field located
+2025-01-05 10:09:07 - INFO - [test_auth.py:66] - Locating password field
+2025-01-05 10:09:07 - INFO - [test_auth.py:68] - Password field located
+2025-01-05 10:09:07 - INFO - [test_auth.py:71] - Entering username
+2025-01-05 10:09:07 - INFO - [test_auth.py:73] - Entering password
+2025-01-05 10:09:07 - INFO - [test_auth.py:77] - Locating login button
+2025-01-05 10:09:07 - INFO - [test_auth.py:79] - Login button located
+2025-01-05 10:09:07 - INFO - [test_auth.py:81] - Clicking login button
+2025-01-05 10:09:08 - INFO - [test_auth.py:85] - Verifying dashboard page load
+2025-01-05 10:09:08 - INFO - [test_auth.py:88] - Dashboard title located: Domain Management Dashboard
+2025-01-05 10:09:08 - INFO - [test_auth.py:90] - Dashboard page loaded successfully
+2025-01-05 10:09:08 - INFO - [test_auth.py:102] - Login successful, proceeding to logout
+2025-01-05 10:09:08 - INFO - [test_auth.py:105] - Locating logout button
+2025-01-05 10:09:08 - INFO - [test_auth.py:107] - Logout button located
+2025-01-05 10:09:08 - INFO - [test_auth.py:109] - Clicking logout button
+2025-01-05 10:09:09 - INFO - [test_auth.py:113] - Verifying redirection to the login page
+2025-01-05 10:09:09 - INFO - [test_auth.py:116] - Login page loaded successfully
+2025-01-05 10:09:12 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:09:12 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:09:22 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 10:09:27 - INFO - [test_auth.py:11] - Navigating to registration page
+2025-01-05 10:09:28 - INFO - [test_auth.py:14] - Register button clicked
+2025-01-05 10:09:28 - INFO - [test_auth.py:22] - Username entered
+2025-01-05 10:09:28 - INFO - [test_auth.py:26] - Password entered
+2025-01-05 10:09:28 - INFO - [test_auth.py:30] - Confirm password entered
+2025-01-05 10:09:29 - INFO - [test_auth.py:36] - Register button clicked
+2025-01-05 10:09:29 - INFO - [test_auth.py:42] - User registered successfully
+2025-01-05 10:09:32 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:09:33 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:09:54 - WARNING - [test_base.py:43] - Could not verify dashboard after teardown refresh.
+2025-01-05 10:09:57 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:09:57 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:09:59 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:09:59 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:09:59 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-05 10:09:59 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-05 10:09:59 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-05 10:10:01 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-05 10:10:04 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:10:04 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:10:04 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:10:08 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:10:08 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:10:10 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:10:10 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:10:10 - INFO - [test_domains.py:81] - Starting delete domain test
+2025-01-05 10:10:10 - INFO - [test_domains.py:91] - Added test domain: delete-test.com
+2025-01-05 10:10:10 - INFO - [test_domains.py:99] - Domain 'delete-test.com' found in the table after addition.
+2025-01-05 10:10:10 - INFO - [test_domains.py:104] - Delete button clicked
+2025-01-05 10:10:10 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:10:10 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-05 10:10:10 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:10:10 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:10:11 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-05 10:10:11 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:10:11 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:10:14 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-05 10:10:14 - ERROR - [test_domains.py:115] - Domain 'delete-test.com' still exists in the table after deletion.
+2025-01-05 10:10:17 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:10:17 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:10:17 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:10:21 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:10:21 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:10:23 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:10:23 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:10:23 - INFO - [test_domains.py:182] - Starting file upload test
+2025-01-05 10:10:23 - INFO - [test_domains.py:191] - Created test domains file
+2025-01-05 10:10:23 - INFO - [test_domains.py:196] - Uploaded test file
+2025-01-05 10:10:23 - INFO - [test_domains.py:204] - Alert dismissed
+2025-01-05 10:10:25 - INFO - [test_domains.py:217] - Successfully verified uploaded domains in table
+2025-01-05 10:10:25 - INFO - [test_domains.py:230] - Cleaned up test file in finally block
+2025-01-05 10:10:28 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:10:29 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:10:29 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:10:33 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:10:33 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:10:35 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:10:35 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:10:35 - INFO - [test_domains.py:130] - Starting refresh domains test
+2025-01-05 10:10:35 - INFO - [test_domains.py:139] - Added test domain: refresh-test.com
+2025-01-05 10:10:37 - INFO - [test_domains.py:147] - Initial status: FAILED
+2025-01-05 10:10:37 - INFO - [test_domains.py:152] - Clicked refresh button
+2025-01-05 10:10:41 - INFO - [test_domains.py:159] - Refresh completed (spinner gone)
+2025-01-05 10:10:43 - INFO - [test_domains.py:165] - New status: FAILED
+2025-01-05 10:10:43 - INFO - [test_domains.py:169] - Domain status refreshed successfully
+2025-01-05 10:10:46 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:10:47 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:10:47 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:10:59 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:10:59 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:11:01 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:11:01 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:11:03 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:11:06 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:11:07 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:11:07 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:11:10 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:11:10 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:11:12 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:11:12 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:11:12 - INFO - [test_scheduler.py:113] - Starting daily schedule test
+2025-01-05 10:11:14 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:11:14 - INFO - [test_scheduler.py:122] - Selected daily schedule
+2025-01-05 10:11:15 - INFO - [test_scheduler.py:128] - Set daily time to 13:00
+2025-01-05 10:11:15 - INFO - [test_scheduler.py:133] - Started daily schedule
+2025-01-05 10:11:15 - INFO - [test_scheduler.py:141] - Next check updated: Next check: 5.1.2025, 13:00:00
+2025-01-05 10:11:18 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:11:19 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:11:19 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:11:23 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:11:23 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:11:25 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:11:25 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:11:25 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 10:11:27 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:11:27 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 10:11:27 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 10:11:27 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 10:11:30 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:11:31 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:11:31 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:11:35 - INFO - [test_scheduler.py:13] - Starting domain tests setup
+2025-01-05 10:11:35 - INFO - [test_scheduler.py:19] - Performing login
+2025-01-05 10:11:36 - INFO - [test_scheduler.py:34] - Login successful
+2025-01-05 10:11:36 - INFO - [test_scheduler.py:15] - Login successful
+2025-01-05 10:11:36 - INFO - [test_scheduler.py:84] - Starting stop schedule test
+2025-01-05 10:11:36 - INFO - [test_scheduler.py:57] - Starting hourly schedule test
+2025-01-05 10:11:38 - INFO - [test_scheduler.py:49] - Domain entered: scheduler-test.com
+2025-01-05 10:11:38 - INFO - [test_scheduler.py:66] - Selected hourly schedule
+2025-01-05 10:11:38 - INFO - [test_scheduler.py:71] - Started schedule
+2025-01-05 10:11:38 - INFO - [test_scheduler.py:76] - Schedule verified running
+2025-01-05 10:11:39 - INFO - [test_scheduler.py:93] - Clicked stop button
+2025-01-05 10:11:39 - INFO - [test_scheduler.py:102] - Final nextRunTime text: Next check: Not scheduled
+2025-01-05 10:11:39 - INFO - [test_scheduler.py:104] - Schedule verified stopped
+2025-01-05 10:11:42 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:11:42 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:11:42 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:15:02 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:15:02 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:15:13 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:15:13 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:15:24 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:15:24 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:15:35 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:15:35 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:16:06 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:16:06 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:16:07 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:16:07 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:16:07 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-05 10:16:07 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-05 10:16:07 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-05 10:16:10 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-05 10:16:13 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:16:13 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:16:13 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:16:19 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:16:19 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:16:21 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:16:21 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:16:21 - INFO - [test_domains.py:81] - Starting delete domain test
+2025-01-05 10:16:21 - INFO - [test_domains.py:91] - Added test domain: delete-test.com
+2025-01-05 10:16:21 - INFO - [test_domains.py:99] - Domain 'delete-test.com' found in the table after addition.
+2025-01-05 10:16:21 - INFO - [test_domains.py:104] - Delete button clicked
+2025-01-05 10:16:21 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:16:21 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-05 10:16:21 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:16:21 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:16:22 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-05 10:16:22 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:16:22 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:16:25 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-05 10:16:25 - ERROR - [test_domains.py:115] - Domain 'delete-test.com' still exists in the table after deletion.
+2025-01-05 10:16:28 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:16:29 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:16:29 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:16:32 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:16:32 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:16:34 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:16:34 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:16:34 - INFO - [test_domains.py:182] - Starting file upload test
+2025-01-05 10:16:34 - INFO - [test_domains.py:191] - Created test domains file
+2025-01-05 10:16:34 - INFO - [test_domains.py:196] - Uploaded test file
+2025-01-05 10:16:34 - INFO - [test_domains.py:204] - Alert dismissed
+2025-01-05 10:16:36 - INFO - [test_domains.py:217] - Successfully verified uploaded domains in table
+2025-01-05 10:16:36 - INFO - [test_domains.py:230] - Cleaned up test file in finally block
+2025-01-05 10:16:39 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:16:40 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:16:40 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:16:44 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:16:44 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:16:45 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:16:45 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:16:45 - INFO - [test_domains.py:130] - Starting refresh domains test
+2025-01-05 10:16:46 - INFO - [test_domains.py:139] - Added test domain: refresh-test.com
+2025-01-05 10:16:48 - INFO - [test_domains.py:147] - Initial status: FAILED
+2025-01-05 10:16:48 - INFO - [test_domains.py:152] - Clicked refresh button
+2025-01-05 10:16:49 - INFO - [test_domains.py:159] - Refresh completed (spinner gone)
+2025-01-05 10:16:51 - INFO - [test_domains.py:165] - New status: FAILED
+2025-01-05 10:16:51 - INFO - [test_domains.py:169] - Domain status refreshed successfully
+2025-01-05 10:16:54 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:16:54 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:16:54 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:18:49 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:18:49 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:18:51 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:18:51 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:18:51 - INFO - [test_domains.py:45] - Starting test to add a domain
+2025-01-05 10:18:51 - INFO - [test_domains.py:52] - Domain entered: example.com
+2025-01-05 10:18:51 - INFO - [test_domains.py:57] - Add button clicked
+2025-01-05 10:18:53 - INFO - [test_domains.py:68] - Domain successfully added to table
+2025-01-05 10:18:56 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:18:56 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:18:56 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:19:02 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:19:02 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:19:04 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:19:04 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:19:04 - INFO - [test_domains.py:127] - Starting delete domain test
+2025-01-05 10:19:04 - INFO - [test_domains.py:137] - Added test domain: delete-test.com
+2025-01-05 10:19:04 - INFO - [test_domains.py:145] - Domain 'delete-test.com' found in the table after addition.
+2025-01-05 10:19:04 - INFO - [test_domains.py:150] - Delete button clicked
+2025-01-05 10:19:04 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:19:04 - INFO - [test_base.py:67] - Alert found with text: Are you sure you want to delete this domain?
+2025-01-05 10:19:04 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:19:04 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:19:05 - INFO - [test_base.py:67] - Alert found with text: The domain has been successfully deleted.
+2025-01-05 10:19:05 - INFO - [test_base.py:69] - Alert dismissed.
+2025-01-05 10:19:05 - INFO - [test_base.py:64] - Checking for alerts...
+2025-01-05 10:19:08 - INFO - [test_base.py:71] - No more alerts present.
+2025-01-05 10:19:08 - INFO - [test_domains.py:161] - Domain 'delete-test.com' successfully removed from the table.
+2025-01-05 10:19:11 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:19:12 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:19:12 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:19:16 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:19:16 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:19:17 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:19:17 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:19:17 - INFO - [test_domains.py:223] - Starting file upload test
+2025-01-05 10:19:17 - INFO - [test_domains.py:232] - Created test domains file
+2025-01-05 10:19:17 - INFO - [test_domains.py:237] - Uploaded test file
+2025-01-05 10:19:17 - INFO - [test_domains.py:245] - Alert dismissed
+2025-01-05 10:19:19 - INFO - [test_domains.py:258] - Successfully verified uploaded domains in table
+2025-01-05 10:19:19 - INFO - [test_domains.py:271] - Cleaned up test file in finally block
+2025-01-05 10:19:22 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:19:23 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:19:23 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
+2025-01-05 10:19:27 - INFO - [test_domains.py:17] - Starting domain tests setup
+2025-01-05 10:19:27 - INFO - [test_domains.py:23] - Performing login
+2025-01-05 10:19:29 - INFO - [test_domains.py:38] - Login successful
+2025-01-05 10:19:29 - INFO - [test_domains.py:19] - Login successful
+2025-01-05 10:19:29 - INFO - [test_domains.py:171] - Starting refresh domains test
+2025-01-05 10:19:29 - INFO - [test_domains.py:180] - Added test domain: refresh-test.com
+2025-01-05 10:19:31 - INFO - [test_domains.py:188] - Initial status: FAILED
+2025-01-05 10:19:31 - INFO - [test_domains.py:193] - Clicked refresh button
+2025-01-05 10:19:32 - INFO - [test_domains.py:200] - Refresh completed (spinner gone)
+2025-01-05 10:19:34 - INFO - [test_domains.py:206] - New status: FAILED
+2025-01-05 10:19:34 - INFO - [test_domains.py:210] - Domain status refreshed successfully
+2025-01-05 10:19:37 - INFO - [test_base.py:32] - No alert present during teardown.
+2025-01-05 10:19:37 - INFO - [test_base.py:36] - Page refreshed after test.
+2025-01-05 10:19:37 - INFO - [test_base.py:41] - Dashboard loaded after refresh.
