@@ -171,6 +171,7 @@ pipeline {
                         sudo docker push ${BE_IMAGE}:latest
                     """
                 }
+                build job: 'ansible-domain-monitor-pipeline', wait: true
             }
         }
         
