@@ -1,0 +1,16 @@
+---
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-west-2
+filters:
+  tag:Name: raziel_*   # Filter instances with the tag "Environment" set to "raziel"
+  # Only include instances that are in the 'running' state
+  instance-state-name: running
+keyed_groups:
+  - key: tags.Purpose
+    prefix: ec2
+hostnames:
+  - dns-name
+compose:
+  ansible_host: dns-name
+  instance_name: tags.Name

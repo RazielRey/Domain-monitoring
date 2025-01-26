@@ -7,7 +7,7 @@ aws1_accessKeys.csv
 *.tfstate.backup
 
 # Ignore Ansible inventory with sensitive data
-Deployment/ansible/inventory_aws_ec2.yaml
+# Deployment/ansible/inventory_aws_ec2.yaml
 
 # Ignore logs and temporary files
 *.log
