@@ -2,101 +2,80 @@
 ---
 - hosts: tag_Purpose_production
   become: yes
-  vars:
-    fe_image: "{{ docker_image_fe | default('razielrey/domain-monitor-fe') }}"
-    be_image: "{{ docker_image_be | default('razielrey/domain-monitor-be') }}"
-    image_tag: "{{ docker_image_tag | default('latest') }}"
-    fe_port: "8080"
-    be_port: "5001"
-
   tasks:
-    - name: Debug environment variables
-      debug:
-        msg: |
-          Frontend Image: {{ fe_image }}:{{ image_tag }}
-          Backend Image: {{ be_image }}:{{ image_tag }}
-          Frontend Port: {{ fe_port }}
-          Backend Port: {{ be_port }}
+    # Docker setup tasks
+    - name: Install Docker prerequisites
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+        state: present
+        update_cache: yes
 
-    - name: Show running containers
-      command: docker ps
-      register: docker_ps
-      changed_when: false
+    - name: Add Docker GPG key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
 
-    - name: Debug docker ps output
-      debug:
-        var: docker_ps.stdout_lines
+    - name: Add Docker repository
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+        state: present
 
-  tasks:
+    - name: Install Docker
+      apt:
+        name:
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+        state: present
+        update_cache: yes
+
+    - name: Start and enable Docker service
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Add ubuntu user to docker group
+      user:
+        name: ubuntu
+        groups: docker
+        append: yes
+
+    - name: Reset SSH connection to allow user changes to affect current session
+      meta: reset_connection
+
+    # Application deployment tasks
     - name: Pull frontend image
       docker_image:
-        name: "{{ fe_image }}"
+        name: "razielrey/domain-monitor-fe:{{ docker_image_tag }}"
         source: pull
-        tag: "{{ image_tag }}"
         force_source: yes
-      register: fe_pull
 
-    - name: Pull backend image  
+    - name: Pull backend image
       docker_image:
-        name: "{{ be_image }}"
+        name: "razielrey/domain-monitor-be:{{ docker_image_tag }}"
         source: pull
-        tag: "{{ image_tag }}"
         force_source: yes
-      register: be_pull
-
-
-    - name: Remove old frontend container
-      docker_container:
-        name: frontend-app
-        state: absent
-      ignore_errors: yes
-
-    - name: Remove old backend container  
-      docker_container:
-        name: backend-app
-        state: absent
-      ignore_errors: yes
-
-    - name: Start frontend container
-      docker_container:
-        name: frontend-app
-        image: "{{ fe_image }}:{{ image_tag }}"
-        state: started
-        restart_policy: always
-        published_ports:
-          - "{{ fe_port }}:8080"
-        env:
-            BACKEND_URL: "http://localhost:{{ be_port }}"
-        networks:
-          - name: host
 
     - name: Start backend container
       docker_container:
-        name: backend-app
-        image: "{{ be_image }}:{{ image_tag }}"
+        name: be-app
+        image: "razielrey/domain-monitor-be:{{ docker_image_tag }}"
         state: started
+        network_mode: host
         restart_policy: always
-        published_ports:
-          - "{{ be_port }}:5001"
-        networks:
-          - name: host
 
-    - name: Check frontend container status
-      uri:
-        url: "http://localhost:{{ fe_port }}/health"
-        method: GET
-        status_code: 200
-      register: fe_health
-      retries: 6
-      delay: 10
-      until: fe_health.status == 200
-      
-    - name: Check backend container status
-      uri:
-        url: "http://localhost:{{ be_port }}/health" 
-        method: GET
-        status_code: 200
-      register: be_health
-      retries: 6
-      delay: 10
-      until: be_health.status == 200
+    - name: Start frontend container
+      docker_container:
+        name: fe-app
+        image: "razielrey/domain-monitor-fe:{{ docker_image_tag }}"
+        state: started
+        network_mode: host
+        restart_policy: always
+        env:
+          BACKEND_URL: "http://localhost:5001"
