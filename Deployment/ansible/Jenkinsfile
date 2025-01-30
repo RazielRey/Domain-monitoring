@@ -33,32 +33,11 @@ pipeline {
                 }
             }
         }
-
-        stage('Setup AWS Inventory') {
-            steps {
-                sh '''
-                    # Install required packages using apt
-                    sudo apt-get update
-                    sudo apt-get install -y python3-boto3 python3-botocore
-                    
-                    # Debug: Check inventory file
-                    echo "Checking inventory file..."
-                    ls -l /etc/ansible/aws_ec2.yaml || echo "Inventory file not found"
-                    
-                    # Debug: Test inventory parsing
-                    echo "Testing inventory parsing..."
-                    ansible-inventory -i /etc/ansible/aws_ec2.yaml --list
-                '''
-            }
-        }
         
         stage('Run Deployment') {
             steps {
                 dir(ANSIBLE_DIR) {
                     sh '''
-                        # Debug: Show Ansible version and config
-                        ansible --version
-                        
                         # Debug: List available hosts
                         echo "Available hosts:"
                         ansible all -i /etc/ansible/aws_ec2.yaml --list-hosts
