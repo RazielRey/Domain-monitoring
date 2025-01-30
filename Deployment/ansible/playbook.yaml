@@ -1,6 +1,6 @@
 # deployment/ansible/deploy-app.yml
 ---
-- hosts: tag_Purpose_app_server
+- hosts: tag_Purpose_production
   become: yes
   vars:
     fe_image: "{{ docker_image_fe | default('razielrey/domain-monitor-fe') }}"
