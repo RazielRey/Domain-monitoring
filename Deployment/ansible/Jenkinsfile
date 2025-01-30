@@ -45,7 +45,7 @@ pipeline {
                         # Run playbook with verbose output
                         ansible-playbook playbook.yaml \
                             -i /etc/ansible/inventory_aws_ec2.yaml \
-                            --limit tag_Purpose_app_server \
+                            --limit tag_Purpose_production \
                             -e "docker_image_tag=${IMAGE_TAG}" \
                             -v
                     '''
