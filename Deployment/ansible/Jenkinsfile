@@ -39,11 +39,7 @@ pipeline {
                 sh '''
                     # Install required packages using apt
                     sudo apt-get update
-                    sudo apt-get install -y python3-boto3 python3-botocore awscli
-                    
-                    # Debug: Check AWS configuration
-                    echo "Checking AWS configuration..."
-                    aws sts get-caller-identity || echo "AWS credentials not found"
+                    sudo apt-get install -y python3-boto3 python3-botocore
                     
                     # Debug: Check inventory file
                     echo "Checking inventory file..."
