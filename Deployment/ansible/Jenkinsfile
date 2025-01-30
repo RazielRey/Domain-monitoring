@@ -1,11 +1,14 @@
 pipeline {
     agent { label 'ansible' }
+    
     parameters {
         string(name: 'IMAGE_TAG', defaultValue: 'latest', description: 'Docker image tag to deploy')
     }
+    
     environment {
         ANSIBLE_DIR = 'Deployment/ansible'
     }
+    
     stages {
         stage('Clean Workspace') {
             steps {
@@ -13,11 +16,13 @@ pipeline {
                 echo 'Workspace cleaned'
             }
         }
+        
         stage('Checkout') {
             steps {
                 checkout scm  
             }
         }
+        
         stage('Verify Parameters') {
             steps {
                 script {
@@ -28,24 +33,51 @@ pipeline {
                 }
             }
         }
-       stage('Run Deployment') {
-        steps {
-            dir(ANSIBLE_DIR) {
+
+        stage('Setup AWS Inventory') {
+            steps {
                 sh '''
-                    echo "Checking AWS inventory file:"
-                    ls -l /etc/ansible/aws_ec2.yaml
+                    # Install required Python packages
+                    pip3 install --user boto3 botocore
+
+                    # Debug: Check AWS credentials
+                    echo "Checking AWS configuration..."
+                    aws sts get-caller-identity || echo "AWS credentials not found"
                     
-                    echo "Testing AWS inventory:"
+                    # Debug: Check inventory file
+                    echo "Checking inventory file..."
+                    ls -l /etc/ansible/aws_ec2.yaml || echo "Inventory file not found"
+                    
+                    # Debug: Test inventory parsing
+                    echo "Testing inventory parsing..."
                     ansible-inventory -i /etc/ansible/aws_ec2.yaml --list
-                    
-                    ansible-playbook playbook.yaml \
-                        -i /etc/ansible/aws_ec2.yaml \
-                        --limit tag_Purpose_app_server \
-                        -e "docker_image_tag=${IMAGE_TAG}"
                 '''
             }
         }
+        
+        stage('Run Deployment') {
+            steps {
+                dir(ANSIBLE_DIR) {
+                    sh '''
+                        # Debug: Show Ansible version and config
+                        ansible --version
+                        
+                        # Debug: List available hosts
+                        echo "Available hosts:"
+                        ansible all -i /etc/ansible/aws_ec2.yaml --list-hosts
+                        
+                        # Run playbook with verbose output
+                        ansible-playbook playbook.yaml \
+                            -i /etc/ansible/aws_ec2.yaml \
+                            --limit tag_Purpose_app_server \
+                            -e "docker_image_tag=${IMAGE_TAG}" \
+                            -v
+                    '''
+                }
+            }
+        }
     }
+    
     post {
         success {
             echo "Deployment completed successfully!"
