@@ -37,10 +37,11 @@ pipeline {
         stage('Setup AWS Inventory') {
             steps {
                 sh '''
-                    # Install required Python packages
-                    pip3 install --user boto3 botocore
-
-                    # Debug: Check AWS credentials
+                    # Install required packages using apt
+                    sudo apt-get update
+                    sudo apt-get install -y python3-boto3 python3-botocore awscli
+                    
+                    # Debug: Check AWS configuration
                     echo "Checking AWS configuration..."
                     aws sts get-caller-identity || echo "AWS credentials not found"
                     
