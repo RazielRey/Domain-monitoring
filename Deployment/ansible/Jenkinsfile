@@ -1,14 +1,11 @@
 pipeline {
     agent { label 'ansible' }
-
     parameters {
         string(name: 'IMAGE_TAG', defaultValue: 'latest', description: 'Docker image tag to deploy')
     }
-
     environment {
         ANSIBLE_DIR = 'Deployment/ansible'
     }
-
     stages {
         stage('Clean Workspace') {
             steps {
@@ -16,13 +13,11 @@ pipeline {
                 echo 'Workspace cleaned'
             }
         }
-
         stage('Checkout') {
             steps {
                 checkout scm  
             }
         }
-
         stage('Verify Parameters') {
             steps {
                 script {
@@ -33,38 +28,25 @@ pipeline {
                 }
             }
         }
-
         stage('Run Deployment') {
             steps {
-                withCredentials([string(credentialsId: 'ansible-vault-pass', variable: 'VAULT_PASS')]) {
-                    dir(ANSIBLE_DIR) {
-                        sh '''
-                            echo "$VAULT_PASS" > .vault_pass
-                            chmod 600 .vault_pass
-                            
-                            ansible-playbook playbook.yaml \
-                                -i /etc/ansible/aws_ec2.yaml \
-                                --limit tag_Purpose_app_server \
-                                -e "docker_image_tag=${IMAGE_TAG}" \
-                                --vault-password-file .vault_pass
-                            
-                            rm -f .vault_pass
-                        '''
-                    }
+                dir(ANSIBLE_DIR) {
+                    sh '''
+                        ansible-playbook playbook.yaml \
+                            -i /etc/ansible/aws_ec2.yaml \
+                            --limit tag_Purpose_app_server \
+                            -e "docker_image_tag=${IMAGE_TAG}"
+                    '''
                 }
             }
         }
     }
-
     post {
         success {
             echo "Deployment completed successfully!"
         }
         failure {
             echo "Deployment failed!"
-        }
-        always {
-            sh 'rm -f .vault_pass'  // Cleanup in case of script failure
         }
     }
 }
