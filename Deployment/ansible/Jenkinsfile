@@ -28,16 +28,21 @@ pipeline {
                 }
             }
         }
-        stage('Run Deployment') {
-            steps {
-                dir(ANSIBLE_DIR) {
-                    sh '''
-                        ansible-playbook playbook.yaml \
-                            -i /etc/ansible/aws_ec2.yaml \
-                            --limit tag_Purpose_app_server \
-                            -e "docker_image_tag=${IMAGE_TAG}"
-                    '''
-                }
+       stage('Run Deployment') {
+        steps {
+            dir(ANSIBLE_DIR) {
+                sh '''
+                    echo "Checking AWS inventory file:"
+                    ls -l /etc/ansible/aws_ec2.yaml
+                    
+                    echo "Testing AWS inventory:"
+                    ansible-inventory -i /etc/ansible/aws_ec2.yaml --list
+                    
+                    ansible-playbook playbook.yaml \
+                        -i /etc/ansible/aws_ec2.yaml \
+                        --limit tag_Purpose_app_server \
+                        -e "docker_image_tag=${IMAGE_TAG}"
+                '''
             }
         }
     }
