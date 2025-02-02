@@ -9,8 +9,9 @@ jenkins_pipeline:
   git_repo: "https://github.com/RazielRey/Domain-monitoring.git"
   git_branch: "*/master"
   jenkinsfile_path: "Jenkinsfile"
-  ansible_jenkinsfile_path: "deployment/ansible/Jenkinsfile" 
+  ansible_jenkinsfile_path: "Deployment/ansible/Jenkinsfile" 
   poll_schedule: "H/5 * * * *"
+  
 
 # System configurations
 jenkins_home: /var/jenkins_home
@@ -23,11 +24,11 @@ docker_agent:
   name: "docker-agent"
   description: "Docker Build Agent"
   executors: 1
-  labels: "docker python"
+  labels: "docker"
 
 # Ansible Agent configurations
 ansible_agent:
   name: "ansible-agent"
   description: "Ansible Deployment Agent"
   executors: 1
-  labels: "ansible deployment"
+  labels: "ansible"

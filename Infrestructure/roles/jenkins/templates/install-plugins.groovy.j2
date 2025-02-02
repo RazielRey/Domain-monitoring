@@ -9,7 +9,8 @@ def plugins = [
   'pipeline-model-definition',
   'ansible',                // For Ansible integration
   'credentials',           // For managing agent credentials
-  'pipeline-stage-view'    // For better pipeline visualization
+  'pipeline-stage-view',    // For better pipeline visualization
+  'ws-cleanup'
 ]
 
 plugins.each { pluginName ->
@@ -17,7 +18,12 @@ plugins.each { pluginName ->
     def plugin = uc.getPlugin(pluginName)
     if (plugin) {
       plugin.deploy(true)  // true means to also install dependencies
+    } else {
+      println "Plugin not found in update center: ${pluginName}"
     }
+  } else {
+    println "Plugin already installed: ${pluginName}"
   }
 }
-uc.save()
+
+instance.save()

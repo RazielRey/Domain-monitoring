@@ -1,23 +1,8 @@
 #!/bin/bash
-
-# Jenkins agent startup script
-JENKINS_URL="http://{{ jenkins_master_ip }}:8080"
-JENKINS_SECRET="{{ agent_secret }}"
-AGENT_NAME="docker-agent"
-JENKINS_AGENT_HOME="{{ jenkins_home }}"
-
-# Check if agent.jar exists and is executable
-if [ ! -x "$JENKINS_AGENT_HOME/agent.jar" ]; then
-    echo "agent.jar not found or not executable in $JENKINS_AGENT_HOME"
-    exit 1
-fi
-
-# Change to agent home directory
-cd "$JENKINS_AGENT_HOME"
-
-# Start the agent
+curl -sO http://{{ jenkins_master_ip }}:8080/jnlpJars/agent.jar
 java -jar agent.jar \
-    -jnlpUrl "$JENKINS_URL/computer/$AGENT_NAME/slave-agent.jnlp" \
-    -secret "$JENKINS_SECRET" \
-    -workDir "$JENKINS_AGENT_HOME/workspace" \
-    -noReconnect
+  -url http://{{ jenkins_master_ip }}:8080/ \
+  -secret {{ agent_secret | quote }} \
+  -name "{{ agent_name }}" \
+  -webSocket \
+  -workDir "{{ jenkins_home }}"

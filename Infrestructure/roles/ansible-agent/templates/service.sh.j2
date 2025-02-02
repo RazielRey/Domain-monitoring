@@ -1,0 +1,8 @@
+#!/bin/bash
+curl -sO http://{{ jenkins_master_ip }}:8080/jnlpJars/agent.jar
+java -jar agent.jar \
+  -url http://{{ jenkins_master_ip }}:8080/ \
+  -secret {{ agent_secret | quote }} \
+  -name "{{ agent_name }}" \
+  -webSocket \
+  -workDir "{{ jenkins_home }}"

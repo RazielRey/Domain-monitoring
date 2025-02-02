@@ -1,15 +1,90 @@
 # roles/jenkins_docker_agent/tasks/main.yml
 ---
-- name: Install Docker
+# System Updates and Base Setup
+- name: Update apt cache
   apt:
-    name: docker.io
+    update_cache: yes
+
+# Java Installation
+- name: Add universe repository
+  apt_repository:
+    repo: "ppa:openjdk-r/ppa"
     state: present
+
+- name: Install Java
+  apt:
+    name: openjdk-17-jdk
+    state: present
+
+# Docker Installation
+- name: Remove conflicting containerd package
+  apt:
+    name: containerd
+    state: absent
+    purge: yes
+
+- name: Install prerequisites for Docker
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg
+      - lsb-release
+    state: present
+    update_cache: yes
+
+- name: Add Docker GPG apt Key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Add Docker Repository
+  apt_repository:
+    repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+    state: present
+
+- name: Update apt and install docker-ce
+  apt:
+    name: 
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+    state: present
+    update_cache: yes
 
 - name: Add ubuntu user to docker group
   user:
     name: ubuntu
     groups: docker
     append: yes
+
+# Jenkins Agent Setup
+- name: Create base Jenkins directory
+  file:
+    path: "{{ jenkins_home }}"
+    state: directory
+    owner: ubuntu
+    group: ubuntu
+    mode: '0755'
+
+- name: Download Jenkins agent JAR
+  get_url:
+    url: "http://{{ jenkins_master_ip }}:8080/jnlpJars/agent.jar"
+    dest: "{{ jenkins_home }}/agent.jar"
+    mode: '0755'
+    validate_certs: no
+    owner: ubuntu
+    group: ubuntu
+  register: download_status
+  retries: 5
+  delay: 10
+  until: download_status is success
+
+- name: Fetch agent secret from AWS secret Manager
+  set_fact:
+    agent_secret: "{{ lookup('aws_secret', '/jenkins/agents/docker') }}"
+  no_log: true
 
 - name: Create agent service script
   template:
@@ -22,24 +97,11 @@
 - name: Create agent systemd service
   template:
     src: jenkins-agent.service.j2
-    dest: /etc/systemd/system/jenkins-agent.service
+    dest: "/etc/systemd/system/jenkins-agent.service"
     mode: '0644'
 
-- name: Reload systemd to apply new service
-  systemd:
-    daemon_reload: yes
-
-- name: Enable and start Jenkins agent service
+- name: Start and enable Jenkins agent service
   systemd:
     name: jenkins-agent
     state: started
     enabled: yes
-
-- name: Check agent service status
-  command: systemctl status jenkins-agent
-  register: service_status
-  ignore_errors: yes
-
-- name: Debug service status
-  debug:
-    var: service_status.stdout_lines

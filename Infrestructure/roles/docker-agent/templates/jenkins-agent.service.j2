@@ -7,20 +7,14 @@ After=network.target
 Type=simple
 User=ubuntu
 Group=ubuntu
-Environment="JENKINS_HOME={{ jenkins_home }}"
+Environment="JENKINS_HOME=/var/lib/jenkins"
 Environment="AGENT_NAME=docker-agent"
-ExecStart=/bin/bash {{ jenkins_home }}/service.sh
+WorkingDirectory=/var/lib/jenkins
+ReadWritePaths=/var/lib/jenkins
+ExecStart=/bin/bash /var/lib/jenkins/service.sh
 Restart=always
 RestartSec=10
 StartLimitInterval=0
-
-# Security settings
-NoNewPrivileges=yes
-ProtectSystem=full
-ProtectHome=read-only
-PrivateTmp=yes
-ProtectKernelTunables=yes
-ProtectControlGroups=yes
 
 [Install]
 WantedBy=multi-user.target

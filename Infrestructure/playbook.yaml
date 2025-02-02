@@ -1,94 +1,52 @@
-# playbook.yml
 ---
-- hosts: all
+- name: Set Private IPs
+  hosts: all
   become: yes
-  roles:
-    - common_server
-
-- hosts: all
-  become: yes
+  gather_facts: yes
   tasks:
     - name: Set private IPs as facts for all hosts
       set_fact:
-        host_private_ip: "{{ ansible_facts['default_ipv4']['address'] }}"
+        host_private_ip: "{{ ansible_default_ipv4.address }}"
 
-# Configure Jenkins
-- hosts: tag_Purpose_jenkins
-  become: yes
-  roles:
-    - jenkins
-
-- hosts: tag_Purpose_docker_agent:tag_Purpose_ansible_agent
+- name: Configure Jenkins Master
+  hosts: tag_Purpose_jenkins
   become: yes
   vars:
-    jenkins_master_ip: "{{ hostvars[groups['tag_Purpose_jenkins'][0]]['host_private_ip'] }}"
-    jenkins_home: /var/lib/jenkins  
-    agent_workspace: /var/lib/jenkins
-    agent_name: "{{ 'docker-agent' if inventory_hostname in groups['tag_Purpose_docker_agent'] else 'ansible-agent' }}"
-    agent_secret_path: "{{ '/jenkins/agents/docker' if inventory_hostname in groups['tag_Purpose_docker_agent'] else '/jenkins/agents/ansible' }}"
-  
-  tasks:
-    # Shared agent setup tasks
-    - name: Set Agent IP as a fact
-      set_fact:
-        agent_ip: "{{ ansible_host }}"
-
-    - name: Install common required packages
-      apt:
-        name:
-          - openjdk-17-jdk
-          - git
-        state: present
-
-    - name: Create base Jenkins home directory
-      file:
-        path: "{{ jenkins_home }}"
-        state: directory
-        owner: ubuntu
-        group: ubuntu
-        mode: '0755'
-
-    - name: Create Jenkins workspace directory
-      file:
-        path: "{{ jenkins_home }}/workspace"
-        state: directory
-        owner: ubuntu
-        group: ubuntu
-        mode: '0755'
-
+    jenkins_home: /var/jenkins_home
+    jenkins_master_ip: "{{ hostvars[groups['tag_Purpose_jenkins'][0]]['ansible_default_ipv4']['address'] }}"
+  vars_files:
+    - roles/jenkins/vars/main.yaml
+  roles:
+    - jenkins
+  post_tasks:
     - name: Wait for Jenkins to be available
-      uri:
-        url: "http://{{ jenkins_master_ip }}:8080/login"
-        status_code: [200, 403]
-        validate_certs: no
-      register: jenkins_check
-      until: jenkins_check.status in [200, 403]
-      retries: 30
-      delay: 10
+      wait_for:
+        host: "{{ jenkins_master_ip }}"
+        port: 8080
+        timeout: 300
+        state: started
+      register: jenkins_up
 
-    - name: Download Jenkins agent JAR
-      get_url:
-        url: "http://{{ jenkins_master_ip }}:8080/jnlpJars/agent.jar"
-        dest: "{{ jenkins_home }}/agent.jar"
-        mode: '0755'
-        validate_certs: no
-        owner: ubuntu
-        group: ubuntu
-      register: download_status
-      retries: 5
-      delay: 10
-      until: download_status is success
-
-    - name: Fetch agent secret from AWS Secrets Manager
-      set_fact:
-        agent_secret: "{{ lookup('aws_secret', agent_secret_path) }}"
-      no_log: true
-
-  # Apply agent-specific roles after shared configuration
-  roles:
-    - role: "{{ 'jenkins_docker_agent' if inventory_hostname in groups['tag_Purpose_docker_agent'] else 'jenkins_ansible_agent' }}"
-
-- hosts: tag_Purpose_app_server
+- name: Configure Docker Agent
+  hosts: tag_Purpose_docker_agent
   become: yes
+  vars:
+    jenkins_master_ip: "{{ hostvars[groups['tag_Purpose_jenkins'][0]]['public_ip_address'] }}"
+    jenkins_home: /var/lib/jenkins
+    agent_workspace: /var/lib/jenkins
+    agent_name: "docker-agent"
+    agent_secret_path: "/jenkins/agents/docker"
   roles:
-    - app_server
+    - role: docker-agent
+
+- name: Configure Ansible Agent
+  hosts: tag_Purpose_ansible_agent
+  become: yes
+  vars:
+    jenkins_master_ip: "{{ hostvars[groups['tag_Purpose_jenkins'][0]]['ansible_default_ipv4']['address'] }}"
+    jenkins_home: /var/lib/jenkins
+    agent_workspace: /var/lib/jenkins
+    agent_name: "ansible-agent"
+    agent_secret_path: "/jenkins/agents/ansible"
+  roles:
+    - role: ansible-agent
