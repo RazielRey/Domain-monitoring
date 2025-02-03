@@ -11,4 +11,4 @@ aws1_accessKeys.csv
 
 # Ignore logs and temporary files
 *.log
-*.tmp
+*.tmpInfrestructure/roles/ansible-agent/files/aws_credentials

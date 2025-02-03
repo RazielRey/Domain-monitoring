@@ -48,6 +48,7 @@ def register():
     password = data.get('password')
     
     try:
+        Config.ensure_directories()
         registration(username, password)
         logger.info(f"New user registered: {username}")
         return jsonify({'success': True}), 200
@@ -61,23 +62,6 @@ def check_username():
     username = request.args.get('username')
     available = check_username_avaliability(username)
     return jsonify({'available': available})
-
-@app.route('/api/google-login', methods=['POST'])
-def google_login():
-    """Handle Google login"""
-    data = request.get_json()
-    try:
-        registration(
-            username=data['email'],
-            password=data['google_id'],
-            full_name=data['name'],
-            is_google_user=True,
-            profile_picture=data['profile_picture']
-        )
-        return jsonify({'success': True}), 200
-    except Exception as e:
-        logger.error(f"Google login error: {str(e)}")
-        return jsonify({'error': str(e)}), 500
 
 """
 Domain Management API endpoints
@@ -102,7 +86,9 @@ def delete_domain():
     
     try:
         if remove_domain(domain, username):
+            logger.info(f"Domain {domain} deleted for user {username}")
             return jsonify({'message': f'Domain {domain} deleted successfully'}), 200
+        logger.warning(f"Domain {domain} not found for user {username}")
         return jsonify({'message': 'Domain not found'}), 404
     except Exception as e:
         logger.error(f"Error removing domain: {str(e)}")
@@ -133,6 +119,7 @@ def schedule_hourly():
     try:
         domains = [domain["url"] for domain in load_domains(username)]
         if not domains:
+            logger.warning(f"No domains found for user {username}")
             return jsonify({"status": "error", "message": "No domains found"}), 400
 
         job_id = f"{username}_hourly_task"
@@ -152,6 +139,7 @@ def schedule_hourly():
             "job_id": job_id
         }
         update_user_task(username, new_task)
+        logger.info(f"Hourly schedule created for user {username}")
         
         return jsonify({
             "status": "success",
@@ -172,6 +160,7 @@ def schedule_daily():
     try:
         domains = [domain["url"] for domain in load_domains(username)]
         if not domains:
+            logger.warning(f"No domains found for user {username}")
             return jsonify({"status": "error", "message": "No domains found"}), 400
 
         job_id = f"{username}_daily_task"
@@ -191,6 +180,7 @@ def schedule_daily():
             "job_id": job_id
         }
         update_user_task(username, new_task)
+        logger.info(f"Daily schedule created for user {username}")
         
         return jsonify({
             "status": "success",
@@ -213,7 +203,6 @@ def schedule_status():
     except Exception as e:
         logger.error(f"Status check error: {str(e)}")
         return jsonify({"status": "error", "message": str(e)}), 500
-    
 
 @app.route('/api/schedule/stop', methods=['POST'])
 def stop_schedule():
@@ -251,10 +240,14 @@ def stop_schedule():
             "status": "error",
             "message": str(e)
         }), 500
-    
+
 @app.route('/health')
 def health():
+    """Health check endpoint"""
     return jsonify({"status": "healthy"}), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001)
+    # Ensure all required directories exist
+    Config.ensure_directories()
+    # Start the application with config values
+    app.run(host=Config.HOST, port=Config.PORT, debug=Config.DEBUG)

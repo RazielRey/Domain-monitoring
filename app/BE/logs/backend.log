@@ -12,3 +12,24 @@
 2025-01-06 22:27:18,787 - backend_service - INFO - Stopped scheduler for user: raziel
 2025-01-07 11:13:59,796 - backend_service - INFO - Successful regular login for user: raziel
 2025-01-07 11:13:59,799 - backend_service - INFO - Successful login for user: raziel
+2025-02-03 18:00:07,740 - backend_service - INFO - Successful regular login for user: raziel
+2025-02-03 18:00:07,740 - backend_service - INFO - Successful login for user: raziel
+2025-02-03 18:00:32,673 - backend_service - INFO - Added 1 domains to queue for raziel
+2025-02-03 18:00:33,455 - backend_service - INFO - Expected 1 results, got 1 for raziel
+2025-02-03 18:35:43,839 - backend_service - INFO - Successful regular login for user: raziel
+2025-02-03 18:35:43,840 - backend_service - INFO - Successful login for user: raziel
+2025-02-03 18:35:56,470 - backend_service - INFO - Added 1 domains to queue for raziel
+2025-02-03 18:35:57,036 - backend_service - INFO - Expected 1 results, got 1 for raziel
+2025-02-03 18:36:31,685 - backend_service - INFO - Added 104 domains to queue for raziel
+2025-02-03 18:36:33,744 - backend_service - ERROR - Error checking steam.com: HTTPConnectionPool(host='steam.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000019415640980>: Failed to resolve 'steam.com' ([Errno 11001] getaddrinfo failed)"))
+2025-02-03 18:36:34,111 - backend_service - ERROR - Error checking amd.com: HTTPSConnectionPool(host='www.amd.com', port=443): Read timed out. (read timeout=1.5)
+2025-02-03 18:36:34,454 - backend_service - ERROR - Error checking magento.com: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-02-03 18:36:35,054 - backend_service - ERROR - Error checking yahoo.com: 
+2025-02-03 18:36:35,695 - backend_service - ERROR - Error checking wikipedia.org: 
+2025-02-03 18:36:35,697 - backend_service - ERROR - Error checking unity.com: HTTPConnectionPool(host='unity.com', port=80): Read timed out. (read timeout=1.5)
+2025-02-03 18:36:36,290 - backend_service - ERROR - Error checking xbox.com: 
+2025-02-03 18:36:36,295 - backend_service - ERROR - Error checking opencart.com: 
+2025-02-03 18:36:36,354 - backend_service - ERROR - Error checking playstation.com: 
+2025-02-03 18:36:37,063 - backend_service - ERROR - Error checking joomla.org: 
+2025-02-03 18:36:37,926 - backend_service - ERROR - Error checking aliexpress.com: 
+2025-02-03 18:36:37,932 - backend_service - INFO - Expected 104 results, got 104 for raziel

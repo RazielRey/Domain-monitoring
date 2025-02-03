@@ -39,7 +39,6 @@ def check_url_mt(domains, username):
     logger.info(f"Added {expected_count} domains to queue for {username}")
     
     max_workers = min(500, len(domains) * 2)
-    
     def check_url():
         while not request_urls_queue.empty():
             url = request_urls_queue.get()
