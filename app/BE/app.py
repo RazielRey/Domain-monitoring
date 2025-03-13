@@ -9,19 +9,10 @@ from config import Config, logger
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from apscheduler.triggers.cron import CronTrigger
-from elasticapm.contrib.flask import ElasticAPM
 
 
 app = Flask(__name__)
 
-app.config['ELASTIC_APM'] = {
-    'SERVICE_NAME': 'Backend',
-    'API_KEY': 'aXhNSi01UUIwZzZuVW5fOWNHc2U6QmRIaDk5XzJTa2VFN1VNbDhrcU9pdw==',
-    'SERVER_URL': 'https://my-observability-project-f11779.apm.us-west-2.aws.elastic.cloud:443',
-      'ENVIRONMENT': 'local',
-}
-
-apm = ElasticAPM(app)
 
 app.config.from_object(Config)
 
