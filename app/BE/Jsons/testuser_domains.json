@@ -1,0 +1,18 @@
+{
+    "domains": [
+        {
+            "url": "example.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "test.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        }
+    ]
+}

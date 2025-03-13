@@ -6,6 +6,20 @@
             "full_name": null,
             "is_google_user": false,
             "profile_picture": null
+        },
+        {
+            "username": "12345",
+            "password": "12345",
+            "full_name": null,
+            "is_google_user": false,
+            "profile_picture": null
+        },
+        {
+            "username": "newuser",
+            "password": "pass123",
+            "full_name": null,
+            "is_google_user": false,
+            "profile_picture": null
         }
     ]
 }

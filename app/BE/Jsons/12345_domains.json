@@ -1,0 +1,718 @@
+{
+    "domains": [
+        {
+            "url": "google.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "youtube.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-14 08:36:03",
+            "issuer": "WR2"
+        },
+        {
+            "url": "apple.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-16 19:56:22",
+            "issuer": "Apple Public EV Server ECC CA 1 - G1"
+        },
+        {
+            "url": "bing.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-06-13 07:52:28",
+            "issuer": "Microsoft Azure RSA TLS Issuing CA 08"
+        },
+        {
+            "url": "github.io",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-03-14 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "walmart.com",
+            "status_code": "OK",
+            "ssl_status": "failed",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "nvidia.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-07-18 23:59:59",
+            "issuer": "Amazon RSA 2048 M02"
+        },
+        {
+            "url": "duckduckgo.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-12-19 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "whatsapp.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-02-19 23:59:59",
+            "issuer": "DigiCert SHA2 High Assurance Server CA"
+        },
+        {
+            "url": "discord.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-15 01:03:14",
+            "issuer": "WE1"
+        },
+        {
+            "url": "slack.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-25 11:19:42",
+            "issuer": "R10"
+        },
+        {
+            "url": "telegram.org",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-09-11 13:33:14",
+            "issuer": "Go Daddy Secure Certificate Authority - G2"
+        },
+        {
+            "url": "skype.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "instagram.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-02-19 23:59:59",
+            "issuer": "DigiCert SHA2 High Assurance Server CA"
+        },
+        {
+            "url": "mail.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-11-15 23:59:59",
+            "issuer": "GeoTrust TLS RSA CA G1"
+        },
+        {
+            "url": "spotify.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-01-06 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "teamspeak.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-16 10:47:23",
+            "issuer": "WE1"
+        },
+        {
+            "url": "ibm.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-10-18 23:59:59",
+            "issuer": "DigiCert TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "ventrilo.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-01-18 23:59:59",
+            "issuer": "Sectigo RSA Organization Validation Secure Server CA"
+        },
+        {
+            "url": "protonmail.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-03-20 13:13:45",
+            "issuer": "R11"
+        },
+        {
+            "url": "xbox.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-07-10 13:28:17",
+            "issuer": "Microsoft Azure RSA TLS Issuing CA 03"
+        },
+        {
+            "url": "godaddy.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "ebay.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-01-08 23:59:59",
+            "issuer": "Sectigo RSA Organization Validation Secure Server CA"
+        },
+        {
+            "url": "mozilla.org",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-12 00:51:33",
+            "issuer": "WR3"
+        },
+        {
+            "url": "amd.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "digitalocean.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-29 00:31:30",
+            "issuer": "WE1"
+        },
+        {
+            "url": "brave.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-11-18 23:59:59",
+            "issuer": "Amazon RSA 2048 M03"
+        },
+        {
+            "url": "line.me",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-09-09 04:31:01",
+            "issuer": "GlobalSign RSA OV SSL CA 2018"
+        },
+        {
+            "url": "nintendo.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-07-09 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "linkedin.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-14 23:59:59",
+            "issuer": "DigiCert SHA2 Secure Server CA"
+        },
+        {
+            "url": "vimeo.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-21 10:46:39",
+            "issuer": "WE1"
+        },
+        {
+            "url": "cloudflare.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-29 00:34:36",
+            "issuer": "WE1"
+        },
+        {
+            "url": "pinterest.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-08-07 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "aws.amazon.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-10-06 23:59:59",
+            "issuer": "Amazon RSA 2048 M01"
+        },
+        {
+            "url": "steam.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "bbc.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-07-19 06:26:04",
+            "issuer": "GlobalSign RSA OV SSL CA 2018"
+        },
+        {
+            "url": "wechat.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-09-10 23:59:59",
+            "issuer": "DigiCert Secure Site OV G2 TLS CN RSA4096 SHA256 2022 CA1"
+        },
+        {
+            "url": "azure.microsoft.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-08-01 18:01:13",
+            "issuer": "Microsoft Azure ECC TLS Issuing CA 07"
+        },
+        {
+            "url": "paypal.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-08-06 23:59:59",
+            "issuer": "DigiCert SHA2 Extended Validation Server CA"
+        },
+        {
+            "url": "npr.org",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-30 23:59:59",
+            "issuer": "Amazon RSA 2048 M03"
+        },
+        {
+            "url": "salesforce.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-11-13 23:59:59",
+            "issuer": "DigiCert Global G3 TLS ECC SHA384 2020 CA1"
+        },
+        {
+            "url": "amazon.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "weather.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-15 23:59:59",
+            "issuer": "DigiCert TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "blizzard.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-03-11 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "playstation.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "etsy.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "namecheap.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-01-07 23:59:59",
+            "issuer": "Sectigo ECC Extended Validation Secure Server CA"
+        },
+        {
+            "url": "facebook.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-02-19 23:59:59",
+            "issuer": "DigiCert SHA2 High Assurance Server CA"
+        },
+        {
+            "url": "ea.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-12-26 23:59:59",
+            "issuer": "DigiCert SHA2 Secure Server CA"
+        },
+        {
+            "url": "upwork.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "heroku.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-03-12 23:59:59",
+            "issuer": "Amazon RSA 2048 M02"
+        },
+        {
+            "url": "nytimes.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-03-13 23:59:59",
+            "issuer": "Thawte RSA CA 2018"
+        },
+        {
+            "url": "woocommerce.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-22 22:21:34",
+            "issuer": "E6"
+        },
+        {
+            "url": "medium.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-23 19:19:35",
+            "issuer": "WE1"
+        },
+        {
+            "url": "twitch.tv",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-08-05 21:35:13",
+            "issuer": "GlobalSign Atlas R3 DV TLS CA 2024 Q2"
+        },
+        {
+            "url": "zoom.us",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-05 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "cnn.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-10-29 19:18:29",
+            "issuer": "GlobalSign Atlas R3 DV TLS CA 2024 Q3"
+        },
+        {
+            "url": "unity.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "github.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-02-05 23:59:59",
+            "issuer": "Sectigo ECC Domain Validation Secure Server CA"
+        },
+        {
+            "url": "wikipedia.org",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-10-17 23:59:59",
+            "issuer": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        {
+            "url": "oracle.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "viber.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "office.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-06-09 18:09:31",
+            "issuer": "Microsoft Azure RSA TLS Issuing CA 03"
+        },
+        {
+            "url": "reddit.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "canva.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "shopify.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-03-30 20:22:19",
+            "issuer": "WE1"
+        },
+        {
+            "url": "cloud.google.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-14 08:36:03",
+            "issuer": "WR2"
+        },
+        {
+            "url": "prestashop.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-08-03 09:42:43",
+            "issuer": "Go Daddy Secure Certificate Authority - G2"
+        },
+        {
+            "url": "forbes.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "mozilla.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-13 13:40:38",
+            "issuer": "WR3"
+        },
+        {
+            "url": "netflix.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "weebly.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-03-26 18:04:05",
+            "issuer": "E6"
+        },
+        {
+            "url": "freelancer.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-06-25 23:59:59",
+            "issuer": "Amazon RSA 2048 M02"
+        },
+        {
+            "url": "microsoft.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-07-28 13:37:56",
+            "issuer": "Microsoft Azure RSA TLS Issuing CA 03"
+        },
+        {
+            "url": "alibaba.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-14 08:41:13",
+            "issuer": "GlobalSign Organization Validation CA - SHA256 - G3"
+        },
+        {
+            "url": "imdb.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "adobe.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-07-15 23:59:59",
+            "issuer": "DigiCert TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "wix.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-23 12:22:46",
+            "issuer": "R10"
+        },
+        {
+            "url": "wordpress.org",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-05-01 19:43:54",
+            "issuer": "E5"
+        },
+        {
+            "url": "twitter.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-09-29 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "opera.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-01-09 23:59:59",
+            "issuer": "DigiCert TLS Hybrid ECC SHA384 2020 CA1"
+        },
+        {
+            "url": "behance.net",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-13 09:22:58",
+            "issuer": "R10"
+        },
+        {
+            "url": "cnet.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-19 02:38:25",
+            "issuer": "WR3"
+        },
+        {
+            "url": "wordpress.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-12 19:45:12",
+            "issuer": "E5"
+        },
+        {
+            "url": "hp.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-02-03 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "blogger.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-14 08:35:49",
+            "issuer": "WR2"
+        },
+        {
+            "url": "unrealengine.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "fiverr.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "squarespace.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-03-03 23:59:59",
+            "issuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "vivaldi.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-14 04:34:26",
+            "issuer": "WE1"
+        },
+        {
+            "url": "intel.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-10 23:59:59",
+            "issuer": "Sectigo RSA Organization Validation Secure Server CA"
+        },
+        {
+            "url": "cisco.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-09-08 14:04:00",
+            "issuer": "HydrantID Server CA O1"
+        },
+        {
+            "url": "tumblr.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-03-26 23:59:59",
+            "issuer": "Sectigo ECC Domain Validation Secure Server CA"
+        },
+        {
+            "url": "dell.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "joomla.org",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "dropbox.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-12-08 23:59:59",
+            "issuer": "DigiCert TLS RSA SHA256 2020 CA1"
+        },
+        {
+            "url": "drupal.org",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2026-03-08 19:56:02",
+            "issuer": "GlobalSign Atlas R3 DV TLS CA 2025 Q1"
+        },
+        {
+            "url": "magento.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "opencart.com",
+            "status_code": "OK",
+            "ssl_status": "valid",
+            "expiration_date": "2025-04-11 23:59:59",
+            "issuer": "Sectigo RSA Domain Validation Secure Server CA"
+        },
+        {
+            "url": "ubisoft.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "aliexpress.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        },
+        {
+            "url": "yahoo.com",
+            "status_code": "FAILED",
+            "ssl_status": "unknown",
+            "expiration_date": "unknown",
+            "issuer": "unknown"
+        }
+    ]
+}
