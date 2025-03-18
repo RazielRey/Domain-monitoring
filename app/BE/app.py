@@ -1,17 +1,35 @@
-from flask import Flask, request, jsonify
-from domains_check_MT import check_url_mt
-from login import check_login, check_username_avaliability, registration
-from DataManagement import (
-    load_domains, remove_domain, update_user_task, 
-    delete_user_task, load_user_tasks
-)
-from config import Config, logger
+from flask import Flask, request, jsonify, redirect
+from flask_cors import CORS
+import os
+from datetime import datetime, timedelta
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from apscheduler.triggers.cron import CronTrigger
+from config import Config, logger
+import requests
+import time
+import json
 
+# Import functions from other modules
+from modules.login import check_login, check_username_avaliability, registration
+from modules.domains_check_MT import check_url_mt
+from modules.DataManagement import (load_domains, update_user_task, delete_user_task, load_user_tasks)
+import modules.DBManagement as DBManagement
+from utils import Utils
 
+utils = Utils()
+
+# Initialize the Flask app 
 app = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(app, resources={
+    r"/api/*": {
+        "origins": Config.CORS_ALLOWED_ORIGINS,
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
 
 
 app.config.from_object(Config)
@@ -20,10 +38,7 @@ app.config.from_object(Config)
 scheduler = BackgroundScheduler()
 scheduler.start()
 
-"""
-Authentication API endpoints
-"""
-
+# Authentication routes
 @app.route('/api/login', methods=['POST'])
 def login():
     """Handle login requests"""
@@ -62,19 +77,21 @@ def register():
 def check_username():
     """Check username availability"""
     username = request.args.get('username')
-    available = check_username_avaliability(username)
-    return jsonify({'available': available})
+    try:
+        available = check_username_avaliability(username)
+        return jsonify({'available': available})
+    except Exception as e:
+        logger.error(f"Error checking username: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
-"""
-Domain Management API endpoints
-"""
-
+# Domain management routes
 @app.route('/api/domains', methods=['GET'])
+@utils.measure_this
 def get_domains():
     """Get user domains"""
     username = request.args.get('username')
     try:
-        domains = load_domains(username)
+        domains = DBManagement.load_domains_DB(username)
         return jsonify(domains)
     except Exception as e:
         logger.error(f"Error loading domains: {str(e)}")
@@ -87,7 +104,7 @@ def delete_domain():
     domain = request.args.get('domain')
     
     try:
-        if remove_domain(domain, username):
+        if DBManagement.remove_domain_DB(domain, username):
             logger.info(f"Domain {domain} deleted for user {username}")
             return jsonify({'message': f'Domain {domain} deleted successfully'}), 200
         logger.warning(f"Domain {domain} not found for user {username}")
@@ -97,6 +114,7 @@ def delete_domain():
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/check-domains', methods=['POST'])
+@utils.measure_this
 def check_domains():
     """Check domain status"""
     data = request.get_json()
@@ -107,10 +125,7 @@ def check_domains():
         logger.error(f"Error checking domains: {str(e)}")
         return jsonify({'error': str(e)}), 500
     
-"""
-Scheduler API endpoints
-"""
-
+# Scheduler routes
 @app.route('/api/schedule/hourly', methods=['POST'])
 def schedule_hourly():
     """Schedule hourly checks"""
@@ -252,4 +267,4 @@ if __name__ == '__main__':
     # Ensure all required directories exist
     Config.ensure_directories()
     # Start the application with config values
-    app.run(host=Config.HOST, port=Config.PORT, debug=Config.DEBUG)
+    app.run(host=Config.FLASK_HOST, port=Config.FLASK_PORT, debug=Config.FLASK_DEBUG)

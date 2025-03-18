@@ -1,39 +1,0 @@
-Script started on 2025-01-14 13:37:04+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="154" LINES="30"]
-
-
-
-
-[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ sudo -i [K [K [K
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app/Be[00m$ cd //[K[K.. 
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse/app[00m$ cd..[K[K ..
-[?2004l[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ git add . 
-[?2004l
-
-
-
-
-^C
-[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ git add . 
-[?2004l^C
-[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ git branch
-[?2004l[?1h=* [32mFE-BE_Exercise[m[m
-  main[m[m
-[K[?1l>[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ git ad [Kd .
-[?2004l^C
-[?2004h]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[01;32mraziel@Raziel[00m:[01;34m/mnt/c/Users/razie/DevOps/Private/DevOpsCourse[00m$ [K]0;raziel@Raziel: /mnt/c/Users/razie/DevOps/Private/DevOpsCourse[0

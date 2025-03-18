@@ -2616,3 +2616,107 @@
 2025-02-12 19:29:40,252 - backend_service - INFO - Expected 2 results, got 2 for testuser
 2025-02-12 19:29:40,561 - backend_service - ERROR - Error checking test.com: 
 2025-02-12 19:29:40,563 - backend_service - INFO - Expected 2 results, got 2 for testuser
+2025-03-17 21:45:06,836 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 21:45:06,836 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 21:45:20,233 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 21:45:20,235 - domain_monitor - ERROR - Database error in login_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 21:45:20,237 - domain_monitor - WARNING - Failed login attempt for user : raziel - Invalid cradentials
+2025-03-17 21:45:20,237 - domain_monitor - WARNING - Failed login attempt for user: raziel
+2025-03-17 21:45:27,886 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 21:45:27,894 - domain_monitor - ERROR - Database error in login_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 21:45:27,894 - domain_monitor - WARNING - Failed login attempt for user : raziel - Invalid cradentials
+2025-03-17 21:45:27,896 - domain_monitor - WARNING - Failed login attempt for user: raziel
+2025-03-17 22:27:46,877 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 22:27:46,880 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 22:27:54,397 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 22:27:54,400 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 22:28:35,324 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2025-03-17 22:28:35,334 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2025-03-17 23:15:46,235 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:15:46,237 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:19:01,861 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:19:01,872 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:19:04,650 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:19:04,652 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:22:30,524 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:22:30,535 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:26:37,527 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:26:37,527 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:28:06,770 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:28:06,770 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:32:34,393 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:32:34,400 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:34:06,533 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:34:06,533 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:34:15,511 - domain_monitor - INFO - DB Params in use at startup: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-17 23:34:28,460 - domain_monitor - ERROR - Database connection error: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:34:28,460 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:35:27,249 - domain_monitor - ERROR - DB Params in use at startup: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-17 23:36:40,092 - domain_monitor - ERROR - DB Params in use at startup: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-17 23:36:55,146 - domain_monitor - ERROR - DB Params in use at startup: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-17 23:37:18,405 - domain_monitor - ERROR - DB Params in use at startup: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': '127.0.0.1', 'port': 5432}
+2025-03-17 23:37:26,862 - domain_monitor - ERROR - Database connection error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-17 23:37:26,862 - domain_monitor - ERROR - Database error in check_username_DB: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "myuser"
+
+2025-03-18 13:30:06,648 - domain_monitor - ERROR - DB Params in use at startup: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-18 14:42:32,774 - domain_monitor - INFO - DB Params in use: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-18 14:42:32,917 - domain_monitor - INFO - User raziel added successfully
+2025-03-18 14:42:32,917 - domain_monitor - INFO - New regular user registered: raziel
+2025-03-18 14:42:32,918 - domain_monitor - INFO - New user registered: raziel
+2025-03-18 14:42:40,366 - domain_monitor - INFO - Successful regular login for user: raziel
+2025-03-18 14:42:40,367 - domain_monitor - INFO - Successful login for user: raziel
+2025-03-18 14:42:42,930 - domain_monitor - INFO - EXECUTION TIME FOR get_domains: 0.1316 SECONDS
+2025-03-18 14:42:57,985 - domain_monitor - ERROR - Error checking domains: name 'check_url_mt' is not defined
+2025-03-18 14:42:57,986 - domain_monitor - INFO - EXECUTION TIME FOR check_domains: 0.0009 SECONDS
+2025-03-18 14:43:54,975 - domain_monitor - ERROR - Error checking domains: name 'check_url_mt' is not defined
+2025-03-18 14:43:54,977 - domain_monitor - INFO - EXECUTION TIME FOR check_domains: 0.0024 SECONDS
+2025-03-18 14:45:31,042 - domain_monitor - ERROR - Error checking domains: name 'check_url_mt' is not defined
+2025-03-18 14:45:31,043 - domain_monitor - INFO - EXECUTION TIME FOR check_domains: 0.0010 SECONDS
+2025-03-18 14:45:38,544 - domain_monitor - ERROR - DB Params in use at startup: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-18 14:45:48,484 - domain_monitor - INFO - EXECUTION TIME FOR get_domains: 0.1723 SECONDS
+2025-03-18 14:45:52,855 - domain_monitor - INFO - EXECUTION TIME FOR get_domains: 0.1753 SECONDS
+2025-03-18 14:45:55,374 - domain_monitor - INFO - EXECUTION TIME FOR get_domains: 0.1684 SECONDS
+2025-03-18 14:46:00,782 - domain_monitor - INFO - Added 1 domains to queue for raziel
+2025-03-18 14:46:01,536 - domain_monitor - INFO - Expected 1 results, got 1 for raziel
+2025-03-18 14:46:01,709 - domain_monitor - INFO - EXECUTION TIME FOR check_domains: 0.9267 SECONDS
+2025-03-18 14:47:01,252 - domain_monitor - INFO - DB Params in use: {'dbname': 'monidb', 'user': 'myuser', 'password': 'mypassword', 'host': 'localhost', 'port': 5432}
+2025-03-18 14:47:01,392 - domain_monitor - INFO - User test1 added successfully
+2025-03-18 14:47:01,393 - domain_monitor - INFO - New regular user registered: test1
+2025-03-18 14:47:01,394 - domain_monitor - INFO - New user registered: test1
+2025-03-18 14:47:09,653 - domain_monitor - INFO - Successful regular login for user: test1
+2025-03-18 14:47:09,654 - domain_monitor - INFO - Successful login for user: test1
+2025-03-18 14:47:12,034 - domain_monitor - INFO - EXECUTION TIME FOR get_domains: 0.1563 SECONDS
+2025-03-18 14:47:16,962 - domain_monitor - INFO - Added 1 domains to queue for test1
+2025-03-18 14:47:17,609 - domain_monitor - INFO - Expected 1 results, got 1 for test1
+2025-03-18 14:47:17,766 - domain_monitor - INFO - EXECUTION TIME FOR check_domains: 0.8054 SECONDS
