@@ -1,0 +1,34 @@
+# roles/jenkins/vars/main.yml
+---
+# Jenkins core settings
+jenkins_admin_password: admin
+
+# Pipeline configuration
+jenkins_pipeline:
+  name: "domain-monitor-pipeline"
+  git_repo: "https://github.com/RazielRey/Domain-monitoring.git"
+  git_branch: "*/master"
+  jenkinsfile_path: "Jenkinsfile"
+  ansible_jenkinsfile_path: "Deployment/ansible/Jenkinsfile" 
+  poll_schedule: "H/5 * * * *"
+  
+
+# System configurations
+jenkins_home: /var/jenkins_home
+java_args: "-Djenkins.install.runSetupWizard=false -Dhudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION=true"
+jenkins_port: 8080
+jenkins_agent_port: 50000
+
+# Docker Agent configurations
+docker_agent:
+  name: "docker-agent"
+  description: "Docker Build Agent"
+  executors: 1
+  labels: "docker"
+
+# Ansible Agent configurations
+ansible_agent:
+  name: "ansible-agent"
+  description: "Ansible Deployment Agent"
+  executors: 1
+  labels: "ansible"

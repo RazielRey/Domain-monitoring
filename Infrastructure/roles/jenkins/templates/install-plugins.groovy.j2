@@ -1,0 +1,29 @@
+def instance = jenkins.model.Jenkins.getInstance()
+def pm = instance.getPluginManager()
+def uc = instance.getUpdateCenter()
+
+def plugins = [
+  'workflow-aggregator',
+  'git',
+  'docker-workflow',
+  'pipeline-model-definition',
+  'ansible',                // For Ansible integration
+  'credentials',           // For managing agent credentials
+  'pipeline-stage-view',    // For better pipeline visualization
+  'ws-cleanup'
+]
+
+plugins.each { pluginName ->
+  if (!pm.getPlugin(pluginName)) {
+    def plugin = uc.getPlugin(pluginName)
+    if (plugin) {
+      plugin.deploy(true)  // true means to also install dependencies
+    } else {
+      println "Plugin not found in update center: ${pluginName}"
+    }
+  } else {
+    println "Plugin already installed: ${pluginName}"
+  }
+}
+
+instance.save()

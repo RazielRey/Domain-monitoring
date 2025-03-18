@@ -1,0 +1,59 @@
+import jenkins.model.*
+import hudson.model.*
+import hudson.slaves.*
+import jenkins.slaves.JnlpSlaveAgentProtocol
+
+def createNode(String name, String description, String label) {
+    try {
+        // Get Jenkins instance inside the method
+        def jenkins = jenkins.model.Jenkins.getInstanceOrNull()
+        if (jenkins == null) {
+            throw new IllegalStateException("Jenkins instance could not be retrieved")
+        }
+
+        // Check if node already exists and delete it
+        def existingNode = jenkins.getNode(name)
+        if (existingNode != null) {
+            jenkins.removeNode(existingNode)
+        }
+
+        def launcher = new JNLPLauncher()
+        def node = new DumbSlave(
+            name,                    // Node name
+            description,            // Description
+            "/var/lib/jenkins",     // Remote root directory
+            "1",                    // Number of executors
+            Node.Mode.NORMAL,       // Mode
+            label,                  // Labels
+            launcher,               // Launch method
+            new RetentionStrategy.Always()
+        )
+    
+        jenkins.addNode(node)
+        def secret = node.getComputer().getJnlpMac()
+        return secret
+    } catch (Exception e) {
+        println "Error creating node ${name}: ${e.message}"
+        throw e
+    }
+}
+
+// Variable to store results
+def results = [:]
+
+try {
+    // Create Docker agent
+    def dockerSecret = createNode("docker-agent", "Jenkins Docker Agent", "docker")
+    results['docker'] = dockerSecret
+    println "docker:" + dockerSecret
+
+    // Create Ansible agent
+    def ansibleSecret = createNode("ansible-agent", "Jenkins Ansible Agent", "ansible")
+    results['ansible'] = ansibleSecret
+    println "ansible:" + ansibleSecret
+
+    // Save changes
+    jenkins.model.Jenkins.getInstanceOrNull()?.save()
+} catch (Exception e) {
+    println "Error: ${e.message}"
+}
